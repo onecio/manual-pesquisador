@@ -11,9 +11,13 @@
     { title: 'Roadmap da pesquisa', module: 'Referência', url: 'roadmap.html', keywords: 'roadmap jornada etapas projeto pesquisa redação submissão publicação' },
     { title: 'Fundamentos da Ciência', module: 'F0 · Alicerces', url: 'modulos/fundamentos.html', keywords: 'ciência fundamentos epistemologia qualitativa quantitativa revisão sistemática' },
     { title: 'Método Científico', module: 'F1 · Alicerces', url: 'modulos/metodo-cientifico.html', keywords: 'método científico hipótese variáveis indução dedução experimento' },
+    { title: 'Ética e Integridade Científica', module: 'F2 · Alicerces', url: 'modulos/etica-integridade.html', keywords: 'ética integridade científica plágio autoria conflito de interesse comitê de ética consentimento' },
+    { title: 'Ciência Aberta', module: 'F3 · Planejamento', url: 'modulos/ciencia-aberta.html', keywords: 'ciência aberta preregistro pre-registro dados abertos materiais abertos transparência reprodutibilidade' },
     { title: 'Planejamento da Pesquisa', module: 'F4 · Planejamento', url: 'modulos/planejamento.html', keywords: 'planejamento problema pergunta picos objetivos preregistro critérios inclusão exclusão' },
+    { title: 'Revisão da Literatura', module: 'F5 · Planejamento', url: 'modulos/revisao-literatura.html', keywords: 'revisão da literatura revisão sistemática narrativa integrativa escopo estratégia de busca prisma' },
     { title: 'Escrita Científica', module: 'F8 · Comunicação', url: 'modulos/escrita.html', keywords: 'escrita científica imrad resumo abstract metodologia discussão referências abnt apa vancouver' },
     { title: 'Publicação Científica', module: 'F9 · Comunicação', url: 'modulos/publicacao.html', keywords: 'publicação científica peer review double blind open access ojs cover letter preprint' },
+    { title: 'Revisão por Pares', module: 'F10 · Comunicação', url: 'modulos/revisao-pares.html', keywords: 'revisão por pares peer review parecerista revisão duplo-cega open review editor pareceres' },
     { title: 'Submissão de Manuscritos', module: 'F19 · Comunicação', url: 'modulos/submissao.html', keywords: 'submissão manuscrito checklist sistema editorial revisão resposta pareceristas' },
     { title: 'Modelo Brasileiro de Publicação', module: 'F18 · Nacional', url: 'modulos/modelo-brasileiro.html', keywords: 'qualis scielo redalyc capes acesso aberto diamante brasil periódicos' }
   ];
