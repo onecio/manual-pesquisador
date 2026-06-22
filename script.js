@@ -30,6 +30,8 @@
     { title: 'Bibliometria', module: 'F14 · Identidade', url: 'modulos/bibliometria.html', keywords: 'bibliometria citações indice h altmetria métricas acadêmicas impacto científico' },
     { title: 'Submissão de Manuscritos', module: 'F19 · Comunicação', url: 'modulos/submissao.html', keywords: 'submissão manuscrito checklist sistema editorial revisão resposta pareceristas' },
     { title: 'Modelo Brasileiro de Publicação', module: 'F18 · Nacional', url: 'modulos/modelo-brasileiro.html', keywords: 'qualis scielo redalyc capes acesso aberto diamante brasil periódicos' }
+    ,{ title: 'Lattes, ORCID e Identificadores', module: 'BR1 · Nacional', url: 'modulos/lattes-orcid.html', keywords: 'lattes orcid identificadores autoria currículo acadêmico cnpq brasil' }
+    ,{ title: 'Fomento e Avaliação no Brasil', module: 'BR2 · Nacional', url: 'modulos/fomento-avaliacao-brasil.html', keywords: 'capes cnpq faps fapesp sucupira avaliação da pós-graduação fomento brasil' }
   ];
 
   var mainNav = document.getElementById('mainNav');
