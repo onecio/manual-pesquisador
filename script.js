@@ -9,6 +9,7 @@
     { title: 'Página inicial', module: 'Hub principal', url: 'index.html', keywords: 'início home ecossistema pesquisa científica módulos roadmap glossário' },
     { title: 'Glossário técnico', module: 'Referência', url: 'glossario.html', keywords: 'glossário termos peer review preprint osf prisma qualis' },
     { title: 'Roadmap da pesquisa', module: 'Referência', url: 'roadmap.html', keywords: 'roadmap jornada etapas projeto pesquisa redação submissão publicação' },
+    { title: 'Perguntas frequentes', module: 'Referência', url: 'faq.html', keywords: 'faq perguntas frequentes pesquisa científica prisma ia bibliometria submissão revisão sistemática' },
     { title: 'Fundamentos da Ciência', module: 'F0 · Alicerces', url: 'modulos/fundamentos.html', keywords: 'ciência fundamentos epistemologia qualitativa quantitativa revisão sistemática' },
     { title: 'Método Científico', module: 'F1 · Alicerces', url: 'modulos/metodo-cientifico.html', keywords: 'método científico hipótese variáveis indução dedução experimento' },
     { title: 'Ética e Integridade Científica', module: 'F2 · Alicerces', url: 'modulos/etica-integridade.html', keywords: 'ética integridade científica plágio autoria conflito de interesse comitê de ética consentimento' },
@@ -24,6 +25,9 @@
     { title: 'Divulgação Científica', module: 'F15 · Impacto', url: 'modulos/divulgacao-cientifica.html', keywords: 'divulgação científica comunicação pública da ciência linguagem acessível alcance social' },
     { title: 'Ferramentas Digitais', module: 'F16 · Impacto', url: 'modulos/ferramentas-digitais.html', keywords: 'ferramentas digitais fluxo acadêmico gerenciador de referências automação organização de pesquisa' },
     { title: 'IA na Pesquisa', module: 'F17 · Impacto', url: 'modulos/ia-pesquisa.html', keywords: 'ia na pesquisa inteligência artificial acadêmica uso responsável transparência supervisão humana' },
+    { title: 'Identidade do Pesquisador', module: 'F12 · Identidade', url: 'modulos/identidade-pesquisador.html', keywords: 'identidade do pesquisador trajetória acadêmica autoria presença científica reputação' },
+    { title: 'Financiamento', module: 'F13 · Identidade', url: 'modulos/financiamento.html', keywords: 'financiamento pesquisa edital agências de fomento proposta orçamento grant' },
+    { title: 'Bibliometria', module: 'F14 · Identidade', url: 'modulos/bibliometria.html', keywords: 'bibliometria citações indice h altmetria métricas acadêmicas impacto científico' },
     { title: 'Submissão de Manuscritos', module: 'F19 · Comunicação', url: 'modulos/submissao.html', keywords: 'submissão manuscrito checklist sistema editorial revisão resposta pareceristas' },
     { title: 'Modelo Brasileiro de Publicação', module: 'F18 · Nacional', url: 'modulos/modelo-brasileiro.html', keywords: 'qualis scielo redalyc capes acesso aberto diamante brasil periódicos' }
   ];
