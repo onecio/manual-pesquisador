@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Módulo F0: Fundamentos da Ciência — Entenda o que é ciência, os tipos de pesquisa (quantitativa, qualitativa, mista), classificação por objetivos, revisão sistemática e os alicerces do pensamento científico.">
+  <meta name="keywords" content="fundamentos da ciência, pesquisa quantitativa, pesquisa qualitativa, pesquisa mista, revisão sistemática, método científico, epistemologia">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://onecio.github.io/manual-pesquisador/modulos/fundamentos.html">
+  <meta property="og:title" content="F0: Fundamentos da Ciência | Manual do Pesquisador">
+  <meta property="og:description" content="Alicerces do pensamento científico: o que é ciência, pesquisa quantitativa, qualitativa, mista e revisão sistemática.">
+  <meta property="og:site_name" content="Manual do Pesquisador">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="F0: Fundamentos da Ciência | Manual do Pesquisador">
+  <meta name="twitter:description" content="Alicerces do pensamento científico: o que é ciência, pesquisa quantitativa, qualitativa, mista e revisão sistemática.">
+  <title>F0: Fundamentos da Ciência | Manual do Pesquisador</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="4" width="20" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+          <rect x="10" y="2" width="20" height="26" rx="2" fill="var(--color-surface)" stroke="currentColor" stroke-width="2"/>
+          <line x1="14" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="13" x2="26" y2="13" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="17" x2="22" y2="17" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="21" x2="24" y2="21" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span>Manual do Pesquisador</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../index.html#blocos">Módulos</a></li>
+        <li><a href="../glossario.html">Glossário</a></li>
+        <li><a href="../roadmap.html">Roadmap</a></li>
+      </ul>
+      <div class="level-selector">
+        <button class="level-btn" data-level="1">Essencial</button>
+        <button class="level-btn active" data-level="2">Estudante</button>
+        <button class="level-btn" data-level="3">Pesquisador</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="../index.html">Início</a></li>
+        <li class="breadcrumb-sep">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"/></svg>
+        </li>
+        <li><a href="../index.html#blocos">Bloco A: Alicerces</a></li>
+        <li class="breadcrumb-sep">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"/></svg>
+        </li>
+        <li class="breadcrumb-current">Fundamentos da Ciência</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header">
+    <div class="container">
+      <span class="module-badge">Módulo F0</span>
+      <h1>Fundamentos da Ciência</h1>
+      <p class="page-description">Neste módulo inaugural, construímos os alicerces do pensamento científico. Você compreenderá o que diferencia o conhecimento científico do senso comum, dominará as abordagens quantitativa, qualitativa e mista, aprenderá a classificar pesquisas por seus objetivos e entenderá por que a revisão sistemática ocupa o topo da pirâmide de evidências.</p>
+    </div>
+  </header>
+
+  <!-- ===== MODULE LAYOUT ===== -->
+  <main id="main-content" class="container">
+    <div class="module-layout">
+
+      <!-- SIDEBAR -->
+      <aside class="module-sidebar">
+        <nav class="sidebar-nav">
+          <span class="sidebar-nav-title">Conteúdos</span>
+          <a href="#ciencia" class="sidebar-link active">O que é Ciência</a>
+          <a href="#conhecimento" class="sidebar-link">Científico vs. Senso Comum</a>
+          <a href="#quantitativa" class="sidebar-link">Pesquisa Quantitativa</a>
+          <a href="#qualitativa" class="sidebar-link">Pesquisa Qualitativa</a>
+          <a href="#mista" class="sidebar-link">Pesquisa Mista</a>
+          <a href="#classificacao" class="sidebar-link">Classificação por Objetivos</a>
+          <a href="#procedimentos" class="sidebar-link">Procedimentos de Coleta</a>
+          <a href="#revisao-sistematica" class="sidebar-link">Revisão Sistemática</a>
+        </nav>
+      </aside>
+
+      <!-- CONTENT -->
+      <div class="module-content">
+
+        <!-- ============================================================
+             CONCEITO 1 — O QUE É CIÊNCIA
+             ============================================================ -->
+        <article class="concept" id="ciencia">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Epistemologia</span>
+              <span class="concept-tag concept-tag-category">Fundamento</span>
+            </div>
+            <h2 class="concept-title">O que é Ciência</h2>
+            <p class="concept-subtitle"><strong>Inglês:</strong> Science &nbsp;|&nbsp; <strong>Origem:</strong> do latim <em>scientia</em> (conhecimento)</p>
+          </div>
+
+          <!-- Level Tabs -->
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Essencial</button>
+            <button class="concept-level-tab" data-level="2">Estudante</button>
+            <button class="concept-level-tab" data-level="3">Pesquisador</button>
+          </div>
+
+          <!-- LEVEL 1 — Essencial -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p>Ciência é uma forma organizada de produzir conhecimento sobre o mundo, usando observação, testes e evidências. Ela busca respostas confiáveis para perguntas, substituindo achismos por resultados que qualquer pessoa pode verificar.</p>
+            </div>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM4 11a1 1 0 100-2H3a1 1 0 000 2h1zM10 18a1 1 0 001-1v-1a1 1 0 10-2 0v1a1 1 0 001 1z"/><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+                Exemplo Simples
+              </span>
+              <p>Imagine que você quer saber se beber água gelada causa dor de garganta. Em vez de confiar na opinião de um vizinho, a ciência pede que você colete dados reais: dê água gelada a um grupo de pessoas, água em temperatura ambiente a outro grupo semelhante, e depois compare quantas ficaram doentes em cada grupo. Essa comparação controlada é o coração do pensamento científico.</p>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 — Estudante -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>Ciência é o empreendimento humano sistemático de produção, organização e validação do conhecimento por meio do método científico — um conjunto de procedimentos lógicos e empíricos que permitem formular hipóteses testáveis, coletar dados controlados e submeter conclusões ao escrutínio da comunidade acadêmica.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
+                Contexto Histórico
+              </h3>
+              <p>A ciência moderna nasce na Revolução Científica (séculos XVI–XVII) com Galileu, Bacon e Newton, que substituíram a autoridade escolástica pela observação empírica e pela matemática. No entanto, formas de investigação sistemática remontam à Grécia Antiga (Aristóteles, Euclides) e ao mundo islâmico medieval (Al-Hazen, Al-Biruni). O Iluminismo consolidou a ciência como instituição social, e o século XX trouxe a profissionalização do cientista, a revisão por pares e o financiamento público de pesquisa.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                Objetivos da Ciência
+              </h3>
+              <ul class="info-list">
+                <li><strong>Descrever</strong> — Registrar fenômenos de forma precisa e mensurável (ex.: catalogar espécies de uma floresta).</li>
+                <li><strong>Explicar</strong> — Identificar relações causais ou mecanismos subjacentes (ex.: por que o aquecimento global derrete geleiras).</li>
+                <li><strong>Prever</strong> — Antecipar eventos futuros com base em padrões observados (ex.: modelos epidemiológicos).</li>
+                <li><strong>Controlar</strong> — Usar o conhecimento para modificar resultados (ex.: vacinas que previnem doenças).</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"/></svg>
+                Funcionamento
+              </h3>
+              <p>O ciclo científico fundamental segue cinco etapas interconectadas: <strong>(1)</strong> Observação de um fenômeno; <strong>(2)</strong> Formulação de uma pergunta e hipótese; <strong>(3)</strong> Desenho experimental e coleta de dados; <strong>(4)</strong> Análise dos resultados; <strong>(5)</strong> Comunicação e escrutínio por pares. Esse ciclo é iterativo: novos dados podem refutar hipóteses, gerar novas perguntas e reconfigurar teorias inteiras.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                Boas Práticas
+              </h3>
+              <ul class="info-list success">
+                <li>Formule hipóteses <strong>falsificáveis</strong> — uma afirmação que nenhum teste pode refutar não é científica.</li>
+                <li>Documente cada passo do procedimento para garantir <strong>reprodutibilidade</strong>.</li>
+                <li>Submeta seus resultados à <strong>revisão por pares</strong> antes de considerá-los validados.</li>
+                <li>Declare conflitos de interesse e fontes de financiamento com <strong>transparência</strong>.</li>
+                <li>Pratique o <strong>ceticismo organizado</strong>: questione inclusive seus próprios resultados.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/></svg>
+                Erros Comuns
+              </h3>
+              <ul class="info-list danger">
+                <li><strong>Argumento de autoridade:</strong> aceitar algo como verdade apenas porque um especialista disse, sem verificar as evidências.</li>
+                <li><strong>Viés de confirmação:</strong> procurar apenas dados que confirmem sua hipótese e ignorar os que a contradizem.</li>
+                <li><strong>Confundir correlação com causalidade:</strong> porque duas variáveis se movem juntas não significa que uma cause a outra.</li>
+                <li><strong>Generalizar sem amostra adequada:</strong> tirar conclusões universais a partir de poucos casos selecionados sem rigor.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM4 11a1 1 0 100-2H3a1 1 0 000 2h1zM10 18a1 1 0 001-1v-1a1 1 0 10-2 0v1a1 1 0 001 1z"/><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+                Exemplo Prático
+              </h3>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                  Exemplo Intermediário
+                </span>
+                <p>Um estudante de enfermagem quer saber se a música ambiente reduz a ansiedade de pacientes em pré-operatório. Ele formula a hipótese: "Pacientes expostos a 30 minutos de música clássica antes da cirurgia terão escores de ansiedade (STAI) significativamente menores que os do grupo controle." Em seguida, desenha um ensaio controlado randomizado, coleta dados de 60 pacientes, aplica testes estatísticos (teste t) e submete os resultados a uma revista de enfermagem. Cada etapa segue o ciclo científico.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 — Pesquisador -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>Ciência constitui um sistema epistemológico autorreflexivo de produção de conhecimento intersubjetivamente verificável, estruturado por programas de pesquisa (Lakatos), paradigmas (Kuhn) e critérios de demarcação (Popper), cuja dinâmica interna se alimenta de tensões entre corroboração e refutação empírica, consenso disciplinar e revoluções teóricas.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                Filosofia da Ciência
+              </h3>
+              <p><strong>Karl Popper (1902–1994)</strong> — Propôs o <em>falsificacionismo</em>: uma teoria só é científica se pode, em princípio, ser refutada por um teste empírico. A ciência progride por conjecturas ousadas e refutações rigorosas, não por acúmulo de confirmações. Obra-chave: <em>A Lógica da Pesquisa Científica</em> (1934).</p>
+              <p><strong>Thomas Kuhn (1922–1996)</strong> — Introduziu o conceito de <em>paradigma</em>: a ciência opera dentro de frameworks consensuais (ciência normal) até que anomalias irreconciliáveis desencadeiem uma revolução científica, substituindo o paradigma vigente. Obra-chave: <em>A Estrutura das Revoluções Científicas</em> (1962).</p>
+              <p><strong>Imre Lakatos (1922–1974)</strong> — Propôs a <em>metodologia dos programas de pesquisa científica</em>, mediando entre Popper e Kuhn. Um programa possui um "núcleo duro" (premissas irrefutáveis) protegido por um "cinturão protetor" de hipóteses auxiliares que absorvem anomalias. Programas são "progressivos" quando geram previsões novas, e "degenerescentes" quando apenas acomodam falhas post hoc.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/></svg>
+                Paradigmas
+              </h3>
+              <p>Na perspectiva kuhniana, um paradigma é mais do que uma teoria: é a constelação de crenças, valores, técnicas e exemplos compartilhados por uma comunidade científica. O paradigma newtoniano dominou a física por 250 anos; a relatividade einsteiniana não o "corrigiu" — o substituiu como framework explicativo. Na ciência da saúde, o modelo biomédico é gradualmente enriquecido pelo biopsicossocial, embora sem ruptura completa.</p>
+              <p>Pesquisadores devem reconhecer que operam dentro de paradigmas, o que influencia desde a escolha de perguntas de pesquisa até os métodos considerados legítimos. A consciência paradigmática é o primeiro passo para a reflexividade epistemológica.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                Demarcação Científica
+              </h3>
+              <p>O <em>problema da demarcação</em> pergunta: o que separa ciência de pseudociência? Popper usou a falsificabilidade; Kuhn, a pertença a um paradigma com puzzle-solving; Lakatos, a progressividade preditiva. Não existe critério único e infalível, mas há consenso de que uma atividade é científica quando: (a) formula predições testáveis, (b) acolhe a possibilidade de erro, (c) se submete a escrutínio público e replicável, e (d) acumula conhecimento cumulativo corrigível.</p>
+              <p>Essa reflexão é vital para o pesquisador moderno que enfrenta a proliferação de revistas predatórias, pseudoterapias com rótulo de "ciência" e o desafio da crise de replicabilidade.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+                Referências Oficiais
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">POPPER, K. <em>A Lógica da Pesquisa Científica</em>. São Paulo: Cultrix, 2013. <a href="https://archive.org/details/logicscientificd0000popp" target="_blank" rel="noopener">Archive.org</a></div>
+                <div class="reference-item">KUHN, T. <em>A Estrutura das Revoluções Científicas</em>. 13.ª ed. São Paulo: Perspectiva, 2017. <a href="https://doi.org/10.7208/chicago/9780226458106.001.0001" target="_blank" rel="noopener">DOI</a></div>
+                <div class="reference-item">LAKATOS, I. <em>The Methodology of Scientific Research Programmes</em>. Cambridge University Press, 1978. <a href="https://doi.org/10.1017/CBO9780511621123" target="_blank" rel="noopener">DOI</a></div>
+                <div class="reference-item">CHALMERS, A. F. <em>O que é Ciência, Afinal?</em> São Paulo: Brasiliense, 1993.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section" style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border-light);">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="metodo-cientifico.html" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Método Científico
+              </a>
+              <a href="#conhecimento" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Conhecimento Científico
+              </a>
+              <a href="#quantitativa" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Pesquisa Científica
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             CONCEITO 2 — CONHECIMENTO CIENTÍFICO VS. SENSO COMUM
+             ============================================================ -->
+        <article class="concept" id="conhecimento">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Epistemologia</span>
+              <span class="concept-tag concept-tag-category">Fundamento</span>
+            </div>
+            <h2 class="concept-title">Conhecimento Científico vs. Senso Comum</h2>
+            <p class="concept-subtitle"><strong>Inglês:</strong> Scientific Knowledge vs. Common Sense &nbsp;|&nbsp; <strong>Área:</strong> Teoria do Conhecimento</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Essencial</button>
+            <button class="concept-level-tab" data-level="2">Estudante</button>
+            <button class="concept-level-tab" data-level="3">Pesquisador</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p>Senso comum é o que as pessoas acreditam no dia a dia sem verificar com testes. O conhecimento científico é o oposto: ele exige provas, pode ser testado novamente por qualquer pessoa e se corrige quando novas evidências aparecem.</p>
+            </div>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"/><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+                Exemplo Simples
+              </span>
+              <p>"Manga com leite faz mal" é senso comum — ninguém testou sistematicamente. Estudos nutricionais mostram que não há reação adversa entre os dois alimentos. A ciência substituiu a crença pela evidência.</p>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>O conhecimento científico distingue-se do senso comum por cinco propriedades: é <strong>sistemático</strong> (organizado em teorias), <strong>verificável</strong> (replicável por terceiros), <strong>falível</strong> (aberto à correção), <strong>objetivo</strong> (busca minimizar vieses pessoais) e <strong>cumulativo</strong> (constrói sobre resultados anteriores). O senso comum, embora funcional no cotidiano, carece dessas garantias epistemológicas.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/></svg>
+                Comparação Detalhada
+              </h3>
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Critério</th>
+                      <th>Senso Comum</th>
+                      <th>Conhecimento Científico</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Fonte</td><td>Experiência pessoal, tradição</td><td>Pesquisa empírica controlada</td></tr>
+                    <tr><td>Método</td><td>Observação casual</td><td>Método científico rigoroso</td></tr>
+                    <tr><td>Verificação</td><td>Não replicável</td><td>Reprodutível por terceiros</td></tr>
+                    <tr><td>Linguagem</td><td>Imprecisa, figurativa</td><td>Técnica, operacional</td></tr>
+                    <tr><td>Correção</td><td>Resiste à mudança</td><td>Autocorretivo</td></tr>
+                    <tr><td>Alcance</td><td>Local, contextual</td><td>Busca generalização</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/></svg>
+                Por que o Senso Comum Engana
+              </h3>
+              <p>O cérebro humano é uma máquina de atalhos cognitivos. Heurísticas como a <strong>disponibilidade</strong> (julgar frequência pelo que lembramos facilmente), a <strong>ancoragem</strong> (fixar-se no primeiro dado recebido) e a <strong>representatividade</strong> (julgar pela semelhança com um estereótipo) geram percepções rápidas, mas frequentemente erradas. A ciência desenvolveu protocolos — randomização, cegamento, controle estatístico — exatamente para neutralizar esses vieses cognitivos.</p>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A distinção entre doxa (opinião) e episteme (conhecimento fundamentado) remonta a Platão. Na ciência contemporânea, essa fronteira é operacionalizada por critérios metodológicos (validade interna/externa), sociais (revisão por pares, reprodutibilidade) e epistemológicos (poder explicativo, parcimônia, fertilidade teórica). A Sociologia da Ciência (Merton, 1942) adicionou as normas CUDOS — Comunismo, Universalismo, Desinteresse, Ceticismo Organizado — como ethos do empreendimento científico.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                O Ethos Mertoniano (CUDOS)
+              </h3>
+              <ul class="info-list">
+                <li><strong>Comunismo:</strong> Os resultados científicos são patrimônio público, não propriedade privada do descobridor.</li>
+                <li><strong>Universalismo:</strong> Afirmações são avaliadas por critérios impessoais, independente da nacionalidade ou status do autor.</li>
+                <li><strong>Desinteresse:</strong> A motivação primária é o avanço do conhecimento, não o ganho pessoal.</li>
+                <li><strong>Ceticismo Organizado:</strong> Toda afirmação é submetida a exame crítico antes de ser aceita.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+                Referências
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">MERTON, R. K. <em>The Sociology of Science</em>. University of Chicago Press, 1973.</div>
+                <div class="reference-item">KAHNEMAN, D. <em>Rápido e Devagar: Duas Formas de Pensar</em>. Rio de Janeiro: Objetiva, 2012.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             CONCEITO 3 — PESQUISA QUANTITATIVA
+             ============================================================ -->
+        <article class="concept" id="quantitativa">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Metodologia</span>
+              <span class="concept-tag concept-tag-category">Abordagem</span>
+            </div>
+            <h2 class="concept-title">Pesquisa Quantitativa</h2>
+            <p class="concept-subtitle"><strong>Inglês:</strong> Quantitative Research &nbsp;|&nbsp; <strong>Paradigma:</strong> Positivista / Pós-positivista</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Essencial</button>
+            <button class="concept-level-tab" data-level="2">Estudante</button>
+            <button class="concept-level-tab" data-level="3">Pesquisador</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p>Pesquisa quantitativa é aquela que trabalha com números. Ela mede, conta e usa estatística para responder perguntas como "quanto?", "com que frequência?" ou "qual é a diferença?".</p>
+            </div>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"/><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+                Exemplo Simples
+              </span>
+              <p>Uma farmácia quer saber se seu genérico funciona tão bem quanto o remédio de marca. Ela dá o genérico a 100 pacientes e o de marca a outros 100, mede a melhora de cada um com escalas numéricas e compara os grupos com estatística. Isso é pesquisa quantitativa.</p>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>A pesquisa quantitativa é uma abordagem de investigação que opera com variáveis mensuráveis e dados numéricos, buscando testar hipóteses por meio de procedimentos estatísticos. Fundamentada no paradigma positivista e pós-positivista, ela pressupõe uma realidade objetiva que pode ser mensurada, controlada e generalizada para populações maiores a partir de amostras representativas.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                Características Essenciais
+              </h3>
+              <ul class="info-list">
+                <li><strong>Dados numéricos:</strong> Escalas, contagens, medidas, escores.</li>
+                <li><strong>Hipóteses prévias:</strong> Formula H₀ e H₁ antes da coleta.</li>
+                <li><strong>Amostra representativa:</strong> Busca tamanho amostral com poder estatístico adequado.</li>
+                <li><strong>Instrumentos padronizados:</strong> Questionários validados, sensores, escalas (Likert, VAS).</li>
+                <li><strong>Análise estatística:</strong> Descritiva (média, desvio-padrão) e inferencial (teste t, ANOVA, regressão).</li>
+                <li><strong>Generalização:</strong> Os resultados da amostra são extrapolados para a população.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
+                Quando Utilizar
+              </h3>
+              <p>Use pesquisa quantitativa quando você precisa: <strong>(a)</strong> medir a magnitude de um fenômeno (prevalência de uma doença); <strong>(b)</strong> comparar grupos (eficácia de dois tratamentos); <strong>(c)</strong> testar relações entre variáveis (correlação entre renda e escolaridade); <strong>(d)</strong> generalizar resultados para uma população ampla. Não é a melhor escolha quando você quer compreender motivações profundas, experiências subjetivas ou contextos culturais complexos.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"/><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+                Exemplos por Nível de Complexidade
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">Exemplo Simples</span>
+                <p>Contar quantos alunos de uma escola preferem ler no celular vs. no livro impresso e calcular a porcentagem de cada grupo.</p>
+              </div>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">Exemplo Intermediário</span>
+                <p>Aplicar o questionário PHQ-9 (depressão) em 200 universitários antes e depois de um programa de mindfulness de 8 semanas, comparando os escores médios com um teste t pareado para verificar se houve redução significativa (p &lt; 0,05).</p>
+              </div>
+              <div class="example-box example-level-advanced">
+                <span class="example-label">Exemplo Avançado</span>
+                <p>Conduzir um ensaio clínico randomizado, duplo-cego e multicêntrico comparando a eficácia de um novo anti-hipertensivo versus placebo em 2.000 pacientes durante 12 meses, utilizando análise de sobrevivência (Kaplan-Meier) e regressão de Cox para ajustar covariáveis.</p>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/></svg>
+                Erros Comuns
+              </h3>
+              <ul class="info-list danger">
+                <li><strong>Amostra insuficiente:</strong> coletar poucos dados e aplicar estatística sofisticada que não tem poder para detectar diferenças reais.</li>
+                <li><strong>P-hacking:</strong> manipular análises até encontrar um p &lt; 0,05, reportando apenas o teste "significativo".</li>
+                <li><strong>Instrumento não validado:</strong> usar questionário caseiro sem verificar confiabilidade (Cronbach &alpha;) e validade de construto.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A pesquisa quantitativa assenta-se epistemologicamente na ontologia realista (existe uma realidade independente do observador) e na epistemologia objetivista (o conhecimento dessa realidade é acessível por medição e controle). Os designs quantitativos — experimentais (RCT), quase-experimentais e observacionais (coorte, caso-controle, transversal) — variam no grau de controle sobre variáveis confundidoras e, portanto, na força da inferência causal que permitem.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"/></svg>
+                Hierarquia de Designs
+              </h3>
+              <ul class="info-list">
+                <li><strong>Ensaio Clínico Randomizado (RCT):</strong> padrão-ouro para causalidade; randomização minimiza confundidores.</li>
+                <li><strong>Coorte:</strong> segue grupos ao longo do tempo; forte para risco relativo, mas sem randomização.</li>
+                <li><strong>Caso-controle:</strong> parte do desfecho para investigar exposição passada; eficiente para doenças raras.</li>
+                <li><strong>Transversal:</strong> retrato instantâneo; mede prevalência, mas não estabelece temporalidade.</li>
+                <li><strong>Ecológico:</strong> analisa populações inteiras, não indivíduos; sujeito à falácia ecológica.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                A Crise de Replicabilidade
+              </h3>
+              <p>Em 2015, o Open Science Collaboration tentou replicar 100 estudos de psicologia publicados em revistas de elite: apenas 36% obtiveram resultados significativos na replicação. Esse resultado abalou a confiança na pesquisa quantitativa e levou a reformas como: <strong>pré-registro</strong> de hipóteses (OSF, ClinicalTrials.gov), <strong>relatórios registrados</strong> (Registered Reports), exigência de <strong>dados abertos</strong> e adoção de <strong>intervalos de confiança</strong> em vez de dependência exclusiva do p-valor.</p>
+            </div>
+
+            <div class="example-box example-level-applied">
+              <span class="example-label">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                Exemplo Aplicado — Saúde Pública
+              </span>
+              <p>Um pesquisador deseja estimar a prevalência de diabetes tipo 2 em adultos de um município (200 mil habitantes). Usando cálculo amostral (prevalência estimada 8%, margem de erro 2%, IC 95%), ele determina n = 707. Utiliza amostragem estratificada por faixa etária, coleta glicemia de jejum, aplica correção pelo efeito de design (deff) e pesa os resultados para estimar a prevalência municipal. A análise é feita com survey statistics no R (pacote 'survey').</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+                Referências
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">CRESWELL, J. W.; CRESWELL, J. D. <em>Research Design</em>. 5th ed. Sage, 2018.</div>
+                <div class="reference-item">Open Science Collaboration. Estimating the reproducibility of psychological science. <em>Science</em>, v. 349, n. 6251, 2015. <a href="https://doi.org/10.1126/science.aac4716" target="_blank" rel="noopener">DOI</a></div>
+                <div class="reference-item">FIELD, A. <em>Discovering Statistics Using IBM SPSS Statistics</em>. 5th ed. Sage, 2018.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section" style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border-light);">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#qualitativa" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Pesquisa Qualitativa
+              </a>
+              <a href="#mista" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Pesquisa Mista
+              </a>
+              <a href="#revisao-sistematica" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Revisão Sistemática
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             CONCEITO 4 — PESQUISA QUALITATIVA
+             ============================================================ -->
+        <article class="concept" id="qualitativa">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Metodologia</span>
+              <span class="concept-tag concept-tag-category">Abordagem</span>
+            </div>
+            <h2 class="concept-title">Pesquisa Qualitativa</h2>
+            <p class="concept-subtitle"><strong>Inglês:</strong> Qualitative Research &nbsp;|&nbsp; <strong>Paradigma:</strong> Construtivista / Interpretativista</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Essencial</button>
+            <button class="concept-level-tab" data-level="2">Estudante</button>
+            <button class="concept-level-tab" data-level="3">Pesquisador</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p>Pesquisa qualitativa busca entender o "porquê" e o "como" das coisas. Em vez de números, ela trabalha com palavras, imagens e descrições profundas da experiência humana. O pesquisador ouve, observa e interpreta.</p>
+            </div>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"/><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+                Exemplo Simples
+              </span>
+              <p>Um professor quer entender por que alunos de uma escola abandonam os estudos. Ele não conta apenas quantos saíram — ele faz entrevistas longas com ex-alunos para ouvir suas histórias, sentimentos e motivações. As respostas são textos, não números.</p>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>A pesquisa qualitativa é uma abordagem interpretativa que investiga fenômenos sociais em seus contextos naturais, buscando compreender significados, percepções e experiências dos participantes. Seus dados são textuais (entrevistas, observações de campo, documentos) e sua análise é indutiva, gerando categorias e temas a partir dos dados em vez de testar hipóteses pré-definidas.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                Principais Métodos
+              </h3>
+              <ul class="info-list">
+                <li><strong>Fenomenologia:</strong> descreve a essência da experiência vivida (ex.: como é viver com dor crônica).</li>
+                <li><strong>Etnografia:</strong> imersão prolongada em uma cultura ou grupo (ex.: rotina de agentes comunitários de saúde).</li>
+                <li><strong>Teoria Fundamentada (Grounded Theory):</strong> constrói teoria indutivamente a partir dos dados.</li>
+                <li><strong>Estudo de Caso:</strong> explora em profundidade um caso único ou múltiplo em seu contexto real.</li>
+                <li><strong>Pesquisa Narrativa:</strong> analisa histórias de vida e trajetórias pessoais.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
+                Quando Utilizar
+              </h3>
+              <p>A pesquisa qualitativa é ideal quando: <strong>(a)</strong> pouco se sabe sobre o fenômeno (estudos exploratórios); <strong>(b)</strong> você precisa compreender perspectivas, motivações e sentimentos; <strong>(c)</strong> o fenômeno é complexo e contextual (ex.: adesão ao tratamento em comunidades vulneráveis); <strong>(d)</strong> variáveis não podem ser isoladas ou quantificadas de forma significativa.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"/><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+                Exemplos por Nível
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">Exemplo Simples</span>
+                <p>Entrevistar 10 idosos de um asilo para entender como se sentem em relação ao afastamento da família.</p>
+              </div>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">Exemplo Intermediário</span>
+                <p>Conduzir um estudo fenomenológico com 15 enfermeiras de UTI, realizando entrevistas semiestruturadas (45–60 min), transcrevendo e analisando os dados com a técnica de Colaizzi para extrair temas sobre o significado de cuidar de pacientes terminais.</p>
+              </div>
+              <div class="example-box example-level-advanced">
+                <span class="example-label">Exemplo Avançado</span>
+                <p>Etnografia de 12 meses em uma aldeia indígena para compreender as práticas de saúde tradicional, seu diálogo com a biomedicina e as tensões de poder entre agentes comunitários e pajés. Coleta por observação participante, diário de campo e entrevistas em profundidade, com análise temática reflexiva (Braun &amp; Clarke, 2019).</p>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/></svg>
+                Erros Comuns
+              </h3>
+              <ul class="info-list danger">
+                <li><strong>Falta de saturação:</strong> encerrar a coleta antes que novos dados parem de gerar categorias inéditas.</li>
+                <li><strong>Não declarar posição do pesquisador:</strong> omitir a reflexividade sobre como suas crenças influenciam a análise.</li>
+                <li><strong>Análise superficial:</strong> reportar falas dos participantes sem interpretação teórica ou identificação de padrões.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A pesquisa qualitativa se fundamenta em ontologias relativistas (múltiplas realidades construídas socialmente) e epistemologias subjetivistas ou intersubjetivistas. Sua rigorosidade é avaliada por critérios de trustworthiness (Lincoln &amp; Guba, 1985): credibilidade (engajamento prolongado, member checking, triangulação), transferibilidade (descrição densa), dependabilidade (audit trail) e confirmabilidade (reflexividade do pesquisador).</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"/></svg>
+                Critérios de Qualidade (Trustworthiness)
+              </h3>
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Critério Qualitativo</th>
+                      <th>Equivalente Quantitativo</th>
+                      <th>Estratégias</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Credibilidade</td><td>Validade interna</td><td>Triangulação, member checking, engajamento prolongado</td></tr>
+                    <tr><td>Transferibilidade</td><td>Validade externa</td><td>Descrição densa (thick description)</td></tr>
+                    <tr><td>Dependabilidade</td><td>Confiabilidade</td><td>Audit trail, codificação por pares</td></tr>
+                    <tr><td>Confirmabilidade</td><td>Objetividade</td><td>Reflexividade, diário do pesquisador</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                Análise Temática Reflexiva (Braun &amp; Clarke, 2019)
+              </h3>
+              <p>A versão reflexiva da análise temática rejeita a ideia de que temas "emergem" dos dados passivamente. O pesquisador é agente ativo na produção de temas, e a codificação é um ato interpretativo, não mecânico. As seis fases — familiarização, codificação inicial, geração de temas candidatos, revisão, definição e nomeação, e escrita — são recursivas, não lineares. A reflexividade constante (documentar decisões, questionar pressupostos) é o que confere rigor ao processo.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+                Referências
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">LINCOLN, Y. S.; GUBA, E. G. <em>Naturalistic Inquiry</em>. Sage, 1985.</div>
+                <div class="reference-item">BRAUN, V.; CLARKE, V. Reflecting on reflexive thematic analysis. <em>Qualitative Research in Sport, Exercise and Health</em>, v. 11, n. 4, p. 589–597, 2019. <a href="https://doi.org/10.1080/2159676X.2019.1628806" target="_blank" rel="noopener">DOI</a></div>
+                <div class="reference-item">CRESWELL, J. W.; POTH, C. N. <em>Qualitative Inquiry and Research Design</em>. 4th ed. Sage, 2018.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section" style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border-light);">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#quantitativa" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Pesquisa Quantitativa
+              </a>
+              <a href="#mista" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Pesquisa Mista
+              </a>
+              <a href="#classificacao" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Classificação por Objetivos
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             CONCEITO 5 — PESQUISA MISTA
+             ============================================================ -->
+        <article class="concept" id="mista">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Metodologia</span>
+              <span class="concept-tag concept-tag-category">Abordagem</span>
+            </div>
+            <h2 class="concept-title">Pesquisa Mista (Métodos Mistos)</h2>
+            <p class="concept-subtitle"><strong>Inglês:</strong> Mixed Methods Research &nbsp;|&nbsp; <strong>Paradigma:</strong> Pragmatismo</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Essencial</button>
+            <button class="concept-level-tab" data-level="2">Estudante</button>
+            <button class="concept-level-tab" data-level="3">Pesquisador</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p>Pesquisa mista combina números e palavras na mesma investigação. Ela usa dados quantitativos (estatísticas) e qualitativos (entrevistas, observações) juntos, para que um tipo de dado complemente o que o outro não consegue captar sozinho.</p>
+            </div>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"/><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+                Exemplo Simples
+              </span>
+              <p>Uma escola aplica uma prova padronizada de matemática para todos os 500 alunos (quantitativo) e depois entrevista 20 alunos com notas muito baixas para entender suas dificuldades (qualitativo). Os números mostram o "quanto"; as entrevistas mostram o "por quê".</p>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>A pesquisa de métodos mistos é uma abordagem metodológica que integra sistematicamente coleta, análise e interpretação de dados quantitativos e qualitativos em um único estudo ou programa de pesquisa. Fundamentada no pragmatismo filosófico, ela prioriza a pergunta de pesquisa sobre a fidelidade paradigmática, utilizando o método mais adequado para cada aspecto do problema.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"/></svg>
+                Designs Clássicos
+              </h3>
+              <ul class="info-list">
+                <li><strong>Convergente (Concurrent):</strong> coleta quanti e quali simultaneamente, analisa em separado e depois mescla os resultados para comparação.</li>
+                <li><strong>Sequencial Explicativo:</strong> primeiro quantitativo, depois qualitativo para explicar resultados numéricos inesperados.</li>
+                <li><strong>Sequencial Exploratório:</strong> primeiro qualitativo (explorar), depois quantitativo (testar o que se descobriu).</li>
+                <li><strong>Incorporado (Embedded):</strong> um método é secundário dentro de um design predominante (ex.: entrevistas qualitativas dentro de um RCT).</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                Vantagens
+              </h3>
+              <ul class="info-list success">
+                <li>Oferece uma visão mais completa do fenômeno ao combinar amplitude (quanti) com profundidade (quali).</li>
+                <li>Permite triangulação metodológica, aumentando a robustez das conclusões.</li>
+                <li>Resultados qualitativos podem explicar dados quantitativos inesperados (e vice-versa).</li>
+                <li>Mais persuasiva para políticas públicas, pois apresenta tanto números quanto vozes.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/></svg>
+                Erros Comuns
+              </h3>
+              <ul class="info-list danger">
+                <li><strong>Mistura sem integração:</strong> coletar dados quanti e quali, mas não mesclá-los na análise — apenas reportar lado a lado.</li>
+                <li><strong>Design não declarado:</strong> não explicitar qual dos designs (convergente, sequencial, embedded) está sendo usado.</li>
+                <li><strong>Subestimar recursos:</strong> pesquisa mista exige o dobro de competências, tempo e custo; muitos subestimam.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A pesquisa de métodos mistos, reconhecida como "terceiro movimento metodológico" (Tashakkori &amp; Teddlie, 2010), supera a "guerra dos paradigmas" ao adotar o pragmatismo como worldview: o valor de um método reside em sua utilidade para responder à pergunta, não em sua coerência com uma ontologia particular. A integração (mixing) é o elemento definidor e pode ocorrer no design, na coleta, na análise ou na interpretação, através de estratégias como joint displays, data transformation e seguimento (following a thread).</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/></svg>
+                Joint Display — Ferramenta de Integração
+              </h3>
+              <p>O <em>joint display</em> é uma tabela ou diagrama que justapõe, lado a lado, resultados quantitativos e qualitativos para cada tema ou variável, forçando o pesquisador a compará-los sistematicamente e formular meta-inferências integradas. Cada linha da tabela mostra: (1) o achado quantitativo, (2) a citação qualitativa correspondente e (3) a meta-inferência resultante da combinação de ambos. Essa prática é recomendada por Creswell &amp; Plano Clark (2018) e exigida por muitos revisores de revistas de métodos mistos.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+                Referências
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">CRESWELL, J. W.; PLANO CLARK, V. L. <em>Designing and Conducting Mixed Methods Research</em>. 3rd ed. Sage, 2018.</div>
+                <div class="reference-item">TASHAKKORI, A.; TEDDLIE, C. <em>Sage Handbook of Mixed Methods in Social &amp; Behavioral Research</em>. 2nd ed. Sage, 2010.</div>
+                <div class="reference-item">FETTERS, M. D.; CURRY, L. A.; CRESWELL, J. W. Achieving integration in mixed methods designs. <em>Health Services Research</em>, v. 48, n. 6pt2, p. 2134–2156, 2013. <a href="https://doi.org/10.1111/1475-6773.12117" target="_blank" rel="noopener">DOI</a></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section" style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border-light);">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#quantitativa" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Pesquisa Quantitativa
+              </a>
+              <a href="#qualitativa" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Pesquisa Qualitativa
+              </a>
+              <a href="#classificacao" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Classificação por Objetivos
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             CONCEITO 6 — CLASSIFICAÇÃO POR OBJETIVOS
+             ============================================================ -->
+        <article class="concept" id="classificacao">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Metodologia</span>
+              <span class="concept-tag concept-tag-category">Tipologia</span>
+            </div>
+            <h2 class="concept-title">Classificação por Objetivos</h2>
+            <p class="concept-subtitle"><strong>Tipos:</strong> Exploratória, Descritiva e Explicativa &nbsp;|&nbsp; <strong>Ref.:</strong> Gil (2017)</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Essencial</button>
+            <button class="concept-level-tab" data-level="2">Estudante</button>
+            <button class="concept-level-tab" data-level="3">Pesquisador</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p>Toda pesquisa tem um objetivo principal. Ela pode ser <strong>exploratória</strong> (descobrir algo novo), <strong>descritiva</strong> (descrever como algo é) ou <strong>explicativa</strong> (explicar por que algo acontece). Esses três tipos formam uma escada: primeiro exploramos, depois descrevemos, depois explicamos.</p>
+            </div>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"/><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+                Exemplo Simples
+              </span>
+              <p><strong>Exploratória:</strong> "O que os moradores de uma comunidade pensam sobre reciclagem?" (ainda não sabemos nada). <strong>Descritiva:</strong> "Qual é a taxa de reciclagem nos bairros da cidade?" (queremos medir). <strong>Explicativa:</strong> "Por que bairros de alta renda reciclam mais que bairros de baixa renda?" (queremos entender as causas).</p>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>A classificação de pesquisas segundo seus objetivos, proposta por Gil (2017) com base na taxonomia de Selltiz et al. (1967), organiza os estudos em três categorias hierárquicas de profundidade investigativa. Cada categoria pressupõe um nível diferente de conhecimento prévio sobre o fenômeno e utiliza métodos específicos para alcançar seus propósitos.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                Pesquisa Exploratória
+              </h3>
+              <p><strong>Objetivo:</strong> Proporcionar familiaridade com o problema quando ele é pouco conhecido ou pouco estudado. Gera hipóteses e define variáveis para estudos futuros.</p>
+              <p><strong>Métodos típicos:</strong> revisão bibliográfica, entrevistas abertas com especialistas, estudos de caso piloto, grupos focais.</p>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">Exemplo</span>
+                <p>Um pesquisador quer estudar o uso de inteligência artificial na educação básica brasileira — tema ainda pouco investigado. Ele faz entrevistas semiestruturadas com 12 professores que já usam IA em sala de aula para mapear potencialidades, desafios e categorias emergentes que guiarão um estudo descritivo futuro em larga escala.</p>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/></svg>
+                Pesquisa Descritiva
+              </h3>
+              <p><strong>Objetivo:</strong> Descrever características de uma população, fenômeno ou experiência, estabelecendo relações entre variáveis sem manipulá-las. Responde "o quê?", "quem?", "onde?", "quando?".</p>
+              <p><strong>Métodos típicos:</strong> surveys, censos, estudos transversais, análise documental, estudos de prevalência.</p>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">Exemplo</span>
+                <p>Um estudo transversal aplica um questionário online a 1.500 universitários para descrever a prevalência de sintomas de burnout, mapeando frequência, intensidade e perfil sociodemográfico (idade, curso, renda). Os resultados são apresentados como proporções e IC 95%, sem investigar causas.</p>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"/></svg>
+                Pesquisa Explicativa
+              </h3>
+              <p><strong>Objetivo:</strong> Identificar os fatores que determinam ou contribuem para a ocorrência de um fenômeno, estabelecendo relações de causalidade. Responde "por quê?".</p>
+              <p><strong>Métodos típicos:</strong> ensaios experimentais (RCTs), estudos quase-experimentais, estudos de coorte prospectiva, modelos de regressão multivariada.</p>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">Exemplo</span>
+                <p>Após identificar (descritiva) que 40% dos universitários têm sintomas de burnout, o pesquisador conduz um estudo de coorte prospectiva com 800 alunos durante 2 semestres para determinar quais fatores (carga horária, trabalho noturno, suporte familiar) predizem o desenvolvimento de burnout, usando regressão logística multivariada.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A tipologia de Gil (2017), refinada a partir de Selltiz et al. (1967) e convergente com a taxonomia internacional de Yin (2018) e Babbie (2016), organiza os estudos em um contínuo epistêmico de crescente controle inferencial. A passagem de exploratória para explicativa exige maior rigor no desenho, controle de variáveis confundidoras e poder estatístico, refletindo a transição da geração de hipóteses (contexto de descoberta) para o teste de hipóteses (contexto de justificação).</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/></svg>
+                Quadro Comparativo Avançado
+              </h3>
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Dimensão</th>
+                      <th>Exploratória</th>
+                      <th>Descritiva</th>
+                      <th>Explicativa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Conhecimento prévio</td><td>Pouco ou nenhum</td><td>Moderado</td><td>Amplo</td></tr>
+                    <tr><td>Pergunta-tipo</td><td>"O quê?", "Como?"</td><td>"Qual?", "Quanto?"</td><td>"Por quê?"</td></tr>
+                    <tr><td>Amostra</td><td>Pequena, intencional</td><td>Representativa</td><td>Controlada</td></tr>
+                    <tr><td>Inferência</td><td>Hipóteses provisórias</td><td>Associações</td><td>Causalidade</td></tr>
+                    <tr><td>Flexibilidade</td><td>Alta</td><td>Moderada</td><td>Baixa</td></tr>
+                    <tr><td>Risco de viés</td><td>Alto (exploratório)</td><td>Médio (confundidores)</td><td>Baixo (se RCT)</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+                Referências
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">GIL, A. C. <em>Como Elaborar Projetos de Pesquisa</em>. 6.ª ed. São Paulo: Atlas, 2017.</div>
+                <div class="reference-item">SELLTIZ, C. et al. <em>Métodos de Pesquisa nas Relações Sociais</em>. São Paulo: E.P.U., 1967.</div>
+                <div class="reference-item">YIN, R. K. <em>Case Study Research and Applications</em>. 6th ed. Sage, 2018.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section" style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border-light);">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#quantitativa" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Pesquisa Quantitativa
+              </a>
+              <a href="#qualitativa" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Pesquisa Qualitativa
+              </a>
+              <a href="#procedimentos" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Procedimentos de Coleta
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             CONCEITO 7 — PROCEDIMENTOS DE COLETA
+             ============================================================ -->
+        <article class="concept" id="procedimentos">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Metodologia</span>
+              <span class="concept-tag concept-tag-category">Procedimento</span>
+            </div>
+            <h2 class="concept-title">Procedimentos de Coleta</h2>
+            <p class="concept-subtitle"><strong>Inglês:</strong> Data Collection Procedures &nbsp;|&nbsp; <strong>Ref.:</strong> Gil (2017), Lakatos &amp; Marconi (2021)</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Essencial</button>
+            <button class="concept-level-tab" data-level="2">Estudante</button>
+            <button class="concept-level-tab" data-level="3">Pesquisador</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p>Procedimentos de coleta são as formas práticas que o pesquisador usa para obter informações: pode ser um experimento em laboratório, uma pesquisa de campo com questionários, consulta a documentos, entrevistas ou observação direta. A escolha depende do que você quer descobrir.</p>
+            </div>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"/><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+                Exemplo Simples
+              </span>
+              <p>Se você quer saber a opinião dos vizinhos sobre barulho, faz uma pesquisa de campo com questionários (survey). Se quer saber se um adubo faz plantas crescerem mais rápido, faz um experimento controlado em vasos. Cada tipo de pergunta pede um procedimento diferente.</p>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>Procedimentos de coleta (ou delineamento técnico) referem-se ao conjunto de técnicas e operações que o pesquisador emprega para obter dados empíricos. Eles são classificados de acordo com as fontes de dados (primárias ou secundárias), o grau de controle do pesquisador e o ambiente de coleta (campo, laboratório, documental).</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/></svg>
+                Principais Procedimentos
+              </h3>
+              <ul class="info-list">
+                <li><strong>Pesquisa Bibliográfica:</strong> baseia-se em material já publicado (livros, artigos, teses). É obrigatória em qualquer pesquisa como fundamentação teórica.</li>
+                <li><strong>Pesquisa Documental:</strong> analisa documentos que não receberam tratamento analítico (atas, prontuários, leis, fotografias, cartas).</li>
+                <li><strong>Pesquisa Experimental:</strong> manipula uma variável independente e mede o efeito sobre a variável dependente, em ambiente controlado.</li>
+                <li><strong>Levantamento (Survey):</strong> interrogação direta de pessoas sobre o fenômeno, com amostra representativa da população.</li>
+                <li><strong>Estudo de Caso:</strong> investigação profunda e contextualizada de um ou poucos casos.</li>
+                <li><strong>Pesquisa Participante:</strong> o pesquisador participa ativamente do grupo estudado.</li>
+                <li><strong>Pesquisa-Ação:</strong> combina pesquisa com intervenção prática para resolver um problema concreto.</li>
+              </ul>
+            </div>
+
+            <div class="callout callout-info">
+              <svg class="callout-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/></svg>
+              <p><strong>Dica importante:</strong> Uma pesquisa pode combinar mais de um procedimento. Um TCC pode ser, ao mesmo tempo, bibliográfico (revisão de literatura) e de levantamento (aplicação de questionário). O segredo é justificar cada escolha com base na pergunta de pesquisa.</p>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A taxonomia de procedimentos técnicos de coleta reflete a epistemologia subjacente ao estudo: procedimentos experimentais alinham-se ao positivismo (controle, randomização, cegamento), enquanto pesquisa participante e pesquisa-ação refletem epistemologias críticas e participativas (Reason &amp; Bradbury, 2008). A escolha do procedimento deve ser coerente com a ontologia, a epistemologia e a pergunta de pesquisa, formando o que Crotty (1998) chamou de "andaime de pesquisa" (research scaffold).</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+                Referências
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">GIL, A. C. <em>Como Elaborar Projetos de Pesquisa</em>. 6.ª ed. Atlas, 2017.</div>
+                <div class="reference-item">LAKATOS, E. M.; MARCONI, M. A. <em>Fundamentos de Metodologia Científica</em>. 9.ª ed. Atlas, 2021.</div>
+                <div class="reference-item">CROTTY, M. <em>The Foundations of Social Research</em>. Sage, 1998.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             CONCEITO 8 — REVISÃO SISTEMÁTICA
+             ============================================================ -->
+        <article class="concept" id="revisao-sistematica">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Metodologia</span>
+              <span class="concept-tag concept-tag-category">Topo da Pirâmide</span>
+            </div>
+            <h2 class="concept-title">Revisão Sistemática</h2>
+            <p class="concept-subtitle"><strong>Inglês:</strong> Systematic Review &nbsp;|&nbsp; <strong>Sigla:</strong> RS &nbsp;|&nbsp; <strong>Padrão:</strong> PRISMA 2020, Cochrane</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Essencial</button>
+            <button class="concept-level-tab" data-level="2">Estudante</button>
+            <button class="concept-level-tab" data-level="3">Pesquisador</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p>Revisão sistemática é um tipo especial de pesquisa que não coleta dados novos: ela reúne e analisa todos os estudos já publicados sobre uma pergunta específica, usando regras rigorosas para garantir que nenhum estudo importante seja esquecido. É considerada o nível mais alto de evidência científica.</p>
+            </div>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"/><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+                Exemplo Simples
+              </span>
+              <p>Em vez de ler um único estudo sobre se exercício físico reduz a ansiedade, a revisão sistemática busca TODOS os estudos sobre o tema, avalia a qualidade de cada um e sintetiza os resultados. É como pedir a opinião de centenas de estudos ao mesmo tempo, em vez de confiar em apenas um.</p>
+            </div>
+
+            <div class="callout callout-warning">
+              <svg class="callout-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/></svg>
+              <p><strong>Atenção:</strong> Revisão sistemática NÃO é a mesma coisa que revisão narrativa (ou revisão de literatura). A narrativa escolhe estudos subjetivamente; a sistemática segue um protocolo público, replicável e exaustivo.</p>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>A revisão sistemática é um estudo secundário que identifica, seleciona, avalia criticamente e sintetiza todas as evidências relevantes sobre uma pergunta de pesquisa claramente formulada, seguindo um protocolo predefinido, transparente e reprodutível. Quando a síntese combina os dados numericamente, utiliza-se a meta-análise — uma técnica estatística que gera um efeito sumário (pooled effect) a partir dos estudos individuais.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
+                Etapas da Revisão Sistemática
+              </h3>
+              <ul class="info-list">
+                <li><strong>1. Pergunta PICO(S):</strong> definir População, Intervenção, Comparador, Outcomes e tipo de Estudo.</li>
+                <li><strong>2. Protocolo:</strong> registrar o plano no PROSPERO antes de iniciar a busca.</li>
+                <li><strong>3. Estratégia de busca:</strong> construir termos de busca com operadores booleanos (AND, OR, NOT) em múltiplas bases (PubMed, Embase, Cochrane, LILACS, Scopus).</li>
+                <li><strong>4. Seleção:</strong> triagem por título/resumo e leitura integral, por pelo menos dois revisores independentes.</li>
+                <li><strong>5. Extração de dados:</strong> tabelas padronizadas com características e resultados de cada estudo.</li>
+                <li><strong>6. Avaliação de qualidade:</strong> ferramentas como RoB 2 (ensaios), ROBINS-I (observacionais), JBI (quali).</li>
+                <li><strong>7. Síntese:</strong> narrativa estruturada e/ou meta-análise (forest plot, I², efeito fixo/randômico).</li>
+                <li><strong>8. PRISMA:</strong> reportar com o checklist PRISMA 2020 e o fluxograma de seleção.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                Por que é o "Topo da Pirâmide"
+              </h3>
+              <p>Na pirâmide de evidências, a revisão sistemática (com ou sem meta-análise) ocupa o ápice porque: <strong>(a)</strong> agrega resultados de múltiplos estudos, reduzindo o efeito de vieses individuais; <strong>(b)</strong> aumenta o poder estatístico ao combinar amostras; <strong>(c)</strong> identifica padrões de consistência ou divergência entre estudos; <strong>(d)</strong> segue protocolo transparente que qualquer pessoa pode auditar. É o tipo de evidência que mais influencia diretrizes clínicas (clinical guidelines) e políticas de saúde pública.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/></svg>
+                Erros Comuns
+              </h3>
+              <ul class="info-list danger">
+                <li><strong>Busca em apenas uma base:</strong> usar somente o Google Scholar não garante exaustividade; são necessárias pelo menos 2–3 bases indexadas.</li>
+                <li><strong>Revisor único:</strong> a seleção deve ser feita por pelo menos dois revisores independentes com cálculo de concordância (Kappa).</li>
+                <li><strong>Ignorar literatura cinza:</strong> deixar de buscar teses, conferências e relatórios técnicos aumenta o viés de publicação.</li>
+                <li><strong>Não registrar protocolo:</strong> sem PROSPERO, não há garantia de que o protocolo não foi alterado post hoc.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A revisão sistemática, conforme os padrões Cochrane (Higgins et al., 2023) e o guideline PRISMA 2020 (Page et al., 2021), é um estudo de síntese de evidências que minimiza vieses de seleção, extração e interpretação por meio de transparência metodológica radical. Quando enriquecida por meta-análise, ela emprega modelos de efeitos fixos ou randômicos, testa heterogeneidade (I², Q de Cochran, tau²), avalia viés de publicação (funnel plot, teste de Egger) e aplica análises de sensibilidade e subgrupo para robustez inferencial. A certeza da evidência é classificada pelo sistema GRADE (Guyatt et al., 2011).</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"/></svg>
+                GRADE — Certeza da Evidência
+              </h3>
+              <p>O sistema GRADE classifica a certeza da evidência em quatro níveis: <strong>Alta</strong> (estamos muito confiantes de que o efeito real está próximo da estimativa), <strong>Moderada</strong> (o efeito real provavelmente está próximo), <strong>Baixa</strong> (pode ser substancialmente diferente) e <strong>Muito Baixa</strong> (o efeito é muito incerto). Cinco fatores rebaixam a certeza: risco de viés, imprecisão, inconsistência, evidência indireta e viés de publicação. Três fatores elevam: grande magnitude de efeito, gradiente dose-resposta e residual confounding.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                Extensões do PRISMA
+              </h3>
+              <ul class="info-list">
+                <li><strong>PRISMA-S:</strong> para reportar a estratégia de busca em detalhes.</li>
+                <li><strong>PRISMA-ScR:</strong> para revisões de escopo (scoping reviews).</li>
+                <li><strong>PRISMA-NMA:</strong> para meta-análise em rede (network meta-analysis).</li>
+                <li><strong>PRISMA-IPD:</strong> para meta-análises com dados individuais de pacientes.</li>
+                <li><strong>PRISMA-P:</strong> para protocolos de revisão sistemática.</li>
+              </ul>
+            </div>
+
+            <div class="example-box example-level-applied">
+              <span class="example-label">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                Exemplo Aplicado Completo
+              </span>
+              <p>Um grupo de pesquisadores registra no PROSPERO (CRD42024xxxxxx) o protocolo de uma RS sobre eficácia de terapia cognitivo-comportamental (TCC) para insônia em adultos. A pergunta PICO: P = adultos (18+) com insônia crônica; I = TCC; C = cuidados habituais ou lista de espera; O = índice de gravidade de insônia (ISI). Buscam em PubMed, Embase, PsycINFO, Cochrane CENTRAL e LILACS. Identificam 3.421 registros, removem 892 duplicatas (Rayyan), triam 2.529 títulos/resumos (dois revisores, Kappa = 0,84), leem 187 textos completos e incluem 34 RCTs. Avaliam risco de viés com RoB 2, conduzem meta-análise de efeitos randômicos (RevMan) e encontram MD = -4,7 no ISI (IC 95%: -5,9 a -3,5; I² = 42%). Classificam a certeza da evidência como MODERADA pelo GRADE e reportam com PRISMA 2020.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+                Referências
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">HIGGINS, J. P. T. et al. (Eds.) <em>Cochrane Handbook for Systematic Reviews of Interventions</em>. Version 6.4, 2023. <a href="https://training.cochrane.org/handbook" target="_blank" rel="noopener">Cochrane</a></div>
+                <div class="reference-item">PAGE, M. J. et al. The PRISMA 2020 statement. <em>BMJ</em>, v. 372, n71, 2021. <a href="https://doi.org/10.1136/bmj.n71" target="_blank" rel="noopener">DOI</a></div>
+                <div class="reference-item">GUYATT, G. H. et al. GRADE guidelines. <em>Journal of Clinical Epidemiology</em>, v. 64, n. 4, p. 383–394, 2011. <a href="https://doi.org/10.1016/j.jclinepi.2010.04.026" target="_blank" rel="noopener">DOI</a></div>
+                <div class="reference-item">PROSPERO — International Prospective Register of Systematic Reviews. <a href="https://www.crd.york.ac.uk/prospero/" target="_blank" rel="noopener">crd.york.ac.uk/prospero</a></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section" style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border-light);">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#quantitativa" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Pesquisa Quantitativa
+              </a>
+              <a href="metodo-cientifico.html" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                Método Científico
+              </a>
+              <a href="#ciencia" class="relation-link">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                O que é Ciência
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ===== MODULE NAV ===== -->
+        <nav class="module-nav">
+          <a href="../index.html" class="module-nav-link prev">
+            <span class="module-nav-label">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" style="display:inline;vertical-align:middle;margin-right:4px;"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"/></svg>
+              Anterior
+            </span>
+            <span class="module-nav-title">Início — Portal</span>
+          </a>
+          <a href="metodo-cientifico.html" class="module-nav-link next">
+            <span class="module-nav-label">
+              Próximo
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" style="display:inline;vertical-align:middle;margin-left:4px;"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+            </span>
+            <span class="module-nav-title">F1: Método Científico</span>
+          </a>
+        </nav>
+
+      </div><!-- /module-content -->
+    </div><!-- /module-layout -->
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <svg class="footer-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="4" width="20" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+            <rect x="10" y="2" width="20" height="26" rx="2" fill="var(--color-primary)" stroke="currentColor" stroke-width="2"/>
+            <line x1="14" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="14" y1="13" x2="26" y2="13" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="14" y1="17" x2="22" y2="17" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="14" y1="21" x2="24" y2="21" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          Manual do Pesquisador
+        </div>
+        <p class="footer-text">Guia aberto e gratuito de pesquisa científica, escrita acadêmica e publicação.</p>
+        <div class="footer-links">
+          <a href="../index.html">Início</a>
+          <a href="../index.html#blocos">Módulos</a>
+          <a href="../glossario.html">Glossário</a>
+          <a href="../roadmap.html">Roadmap</a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">Manual do Pesquisador. Conteúdo educacional de acesso aberto.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"/>
+    </svg>
+  </button>
+
+  <script src="../script.js"></script>
+</body>
+</html>

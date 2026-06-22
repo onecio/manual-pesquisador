@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Módulo F4: Planejamento da Pesquisa — Do problema de pesquisa ao pré-registro. Aprenda a construir cada etapa do planejamento científico com rigor metodológico.">
+  <meta name="keywords" content="planejamento de pesquisa, problema de pesquisa, PICOS, pergunta de pesquisa, estado da arte, objetivos de pesquisa, pré-registro, ciência aberta">
+  <meta name="author" content="Manual do Pesquisador">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://onecio.github.io/manual-pesquisador/modulos/planejamento.html">
+  <meta property="og:title" content="F4: Planejamento da Pesquisa | Manual do Pesquisador">
+  <meta property="og:description" content="Do problema de pesquisa ao pré-registro: PICOS, estado da arte, objetivos, hipóteses e critérios de inclusão/exclusão.">
+  <meta property="og:site_name" content="Manual do Pesquisador">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="F4: Planejamento da Pesquisa | Manual do Pesquisador">
+  <meta name="twitter:description" content="Do problema de pesquisa ao pré-registro: PICOS, estado da arte, objetivos, hipóteses e critérios de inclusão/exclusão.">
+  <title>F4 · Planejamento da Pesquisa | Manual do Pesquisador</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    /* ===== Module-specific: PICOS Visual Grid ===== */
+    .picos-visual-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: var(--space-sm);
+      margin: var(--space-lg) 0;
+    }
+    .picos-visual-item {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      text-align: center;
+      transition: all var(--transition-base);
+      position: relative;
+      overflow: hidden;
+    }
+    .picos-visual-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+    .picos-visual-item:nth-child(1)::before { background: #1B2A4A; }
+    .picos-visual-item:nth-child(2)::before { background: #2B6CB0; }
+    .picos-visual-item:nth-child(3)::before { background: #2D7D46; }
+    .picos-visual-item:nth-child(4)::before { background: #C4792B; }
+    .picos-visual-item:nth-child(5)::before { background: #6B46C1; }
+    .picos-visual-item:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .picos-letter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--color-text-inverse);
+      margin-bottom: var(--space-sm);
+    }
+    .picos-visual-item:nth-child(1) .picos-letter { background: #1B2A4A; }
+    .picos-visual-item:nth-child(2) .picos-letter { background: #2B6CB0; }
+    .picos-visual-item:nth-child(3) .picos-letter { background: #2D7D46; }
+    .picos-visual-item:nth-child(4) .picos-letter { background: #C4792B; }
+    .picos-visual-item:nth-child(5) .picos-letter { background: #6B46C1; }
+    .picos-word {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: var(--space-xs);
+    }
+    .picos-desc {
+      font-size: 0.8rem;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ===== Verb Table ===== */
+    .verb-table-wrapper {
+      overflow-x: auto;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border-light);
+      margin: var(--space-lg) 0;
+    }
+    .verb-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .verb-table thead {
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+    }
+    .verb-table th {
+      padding: var(--space-md) var(--space-lg);
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .verb-table td {
+      padding: var(--space-md) var(--space-lg);
+      border-bottom: 1px solid var(--color-border-light);
+      color: var(--color-text-secondary);
+      vertical-align: top;
+    }
+    .verb-table tbody tr:hover {
+      background: var(--color-bg-alt);
+    }
+    .verb-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .verb-tag {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+    .verb-tag-knowledge { background: rgba(45,125,70,0.1); color: var(--color-success); }
+    .verb-tag-comprehension { background: rgba(43,108,176,0.1); color: var(--color-info); }
+    .verb-tag-application { background: rgba(196,121,43,0.1); color: var(--color-accent); }
+    .verb-tag-analysis { background: rgba(107,70,193,0.1); color: #6B46C1; }
+    .verb-tag-synthesis { background: rgba(197,48,48,0.1); color: var(--color-danger); }
+    .verb-tag-evaluation { background: rgba(27,42,74,0.1); color: var(--color-primary); }
+
+    /* ===== Platform Cards ===== */
+    .platforms-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+      margin: var(--space-lg) 0;
+    }
+    .platform-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      transition: all var(--transition-base);
+    }
+    .platform-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .platform-icon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      background: var(--color-primary-subtle);
+      color: var(--color-primary);
+      margin-bottom: var(--space-sm);
+    }
+    .platform-card h4 {
+      font-size: 0.95rem;
+      margin-bottom: var(--space-xs);
+    }
+    .platform-card p {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+    }
+
+    /* ===== Variations Cards ===== */
+    .variations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+      margin: var(--space-lg) 0;
+    }
+    .variation-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+    }
+    .variation-card h4 {
+      font-size: 0.95rem;
+      color: var(--color-primary);
+      margin-bottom: var(--space-xs);
+    }
+    .variation-card .variation-full {
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      font-style: italic;
+      margin-bottom: var(--space-sm);
+    }
+    .variation-card p {
+      font-size: 0.85rem;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .picos-visual-grid { grid-template-columns: repeat(2, 1fr); }
+      .picos-visual-grid .picos-visual-item:last-child { grid-column: span 2; }
+      .platforms-grid { grid-template-columns: 1fr; }
+      .variations-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .picos-visual-grid { grid-template-columns: 1fr; }
+      .picos-visual-grid .picos-visual-item:last-child { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="4" width="20" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+          <rect x="10" y="2" width="20" height="26" rx="2" fill="var(--color-surface)" stroke="currentColor" stroke-width="2"/>
+          <line x1="14" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="13" x2="26" y2="13" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="17" x2="22" y2="17" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="21" x2="24" y2="21" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span>Manual do Pesquisador</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../index.html#blocos">Módulos</a></li>
+        <li><a href="../glossario.html">Glossário</a></li>
+        <li><a href="../index.html#roadmap">Roadmap</a></li>
+      </ul>
+      <div class="level-selector">
+        <button class="level-btn" data-level="1">Básico</button>
+        <button class="level-btn active" data-level="2">Intermediário</button>
+        <button class="level-btn" data-level="3">Avançado</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="../index.html">Início</a></li>
+        <li class="breadcrumb-sep">
+          <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </li>
+        <li><a href="../index.html#blocos">Bloco B: Planejamento</a></li>
+        <li class="breadcrumb-sep">
+          <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </li>
+        <li class="breadcrumb-current">Planejamento da Pesquisa</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header">
+    <div class="container">
+      <span class="module-badge">Módulo F4</span>
+      <h1>Planejamento da Pesquisa</h1>
+      <p class="page-description">Da identificação do problema à formalização do protocolo: este módulo cobre toda a fase de planejamento que antecede a coleta de dados. Você aprenderá a formular problemas e perguntas de pesquisa, mapear o estado da arte, definir objetivos com precisão cirúrgica e blindar seu estudo com o pré-registro.</p>
+    </div>
+  </header>
+
+  <!-- ===== MODULE LAYOUT ===== -->
+  <div id="main-content" class="container">
+    <div class="module-layout">
+
+      <!-- Sidebar -->
+      <aside class="module-sidebar">
+        <nav class="sidebar-nav">
+          <span class="sidebar-nav-title">Neste módulo</span>
+          <a href="#problema" class="sidebar-link active">Problema de Pesquisa</a>
+          <a href="#pergunta-picos" class="sidebar-link">Pergunta de Pesquisa (PICOS)</a>
+          <a href="#estado-da-arte" class="sidebar-link">Estado da Arte</a>
+          <a href="#lacunas" class="sidebar-link">Lacunas do Conhecimento</a>
+          <a href="#hipoteses" class="sidebar-link">Hipóteses</a>
+          <a href="#objetivos" class="sidebar-link">Objetivos (Geral e Específicos)</a>
+          <a href="#pre-registro" class="sidebar-link">Pré-registro</a>
+          <a href="#criterios" class="sidebar-link">Critérios de Inclusão/Exclusão</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="module-content">
+
+        <!-- ============================================================
+             CONCEPT 1 — Problema de Pesquisa
+             ============================================================ -->
+        <article class="concept" id="problema">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Planejamento</span>
+              <span class="concept-tag concept-tag-category">Fundamento</span>
+            </div>
+            <h2 class="concept-title">Problema de Pesquisa</h2>
+            <p class="concept-subtitle"><strong>Research Problem</strong> — A inquietação intelectual que dá origem a toda investigação científica</p>
+          </div>
+
+          <!-- Level Tabs -->
+          <div class="concept-levels">
+            <button class="concept-level-tab" data-level="1">Nível 1 — Básico</button>
+            <button class="concept-level-tab active" data-level="2">Nível 2 — Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Nível 3 — Avançado</button>
+          </div>
+
+          <!-- Level 1 -->
+          <div class="concept-level-panel" data-level="1">
+            <div class="concept-definition">
+              <p>O <strong>problema de pesquisa</strong> é uma dúvida, uma dificuldade ou uma lacuna que ainda não foi satisfatoriamente respondida pela ciência. É o ponto de partida de qualquer estudo: sem um problema claro, não existe pesquisa.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                O que é, na prática?
+              </h3>
+              <p>Pense no problema de pesquisa como a <strong>pergunta que tira o seu sono intelectual</strong>. É algo que você observou no mundo real, na sua área de atuação ou na leitura de artigos, e que ainda não tem uma resposta convincente. Ele nasce da curiosidade e se transforma em investigação.</p>
+              <p>Um problema de pesquisa não é um tema amplo — é uma questão específica dentro de um tema. Por exemplo: "Educação" é um tema; "Por que alunos de escolas rurais têm menor desempenho em matemática?" é um problema de pesquisa.</p>
+            </div>
+          </div>
+
+          <!-- Level 2 -->
+          <div class="concept-level-panel active" data-level="2">
+            <div class="concept-definition">
+              <p>O <strong>problema de pesquisa</strong> é a formulação explícita de uma questão ainda não resolvida, que pode ser investigada de forma sistemática e cuja resposta contribui para o avanço do conhecimento em uma determinada área.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Como identificar um bom problema
+              </h3>
+              <p>Um problema de pesquisa de qualidade geralmente nasce de uma das seguintes fontes:</p>
+              <ul class="info-list">
+                <li><strong>Observação direta:</strong> você percebe um fenômeno no seu campo de trabalho que não tem explicação satisfatória</li>
+                <li><strong>Leitura crítica da literatura:</strong> ao ler artigos publicados, você identifica lacunas, contradições ou limitações nos estudos anteriores</li>
+                <li><strong>Demanda social ou clínica:</strong> um problema prático da sociedade ou da sua profissão exige uma resposta baseada em evidências</li>
+                <li><strong>Orientação acadêmica:</strong> o seu orientador ou grupo de pesquisa já mapeia problemas-alvo dentro de uma linha de investigação</li>
+              </ul>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+                Características de um bom problema
+              </h3>
+              <ul class="info-list success">
+                <li><strong>Relevância:</strong> a resposta interessa a alguém além de você — à comunidade científica, à sociedade ou à prática profissional</li>
+                <li><strong>Viabilidade:</strong> é possível investigá-lo com os recursos, o tempo e as ferramentas disponíveis</li>
+                <li><strong>Originalidade:</strong> não é uma mera repetição exata de algo já exaustivamente respondido</li>
+                <li><strong>Clareza:</strong> pode ser enunciado em uma ou duas frases objetivas, sem ambiguidade</li>
+                <li><strong>Delimitação:</strong> tem fronteiras claras — quem, onde, quando, o quê</li>
+              </ul>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 9v2m0 4h.01M5.07 19h13.86c1.54 0 2.5-1.67 1.73-3L13.73 4c-.77-1.33-2.69-1.33-3.46 0L3.34 16c-.77 1.33.19 3 1.73 3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Erros comuns ao formular o problema
+              </h3>
+              <ul class="info-list danger">
+                <li><strong>Problema amplo demais:</strong> "A saúde pública no Brasil" — não é investigável como está</li>
+                <li><strong>Problema opinativo:</strong> "O SUS é bom?" — contém juízo de valor, não é científico</li>
+                <li><strong>Problema sem viabilidade:</strong> exigiria recursos financeiros ou temporais inalcançáveis</li>
+                <li><strong>Problema trivial:</strong> a resposta já é conhecida e amplamente documentada</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Level 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>O <strong>problema de pesquisa</strong>, sob a perspectiva epistemológica, é uma construção intelectual que articula uma tensão entre o estado atual do conhecimento e o que permanece desconhecido. Ele reflete pressupostos ontológicos (a natureza da realidade que se investiga), epistemológicos (o tipo de conhecimento que se busca) e axiológicos (os valores que orientam a investigação).</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg>
+                Fundamentos epistemológicos
+              </h3>
+              <p>A formulação de um problema não é neutra. Ela já carrega a visão de mundo do pesquisador. Em um paradigma <strong>positivista</strong>, o problema busca relações causais mensuráveis. Em um paradigma <strong>interpretativista</strong>, busca compreender significados e experiências vividas. Em um paradigma <strong>crítico</strong>, questiona estruturas de poder e desigualdade.</p>
+              <p>Kuhn (1962) argumenta que os problemas "legítimos" são definidos pelo paradigma dominante de uma época — a chamada <strong>ciência normal</strong>. Problemas que não se encaixam no paradigma vigente tendem a ser ignorados até que uma crise paradigmática abra espaço para novas questões. Lakatos (1978), por sua vez, distingue entre problemas que pertencem ao <strong>núcleo duro</strong> de um programa de pesquisa e problemas que estão em seu <strong>cinturão protetor</strong>.</p>
+            </div>
+          </div>
+
+          <!-- Examples -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Exemplos por nível
+            </h3>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/></svg>
+                Exemplo Simples — Observação direta
+              </span>
+              <p>"Na clínica onde trabalho, percebo que muitos pacientes idosos abandonam o tratamento fisioterapêutico antes de completá-lo." — A observação de um padrão recorrente é a semente de um problema de pesquisa.</p>
+            </div>
+            <div class="example-box example-level-intermediate">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+                Exemplo Intermediário — Lacuna na literatura
+              </span>
+              <p>"Embora diversos estudos investiguem a eficácia de exercícios domiciliares na reabilitação pós-AVC, não foram encontradas revisões sistemáticas que comparem programas supervisionados remotamente com programas presenciais em termos de adesão e recuperação funcional." — O problema surge de uma leitura crítica do que já existe.</p>
+            </div>
+            <div class="example-box example-level-advanced">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><polygon points="8,1 15,15 1,15" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                Exemplo Avançado — Lacuna clínica e teórica
+              </span>
+              <p>"As diretrizes da OMS para manejo da dor crônica baseiam-se predominantemente em evidências de populações de alta renda, o que levanta a questão sobre sua aplicabilidade em contextos de baixa e média renda, onde determinantes sociais da saúde e o acesso a analgésicos operam de forma estruturalmente distinta." — O problema articula uma tensão entre a evidência disponível e a realidade de aplicação.</p>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="1.5"/></svg>
+              Conceitos relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#pergunta-picos" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Pergunta de Pesquisa
+              </a>
+              <a href="#hipoteses" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Hipóteses
+              </a>
+              <a href="#estado-da-arte" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Estado da Arte
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             CONCEPT 2 — Pergunta de Pesquisa e PICOS
+             ============================================================ -->
+        <article class="concept" id="pergunta-picos">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Planejamento</span>
+              <span class="concept-tag concept-tag-category">Ferramenta Estruturante</span>
+            </div>
+            <h2 class="concept-title">Pergunta de Pesquisa e PICOS</h2>
+            <p class="concept-subtitle"><strong>Research Question &amp; PICOS Framework</strong> — A fórmula estruturada que transforma curiosidade em investigação rigorosa</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab" data-level="1">Nível 1 — Básico</button>
+            <button class="concept-level-tab active" data-level="2">Nível 2 — Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Nível 3 — Avançado</button>
+          </div>
+
+          <!-- Level 1 -->
+          <div class="concept-level-panel" data-level="1">
+            <div class="concept-definition">
+              <p>A <strong>pergunta de pesquisa</strong> é a versão refinada do seu problema. É uma frase interrogativa que expressa exatamente o que você quer descobrir. Uma pergunta bem feita já contém, implicitamente, o caminho para a resposta.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                O que é PICOS?
+              </h3>
+              <p>PICOS é uma <strong>fórmula com 5 elementos</strong> que ajuda você a montar a sua pergunta de pesquisa de forma completa e precisa. Cada letra representa uma peça do quebra-cabeça:</p>
+              <div class="picos-visual-grid">
+                <div class="picos-visual-item">
+                  <span class="picos-letter">P</span>
+                  <span class="picos-word">População</span>
+                  <span class="picos-desc">Quem será estudado?</span>
+                </div>
+                <div class="picos-visual-item">
+                  <span class="picos-letter">I</span>
+                  <span class="picos-word">Intervenção</span>
+                  <span class="picos-desc">O que será testado?</span>
+                </div>
+                <div class="picos-visual-item">
+                  <span class="picos-letter">C</span>
+                  <span class="picos-word">Comparação</span>
+                  <span class="picos-desc">Contra o que se compara?</span>
+                </div>
+                <div class="picos-visual-item">
+                  <span class="picos-letter">O</span>
+                  <span class="picos-word">Outcome</span>
+                  <span class="picos-desc">Que resultado se espera?</span>
+                </div>
+                <div class="picos-visual-item">
+                  <span class="picos-letter">S</span>
+                  <span class="picos-word">Study Design</span>
+                  <span class="picos-desc">Qual tipo de estudo?</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Level 2 -->
+          <div class="concept-level-panel active" data-level="2">
+            <div class="concept-definition">
+              <p>A <strong>pergunta de pesquisa</strong> é a formulação interrogativa precisa e operacional que guia toda a investigação. O framework <strong>PICOS</strong> (Population, Intervention, Comparison, Outcome, Study Design) oferece uma estrutura modular para construí-la, garantindo que cada componente necessário esteja presente.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="1.5"/></svg>
+                Como construir passo a passo
+              </h3>
+              <p>A construção segue uma lógica sequencial. Comece definindo a população com critérios claros, depois especifique a intervenção de interesse, defina o grupo de comparação (que pode ser placebo, tratamento padrão ou ausência de intervenção), declare o desfecho primário mensurável e, por fim, defina o desenho de estudo adequado.</p>
+
+              <div class="picos-visual-grid">
+                <div class="picos-visual-item">
+                  <span class="picos-letter">P</span>
+                  <span class="picos-word">População</span>
+                  <span class="picos-desc">Adultos com diabetes tipo 2, acima de 40 anos, diagnosticados há pelo menos 2 anos</span>
+                </div>
+                <div class="picos-visual-item">
+                  <span class="picos-letter">I</span>
+                  <span class="picos-word">Intervenção</span>
+                  <span class="picos-desc">Programa de exercícios resistidos supervisionados, 3x por semana, por 12 semanas</span>
+                </div>
+                <div class="picos-visual-item">
+                  <span class="picos-letter">C</span>
+                  <span class="picos-word">Comparação</span>
+                  <span class="picos-desc">Grupo controle com orientação padrão de atividade física (caminhada não supervisionada)</span>
+                </div>
+                <div class="picos-visual-item">
+                  <span class="picos-letter">O</span>
+                  <span class="picos-word">Outcome</span>
+                  <span class="picos-desc">Redução do nível de hemoglobina glicada (HbA1c) e melhora do perfil lipídico</span>
+                </div>
+                <div class="picos-visual-item">
+                  <span class="picos-letter">S</span>
+                  <span class="picos-word">Study Design</span>
+                  <span class="picos-desc">Ensaio clínico randomizado controlado (RCT)</span>
+                </div>
+              </div>
+
+              <div class="callout callout-info">
+                <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <p><strong>Pergunta resultante:</strong> "Em adultos com diabetes tipo 2 (P), o exercício resistido supervisionado (I), comparado à caminhada não supervisionada (C), reduz significativamente a HbA1c (O) em ensaios clínicos randomizados (S)?"</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Level 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A <strong>pergunta de pesquisa</strong> é o constructo operacional central que determina toda a arquitetura metodológica de um estudo. Embora o PICOS seja o framework canônico, existem <strong>variações formais</strong> adaptadas a diferentes paradigmas e tipos de investigação.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg>
+                Variações do framework
+              </h3>
+              <div class="variations-grid">
+                <div class="variation-card">
+                  <h4>PECO</h4>
+                  <p class="variation-full">Population, Exposure, Comparison, Outcome</p>
+                  <p>Usado em estudos observacionais onde não há intervenção ativa, mas sim uma exposição (ex.: tabagismo, poluição, dieta).</p>
+                </div>
+                <div class="variation-card">
+                  <h4>SPIDER</h4>
+                  <p class="variation-full">Sample, Phenomenon of Interest, Design, Evaluation, Research type</p>
+                  <p>Projetado para pesquisas qualitativas e métodos mistos. Substitui "população" por "amostra" e "intervenção" por "fenômeno de interesse".</p>
+                </div>
+                <div class="variation-card">
+                  <h4>PCC</h4>
+                  <p class="variation-full">Population, Concept, Context</p>
+                  <p>Ideal para revisões de escopo (scoping reviews), onde o objetivo é mapear a extensão de um tema, não responder a uma pergunta causal específica.</p>
+                </div>
+              </div>
+              <p>A escolha do framework não é arbitrária: ela deve refletir o tipo de pergunta, o paradigma epistemológico e o desenho de estudo pretendido. Um PICOS para uma revisão qualitativa seria um erro metodológico de categorias.</p>
+            </div>
+          </div>
+
+          <!-- Examples -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Exemplos por nível
+            </h3>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/></svg>
+                Exemplo Simples
+              </span>
+              <p>"Tomar vitamina C previne resfriados?" — Uma pergunta natural, mas ainda imprecisa. Não define quem, quanto, comparado a quê nem o que se mede.</p>
+            </div>
+            <div class="example-box example-level-intermediate">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+                Exemplo Intermediário — Com PICOS
+              </span>
+              <p>"Em crianças de 6 a 12 anos (P), a suplementação diária de 500 mg de vitamina C (I), comparada a placebo (C), reduz a incidência de infecções respiratórias superiores (O) em ensaios clínicos randomizados (S)?"</p>
+            </div>
+            <div class="example-box example-level-advanced">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><polygon points="8,1 15,15 1,15" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                Exemplo Avançado — PECO observacional
+              </span>
+              <p>"Em adultos residentes em áreas urbanas de alta poluição (P), a exposição crônica a material particulado PM2.5 acima de 35 μg/m³ (E), comparada a populações com exposição abaixo de 12 μg/m³ (C), está associada a maior incidência de asma diagnosticada (O)?"</p>
+            </div>
+            <div class="example-box example-level-applied">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M2 14l6-12 6 12H2z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                Exemplo Aplicado — Trecho de artigo real
+              </span>
+              <p>"This systematic review aimed to answer the following research question: In patients with chronic low back pain (P), does structured Pilates exercise (I), compared to conventional physiotherapy (C), improve functional disability and pain intensity (O) as reported in randomized controlled trials (S)?" — Pergunta de pesquisa extraída do abstract de uma revisão sistemática publicada.</p>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="1.5"/></svg>
+              Conceitos relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#problema" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Problema de Pesquisa
+              </a>
+              <a href="#objetivos" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Objetivos
+              </a>
+              <a href="#criterios" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Critérios de Inclusão/Exclusão
+              </a>
+              <a href="#hipoteses" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Hipóteses
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             CONCEPT 3 — Estado da Arte
+             ============================================================ -->
+        <article class="concept" id="estado-da-arte">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Planejamento</span>
+              <span class="concept-tag concept-tag-category">Mapeamento</span>
+            </div>
+            <h2 class="concept-title">Estado da Arte</h2>
+            <p class="concept-subtitle"><strong>State of the Art</strong> — O retrato atualizado de tudo o que a ciência já sabe (e não sabe) sobre o seu tema</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab" data-level="1">Nível 1 — Básico</button>
+            <button class="concept-level-tab active" data-level="2">Nível 2 — Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Nível 3 — Avançado</button>
+          </div>
+
+          <!-- Level 1 -->
+          <div class="concept-level-panel" data-level="1">
+            <div class="concept-definition">
+              <p>O <strong>estado da arte</strong> é um levantamento de tudo o que já foi pesquisado e publicado sobre o seu assunto. É como olhar um mapa antes de viajar: você precisa saber o que já foi explorado para decidir para onde ir.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Por que é importante?
+              </h3>
+              <p>Imagine construir uma casa sem verificar se já existe uma no mesmo terreno. Pesquisar sem conhecer o estado da arte é arriscar-se a <strong>repetir um estudo que já foi feito</strong>. Além de evitar repetição, o estado da arte mostra onde estão os "buracos" — as lacunas que justificam a sua pesquisa.</p>
+            </div>
+          </div>
+
+          <!-- Level 2 -->
+          <div class="concept-level-panel active" data-level="2">
+            <div class="concept-definition">
+              <p>O <strong>estado da arte</strong> (ou revisão de escopo preliminar) é o mapeamento sistemático e crítico da produção científica existente sobre um tema específico, identificando teorias dominantes, consensos, controvérsias, limitações metodológicas e lacunas que justificam novas investigações.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Como mapear o conhecimento atual
+              </h3>
+              <ul class="info-list">
+                <li><strong>Busca em bases de dados:</strong> PubMed, Scopus, Web of Science, SciELO, LILACS — use descritores controlados (MeSH, DeCS) e operadores booleanos</li>
+                <li><strong>Leitura de revisões existentes:</strong> procure revisões sistemáticas, meta-análises e revisões de escopo já publicadas sobre o tema</li>
+                <li><strong>Análise bibliométrica:</strong> identifique os autores mais produtivos, os periódicos de referência e as tendências temporais de publicação</li>
+                <li><strong>Mapeamento de controvérsias:</strong> registre onde os autores discordam e quais metodologias geraram resultados conflitantes</li>
+                <li><strong>Identificação de lacunas:</strong> anote o que os próprios autores dizem que falta investigar nas seções de limitações e sugestões de pesquisas futuras</li>
+              </ul>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+                Relação com a lacuna
+              </h3>
+              <p>O estado da arte é o contexto; a <strong>lacuna</strong> é o que emerge dele. Ao final do seu levantamento, você deve ser capaz de declarar: "A literatura atual mostra X, Y e Z, <em>porém</em> não aborda W — e é exatamente isso que esta pesquisa pretende investigar."</p>
+            </div>
+          </div>
+
+          <!-- Level 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>O <strong>estado da arte</strong>, na perspectiva da sociologia da ciência, é mais do que um resumo bibliográfico: é uma cartografia intelectual que revela a dinâmica de produção, circulação e legitimação do conhecimento em um campo disciplinar. Ele expõe as redes de citação, os gatekeepers editoriais, as hegemonias teóricas e as epistemes marginalizadas.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg>
+                Análise crítica profunda
+              </h3>
+              <p>Um estado da arte avançado não se limita a descrever o que foi publicado. Ele interroga <strong>por que</strong> determinados tópicos dominam a literatura enquanto outros são ignorados. Ele examina vieses de publicação (positive publication bias), vieses geográficos (a predominância de estudos anglocentrados) e vieses metodológicos (a valorização excessiva de RCTs em contextos onde estudos observacionais seriam mais apropriados).</p>
+              <p>Ferramentas como a análise de redes bibliométricas (VOSviewer, CiteSpace), a análise de co-citação e a bibliometria acoplada permitem visualizar a estrutura intelectual de um campo de forma objetiva e identificar <strong>frentes de pesquisa emergentes</strong> (research fronts) antes que elas se consolidem na literatura mainstream.</p>
+            </div>
+          </div>
+
+          <!-- Examples -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Exemplos
+            </h3>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/></svg>
+                Exemplo Simples
+              </span>
+              <p>"Pesquisei no Google Acadêmico e encontrei 15 artigos sobre o assunto. Li os resumos e percebi que a maioria fala de adultos, mas nenhum investigou crianças." — Um estado da arte informal, mas já funcional.</p>
+            </div>
+            <div class="example-box example-level-intermediate">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+                Exemplo Intermediário
+              </span>
+              <p>"A busca nas bases PubMed e Scopus com os descritores 'telerehabilitação AND acidente vascular cerebral AND adesão' retornou 87 artigos (2015–2024). Destes, 12 eram revisões sistemáticas, mas nenhuma analisou especificamente a tele-supervisão em contextos de baixa conectividade."</p>
+            </div>
+            <div class="example-box example-level-advanced">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><polygon points="8,1 15,15 1,15" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                Exemplo Avançado
+              </span>
+              <p>"A análise bibliométrica de co-citação revelou dois clusters intelectuais dominantes: o cluster de 'eficácia clínica' (centrado em RCTs europeus) e o cluster de 'implementação' (centrado em estudos qualitativos africanos e asiáticos). A ausência de pontes entre os clusters sugere uma fragmentação epistemológica que limita a tradução de evidências para políticas públicas."</p>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="1.5"/></svg>
+              Conceitos relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#lacunas" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Lacunas do Conhecimento
+              </a>
+              <a href="#problema" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Problema de Pesquisa
+              </a>
+              <span class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Revisão da Literatura
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             Anchor: Lacunas do Conhecimento
+             ============================================================ -->
+        <div id="lacunas" style="scroll-margin-top: calc(var(--nav-height) + 24px);"></div>
+
+        <!-- ============================================================
+             Anchor: Hipóteses
+             ============================================================ -->
+        <div id="hipoteses" style="scroll-margin-top: calc(var(--nav-height) + 24px);"></div>
+
+
+        <!-- ============================================================
+             CONCEPT 4 — Objetivos de Pesquisa
+             ============================================================ -->
+        <article class="concept" id="objetivos">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Planejamento</span>
+              <span class="concept-tag concept-tag-category">Estrutura</span>
+            </div>
+            <h2 class="concept-title">Objetivos de Pesquisa</h2>
+            <p class="concept-subtitle"><strong>Research Objectives</strong> — As metas concretas que o estudo se propõe a alcançar</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab" data-level="1">Nível 1 — Básico</button>
+            <button class="concept-level-tab active" data-level="2">Nível 2 — Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Nível 3 — Avançado</button>
+          </div>
+
+          <!-- Level 1 -->
+          <div class="concept-level-panel" data-level="1">
+            <div class="concept-definition">
+              <p>Os <strong>objetivos</strong> são as declarações do que você quer conseguir com a sua pesquisa. São frases que começam com verbos de ação e dizem exatamente o que será feito. Existem dois tipos: o objetivo geral (o grande alvo) e os objetivos específicos (os passos para chegar lá).</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Geral vs. Específicos
+              </h3>
+              <p><strong>Objetivo geral:</strong> responde à sua pergunta de pesquisa. É amplo e único. Exemplo: "Avaliar a eficácia de exercícios resistidos na redução da HbA1c em diabéticos tipo 2."</p>
+              <p><strong>Objetivos específicos:</strong> são os passos menores que, somados, permitem atingir o objetivo geral. Exemplo: "1) Identificar estudos publicados sobre o tema; 2) Comparar os desfechos entre grupos; 3) Analisar os efeitos adversos reportados."</p>
+            </div>
+          </div>
+
+          <!-- Level 2 -->
+          <div class="concept-level-panel active" data-level="2">
+            <div class="concept-definition">
+              <p>Os <strong>objetivos de pesquisa</strong> são proposições declarativas que operacionalizam a pergunta de pesquisa em metas alcançáveis e mensuráveis. Devem iniciar com verbos no infinitivo que indicam o nível cognitivo da ação pretendida, alinhados à <strong>Taxonomia de Bloom</strong>.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="1.5"/></svg>
+                Verbos de ação por nível cognitivo (Bloom)
+              </h3>
+              <div class="verb-table-wrapper">
+                <table class="verb-table">
+                  <thead>
+                    <tr>
+                      <th>Nível</th>
+                      <th>Operação cognitiva</th>
+                      <th>Verbos indicados</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="verb-tag verb-tag-knowledge">Conhecimento</span></td>
+                      <td>Recordar informações</td>
+                      <td>Identificar, listar, descrever, nomear, citar, definir</td>
+                    </tr>
+                    <tr>
+                      <td><span class="verb-tag verb-tag-comprehension">Compreensão</span></td>
+                      <td>Interpretar significados</td>
+                      <td>Classificar, explicar, resumir, distinguir, exemplificar</td>
+                    </tr>
+                    <tr>
+                      <td><span class="verb-tag verb-tag-application">Aplicação</span></td>
+                      <td>Usar em situações novas</td>
+                      <td>Aplicar, demonstrar, calcular, implementar, executar</td>
+                    </tr>
+                    <tr>
+                      <td><span class="verb-tag verb-tag-analysis">Análise</span></td>
+                      <td>Decompor em partes</td>
+                      <td>Analisar, comparar, contrastar, diferenciar, categorizar</td>
+                    </tr>
+                    <tr>
+                      <td><span class="verb-tag verb-tag-synthesis">Síntese</span></td>
+                      <td>Criar algo novo</td>
+                      <td>Propor, elaborar, formular, planejar, construir, sintetizar</td>
+                    </tr>
+                    <tr>
+                      <td><span class="verb-tag verb-tag-evaluation">Avaliação</span></td>
+                      <td>Julgar com critérios</td>
+                      <td>Avaliar, julgar, criticar, recomendar, justificar</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="callout callout-warning">
+                <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M12 9v2m0 4h.01M5.07 19h13.86c1.54 0 2.5-1.67 1.73-3L13.73 4c-.77-1.33-2.69-1.33-3.46 0L3.34 16c-.77 1.33.19 3 1.73 3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <p><strong>Erro frequente:</strong> usar verbos vagos como "estudar", "verificar" ou "abordar". Esses verbos não indicam uma operação mental específica e tornam o objetivo impossível de avaliar como cumprido ou não.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Level 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>Os <strong>objetivos de pesquisa</strong> constituem a interface operacional entre a pergunta de pesquisa e o desenho metodológico. Cada objetivo específico deve gerar, pelo menos, uma seção de resultados no artigo final. A falta de alinhamento entre objetivos e metodologia é uma das causas mais frequentes de rejeição em peer review.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg>
+                Alinhamento objetivo–método–resultado
+              </h3>
+              <p>Cada objetivo específico deve se desdobrar em: (a) um procedimento metodológico correspondente, (b) um instrumento de coleta ou análise de dados, e (c) uma seção de resultados. Este alinhamento tripartido garante coerência interna do estudo e facilita a leitura por revisores.</p>
+              <p>Na Taxonomia de Bloom Revisada (Anderson & Krathwohl, 2001), os verbos são cruzados com uma dimensão de <strong>tipo de conhecimento</strong> — factual, conceitual, processual e metacognitivo —, gerando uma matriz bidimensional que permite ao pesquisador calibrar o nível de complexidade de cada objetivo com precisão.</p>
+            </div>
+          </div>
+
+          <!-- Examples -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Exemplos por nível
+            </h3>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/></svg>
+                Exemplo Simples
+              </span>
+              <p><strong>Geral:</strong> "Analisar os benefícios da fisioterapia aquática para idosos." <br><strong>Específico 1:</strong> "Identificar os principais exercícios aquáticos utilizados." <br><strong>Específico 2:</strong> "Descrever os efeitos relatados na dor articular."</p>
+            </div>
+            <div class="example-box example-level-intermediate">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+                Exemplo Intermediário
+              </span>
+              <p><strong>Geral:</strong> "Avaliar a eficácia de programas de exercícios resistidos na redução da hemoglobina glicada (HbA1c) em adultos com diabetes tipo 2." <br><strong>Específico 1:</strong> "Comparar a variação média de HbA1c entre os grupos de intervenção e controle." <br><strong>Específico 2:</strong> "Classificar os protocolos de exercício por frequência, intensidade e duração." <br><strong>Específico 3:</strong> "Analisar a heterogeneidade dos resultados entre os estudos incluídos."</p>
+            </div>
+            <div class="example-box example-level-advanced">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><polygon points="8,1 15,15 1,15" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                Exemplo Avançado
+              </span>
+              <p><strong>Geral:</strong> "Sintetizar a evidência quantitativa sobre a associação entre exposição ocupacional a agrotóxicos organofosforados e neurotoxicidade crônica em trabalhadores rurais." <br><strong>Específico 1:</strong> "Estimar o risco relativo agrupado (pooled RR) de declínio neurocognitivo por meta-análise de efeitos aleatórios." <br><strong>Específico 2:</strong> "Avaliar a qualidade metodológica dos estudos incluídos por meio da escala Newcastle-Ottawa." <br><strong>Específico 3:</strong> "Investigar fontes de heterogeneidade por análise de subgrupos e meta-regressão."</p>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="1.5"/></svg>
+              Conceitos relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#pergunta-picos" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Pergunta de Pesquisa
+              </a>
+              <a href="#hipoteses" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Hipóteses
+              </a>
+              <span class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Metodologia
+              </span>
+              <span class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Taxonomia de Bloom
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             CONCEPT 5 — Pré-registro
+             ============================================================ -->
+        <article class="concept" id="pre-registro">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Planejamento</span>
+              <span class="concept-tag concept-tag-category">Transparência</span>
+            </div>
+            <h2 class="concept-title">Pré-registro</h2>
+            <p class="concept-subtitle"><strong>Pre-registration</strong> — O compromisso público de como você conduzirá a pesquisa, antes de começá-la</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab" data-level="1">Nível 1 — Básico</button>
+            <button class="concept-level-tab active" data-level="2">Nível 2 — Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Nível 3 — Avançado</button>
+          </div>
+
+          <!-- Level 1 -->
+          <div class="concept-level-panel" data-level="1">
+            <div class="concept-definition">
+              <p>O <strong>pré-registro</strong> é como publicar a receita antes de fazer o bolo. Você escreve publicamente, em uma plataforma online, exatamente o que pretende pesquisar, como vai fazer e o que espera encontrar — <em>antes</em> de coletar qualquer dado. Isso impede que você mude a receita depois de provar o resultado.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Por que isso importa?
+              </h3>
+              <p>Imagine um jogador de futebol que, depois de perder, diz: "Na verdade, eu não estava tentando ganhar, estava testando outra estratégia." Parece desonesto, certo? Na ciência, isso acontece quando pesquisadores mudam suas hipóteses ou métodos depois de ver os dados, para que os resultados pareçam mais interessantes. O pré-registro torna isso impossível — ou, pelo menos, visível.</p>
+            </div>
+          </div>
+
+          <!-- Level 2 -->
+          <div class="concept-level-panel active" data-level="2">
+            <div class="concept-definition">
+              <p>O <strong>pré-registro</strong> é o depósito formal, em plataforma pública com carimbo de tempo, do protocolo completo de uma pesquisa — incluindo pergunta, hipóteses, métodos, plano de análise de dados e critérios de sucesso — antes do início da coleta ou análise dos dados.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="1.5"/></svg>
+                Passo a passo para pré-registrar
+              </h3>
+              <ul class="info-list">
+                <li><strong>1. Escolha a plataforma:</strong> OSF Registries, PROSPERO (para revisões sistemáticas), ClinicalTrials.gov (para ensaios clínicos) ou AsPredicted</li>
+                <li><strong>2. Preencha o formulário:</strong> declare pergunta de pesquisa, hipóteses, critérios de inclusão/exclusão, variáveis, instrumentos, tamanho amostral e plano de análise estatística</li>
+                <li><strong>3. Submeta e receba o carimbo de tempo:</strong> a plataforma gera um registro com data e hora imutáveis (timestamp) que comprova quando o protocolo foi depositado</li>
+                <li><strong>4. Conduza a pesquisa:</strong> siga o protocolo registrado — desvios devem ser documentados e justificados no artigo final</li>
+                <li><strong>5. Cite o pré-registro no artigo:</strong> inclua o DOI ou link do registro na seção de Métodos</li>
+              </ul>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Principais plataformas
+              </h3>
+              <div class="platforms-grid">
+                <div class="platform-card">
+                  <div class="platform-icon">
+                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </div>
+                  <h4>OSF Registries</h4>
+                  <p>Plataforma universal para qualquer tipo de pesquisa. Gratuita, aberta e com templates de pré-registro validados.</p>
+                </div>
+                <div class="platform-card">
+                  <div class="platform-icon">
+                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  </div>
+                  <h4>PROSPERO</h4>
+                  <p>Registro internacional específico para protocolos de revisões sistemáticas. Mantido pela University of York (UK).</p>
+                </div>
+                <div class="platform-card">
+                  <div class="platform-icon">
+                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="3" width="6" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M9 14l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <h4>ClinicalTrials.gov</h4>
+                  <p>Registro obrigatório para ensaios clínicos. Exigido pela maioria dos periódicos e pela declaração ICMJE.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Level 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>O <strong>pré-registro</strong> é um artefato epistêmico que opera como mecanismo de contenção contra práticas questionáveis de pesquisa (Questionable Research Practices — QRPs), incluindo HARKing (Hypothesizing After Results are Known), p-hacking e selective outcome reporting. Sua fundamentação teórica reside na distinção popperiana entre pesquisa confirmatória e exploratória.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg>
+                O debate em torno do pré-registro
+              </h3>
+              <p><strong>Argumentos a favor:</strong> o pré-registro aumenta a transparência, reduz o viés de publicação (publication bias), permite distinguir análises confirmatórias de exploratórias e força o pesquisador a pensar criticamente sobre o desenho antes de executá-lo. O movimento dos <strong>Registered Reports</strong> vai além: o artigo é aceito para publicação com base no protocolo, antes mesmo dos resultados.</p>
+              <p><strong>Argumentos contra:</strong> críticos argumentam que o pré-registro pode burocratizar a pesquisa exploratória legítima, inibir a serendipidade científica, ser facilmente contornado por mau fé (pesquisador pode fazer múltiplos registros e publicar apenas o que deu certo) e impor um modelo hipotético-dedutivo a áreas onde abordagens indutivas são mais apropriadas (ciências sociais qualitativas, ciências humanas).</p>
+              <p>A posição contemporânea dominante (Nosek et al., 2018) reconhece o pré-registro como <strong>uma ferramenta, não uma panaceia</strong>. Ele é mais valioso quando combinado com compartilhamento de dados abertos, código aberto e revisão por pares transparente, formando o ecossistema mais amplo da <strong>Ciência Aberta</strong>.</p>
+            </div>
+          </div>
+
+          <!-- Examples -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Exemplos
+            </h3>
+            <div class="example-box example-level-simple">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/></svg>
+                Analogia
+              </span>
+              <p>"É como entregar a prova em envelope lacrado antes da partida. Se você acertar o placar, todos sabem que você realmente previu. Se errar, todos sabem que você foi honesto. Mas ninguém pode acusá-lo de ter mudado a resposta depois do jogo."</p>
+            </div>
+            <div class="example-box example-level-intermediate">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+                Registro PROSPERO
+              </span>
+              <p>"Protocolo registrado no PROSPERO (CRD42024012345) em 15/03/2024: Revisão sistemática sobre a eficácia de intervenções de mindfulness na redução de burnout em profissionais de saúde. Bases: PubMed, PsycINFO, CINAHL. Período: 2014–2024. Avaliação de risco de viés: RoB 2."</p>
+            </div>
+            <div class="example-box example-level-advanced">
+              <span class="example-label">
+                <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><polygon points="8,1 15,15 1,15" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                Registered Report
+              </span>
+              <p>"Este artigo seguiu o formato de Registered Report, tendo sido aceito para publicação no estágio 1 (Stage 1 In-Principle Acceptance) pelo periódico Cortex antes da coleta de dados. O protocolo completo, incluindo plano de análise e power analysis, está disponível em [DOI]. Desvios do protocolo original são declarados na Tabela Suplementar S2."</p>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="1.5"/></svg>
+              Conceitos relacionados
+            </h3>
+            <div class="relations-grid">
+              <span class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Ciência Aberta
+              </span>
+              <span class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Protocolo de Pesquisa
+              </span>
+              <span class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Transparência Científica
+              </span>
+              <a href="#criterios" class="relation-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Critérios de Inclusão/Exclusão
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================================
+             Anchor: Critérios de Inclusão/Exclusão
+             ============================================================ -->
+        <div id="criterios" style="scroll-margin-top: calc(var(--nav-height) + 24px);"></div>
+
+
+        <!-- ===== MODULE NAV ===== -->
+        <nav class="module-nav">
+          <a href="metodo-cientifico.html" class="module-nav-link prev">
+            <span class="module-nav-label">
+              <svg viewBox="0 0 16 16" fill="none" width="14" height="14" style="display:inline;vertical-align:middle;margin-right:4px;transform:rotate(180deg)"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Módulo Anterior
+            </span>
+            <span class="module-nav-title">F1 — Método Científico</span>
+          </a>
+          <a href="escrita.html" class="module-nav-link next">
+            <span class="module-nav-label">
+              Próximo Módulo
+              <svg viewBox="0 0 16 16" fill="none" width="14" height="14" style="display:inline;vertical-align:middle;margin-left:4px"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <span class="module-nav-title">F8 — Escrita Científica</span>
+          </a>
+        </nav>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <svg class="footer-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="4" width="20" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+            <rect x="10" y="2" width="20" height="26" rx="2" fill="var(--color-primary)" stroke="currentColor" stroke-width="2"/>
+            <line x1="14" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="14" y1="13" x2="26" y2="13" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="14" y1="17" x2="22" y2="17" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="14" y1="21" x2="24" y2="21" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span>Manual do Pesquisador</span>
+        </div>
+        <p class="footer-text">Guia completo de pesquisa científica, escrita de artigos e publicação acadêmica.</p>
+        <div class="footer-links">
+          <a href="../index.html">Início</a>
+          <a href="../index.html#blocos">Módulos</a>
+          <a href="../glossario.html">Glossário</a>
+          <a href="../index.html#roadmap">Roadmap</a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">Manual do Pesquisador. Conteúdo educacional de acesso aberto.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+      <path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="../script.js"></script>
+</body>
+</html>

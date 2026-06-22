@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Módulo F9 — Publicação Científica: Peer Review, Double-Blind, Preprint, Open Access, Sistemas Editoriais (OJS) e Cover Letter. Manual do Pesquisador Iniciante.">
+  <meta name="keywords" content="publicação científica, peer review, revisão por pares, double-blind, preprint, open access, acesso aberto, OJS, ScholarOne, cover letter, fator de impacto">
+  <meta name="author" content="Manual do Pesquisador">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://onecio.github.io/manual-pesquisador/modulos/publicacao.html">
+  <meta property="og:title" content="F9: Publicação Científica | Manual do Pesquisador">
+  <meta property="og:description" content="Ciclo editorial completo: peer review, double-blind, preprint, open access, OJS, fator de impacto e cover letter.">
+  <meta property="og:site_name" content="Manual do Pesquisador">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="F9: Publicação Científica | Manual do Pesquisador">
+  <meta name="twitter:description" content="Ciclo editorial completo: peer review, double-blind, preprint, open access, OJS, fator de impacto e cover letter.">
+  <title>F9 — Publicação Científica | Manual do Pesquisador</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="4" width="20" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+          <rect x="10" y="2" width="20" height="26" rx="2" fill="var(--color-surface)" stroke="currentColor" stroke-width="2"/>
+          <line x1="14" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="13" x2="26" y2="13" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="17" x2="22" y2="17" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="21" x2="24" y2="21" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span>Manual do Pesquisador</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="escrita.html">Escrita</a></li>
+        <li><a href="publicacao.html" class="active">Publicação</a></li>
+        <li><a href="modelo-brasileiro.html">Modelo Brasileiro</a></li>
+      </ul>
+      <div class="level-selector">
+        <button class="level-btn" data-level="1">N1</button>
+        <button class="level-btn active" data-level="2">N2</button>
+        <button class="level-btn" data-level="3">N3</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="../index.html">Início</a></li>
+        <li class="breadcrumb-sep">
+          <svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </li>
+        <li><a href="../index.html#blocos">Bloco D</a></li>
+        <li class="breadcrumb-sep">
+          <svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </li>
+        <li class="breadcrumb-current">Publicação Científica</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header">
+    <div class="container">
+      <span class="module-badge">Módulo F9</span>
+      <h1>Publicação Científica</h1>
+      <p class="page-description">Do manuscrito à disseminação: o ciclo editorial completo, modelos de revisão por pares, repositórios de preprints, acesso aberto e ferramentas de gestão editorial que transformam pesquisa em conhecimento publicado.</p>
+    </div>
+  </header>
+
+  <!-- ===== MODULE LAYOUT ===== -->
+  <div id="main-content" class="container">
+    <div class="module-layout">
+
+      <!-- Sidebar -->
+      <aside class="module-sidebar">
+        <nav class="sidebar-nav">
+          <span class="sidebar-nav-title">Neste Módulo</span>
+          <a href="#peer-review" class="sidebar-link active">Peer Review</a>
+          <a href="#double-blind" class="sidebar-link">Double-Blind Review</a>
+          <a href="#preprint" class="sidebar-link">Preprint</a>
+          <a href="#open-access" class="sidebar-link">Open Access</a>
+          <a href="#acesso-diamante" class="sidebar-link">Acesso Aberto Diamante</a>
+          <a href="#sistemas-editoriais" class="sidebar-link">Sistemas Editoriais</a>
+          <a href="#fator-impacto" class="sidebar-link">Fator de Impacto</a>
+          <a href="#cover-letter" class="sidebar-link">Cover Letter</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="module-content">
+
+        <!-- ============================================
+             CONCEPT 1: PEER REVIEW
+             ============================================ -->
+        <article class="concept" id="peer-review">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Ciclo Editorial</span>
+              <span class="concept-tag concept-tag-category">Avaliação</span>
+            </div>
+            <h2 class="concept-title">Peer Review</h2>
+            <p class="concept-subtitle">Revisão por Pares &mdash; O mecanismo central de validação do conhecimento científico</p>
+          </div>
+
+          <!-- Level Tabs -->
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Nível 1 &mdash; Essencial</button>
+            <button class="concept-level-tab" data-level="2">Nível 2 &mdash; Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Nível 3 &mdash; Avançado</button>
+          </div>
+
+          <!-- ===== LEVEL 1 ===== -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p><strong>Peer review</strong> (revisão por pares) é o processo pelo qual um manuscrito científico é avaliado por outros especialistas &mdash; os <em>pares</em> &mdash; antes de ser aceito para publicação em um periódico. É o filtro que separa opinião de evidência.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                Analogia Simplificada
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">
+                  <svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Analogia
+                </span>
+                <p>Imagine que você escreveu uma receita de bolo. Antes de ela ir para o livro de receitas, dois chefs experientes provam o bolo, verificam os ingredientes, testam as proporções e dizem se a receita funciona de verdade. Só depois disso ela é publicada. É assim que funciona o <em>peer review</em>: especialistas conferem se o seu trabalho é sólido antes de ele virar artigo.</p>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Por que é Importante?
+              </h3>
+              <ul class="info-list">
+                <li>Garante que os resultados publicados passaram por um crivo independente de qualidade.</li>
+                <li>Ajuda a identificar erros metodológicos, dados inconsistentes e conclusões sem fundamento.</li>
+                <li>Protege o leitor de informações não verificadas e potencialmente prejudiciais.</li>
+                <li>É o padrão-ouro da comunicação científica há mais de 350 anos.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ===== LEVEL 2 ===== -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>O <strong>peer review</strong> é um processo de avaliação editorial no qual um manuscrito submetido a um periódico é encaminhado a avaliadores independentes (referees) com expertise na área, que emitem pareceres sobre mérito científico, rigor metodológico, originalidade e clareza da comunicação.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z" stroke="currentColor" stroke-width="1.5"/><polyline points="13,2 13,9 20,9" stroke="currentColor" stroke-width="1.5"/></svg>
+                Breve Histórico
+              </h3>
+              <p>A prática remonta a 1665, quando a <em>Philosophical Transactions</em> da Royal Society começou a solicitar pareceres de membros da sociedade sobre textos submetidos. No entanto, a formalização do <em>peer review</em> como conhecemos &mdash; com revisores anônimos selecionados pelo editor &mdash; só se consolidou na segunda metade do século XX, a partir dos anos 1950-1960, quando o volume de publicações cresceu exponencialmente.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="1.5"/></svg>
+                Como Funciona &mdash; Passo a Passo
+              </h3>
+              <div class="example-box">
+                <span class="example-label">
+                  <svg viewBox="0 0 24 24" fill="none" width="14" height="14"><polyline points="9,11 12,14 22,4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="1.5"/></svg>
+                  Processo Editorial
+                </span>
+                <ol class="info-list">
+                  <li><strong>1. Submissão:</strong> O autor envia o manuscrito ao periódico via sistema editorial (ex.: OJS, ScholarOne).</li>
+                  <li><strong>2. Triagem editorial (Desk Review):</strong> O editor-chefe avalia se o artigo está dentro do escopo da revista, se segue as normas e se tem mérito inicial. ~30-50% dos artigos são rejeitados nesta fase.</li>
+                  <li><strong>3. Seleção de revisores:</strong> O editor convida 2 a 4 especialistas da área para avaliar o manuscrito. Os revisores são selecionados por expertise, sem conflitos de interesse.</li>
+                  <li><strong>4. Avaliação:</strong> Cada revisor produz um parecer detalhado analisando metodologia, resultados, referencial teórico, originalidade e clareza. Prazo típico: 2 a 6 semanas.</li>
+                  <li><strong>5. Decisão editorial:</strong> Com base nos pareceres, o editor emite uma decisão: aceitar, revisões menores, revisões maiores ou rejeitar.</li>
+                  <li><strong>6. Revisão do autor:</strong> O autor incorpora as sugestões, produz uma carta-resposta (response letter) ponto a ponto e reenvia o manuscrito revisado.</li>
+                  <li><strong>7. Nova rodada (se necessário):</strong> Os revisores reavaliação as alterações. Pode haver 2 ou 3 rodadas até a decisão final.</li>
+                  <li><strong>8. Aceite e publicação:</strong> Após aprovação final, o artigo segue para produção editorial (diagramação, prova, DOI).</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5"/></svg>
+                Tipos de Peer Review
+              </h3>
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Tipo</th>
+                      <th>Autor sabe quem revisou?</th>
+                      <th>Revisor sabe quem escreveu?</th>
+                      <th>Uso</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Single-Blind</strong></td>
+                      <td>Não</td>
+                      <td>Sim</td>
+                      <td>Mais comum globalmente</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Double-Blind</strong></td>
+                      <td>Não</td>
+                      <td>Não</td>
+                      <td>Ciências humanas, sociais</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Open Review</strong></td>
+                      <td>Sim</td>
+                      <td>Sim</td>
+                      <td>BMJ, Nature Comms (opcional)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Triple-Blind</strong></td>
+                      <td>Não</td>
+                      <td>Não (editor também não)</td>
+                      <td>Raro, experimental</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="1.5"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="1.5"/></svg>
+                O que os Revisores Avaliam
+              </h3>
+              <ul class="info-list">
+                <li><strong>Originalidade:</strong> O estudo traz contribuição nova ao campo?</li>
+                <li><strong>Rigor metodológico:</strong> O desenho do estudo é adequado à pergunta de pesquisa?</li>
+                <li><strong>Análise estatística:</strong> Os métodos quantitativos são apropriados e bem aplicados?</li>
+                <li><strong>Qualidade da escrita:</strong> O texto é claro, coeso e bem estruturado?</li>
+                <li><strong>Referencial teórico:</strong> A literatura é atualizada e adequadamente citada?</li>
+                <li><strong>Reprodutibilidade:</strong> Outro pesquisador conseguiria repetir o estudo?</li>
+                <li><strong>Ética:</strong> Houve aprovação de comitê de ética quando necessário?</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Linha do Tempo Típica
+              </h3>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">
+                  <svg viewBox="0 0 24 24" fill="none" width="14" height="14"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  Cronograma médio (periódico internacional)
+                </span>
+                <ul class="info-list">
+                  <li><strong>Desk review:</strong> 1 &ndash; 2 semanas</li>
+                  <li><strong>Convite e aceite dos revisores:</strong> 1 &ndash; 3 semanas</li>
+                  <li><strong>Período de avaliação:</strong> 3 &ndash; 8 semanas</li>
+                  <li><strong>Primeira decisão editorial:</strong> 6 &ndash; 14 semanas após submissão</li>
+                  <li><strong>Revisão do autor + segunda rodada:</strong> + 4 &ndash; 8 semanas</li>
+                  <li><strong>Aceite até publicação online:</strong> 2 &ndash; 6 semanas</li>
+                  <li><strong>Total médio:</strong> 4 &ndash; 9 meses (varia enormemente)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== LEVEL 3 ===== -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>O <strong>peer review</strong> é o principal mecanismo de <em>gatekeeping</em> epistêmico da ciência moderna, porém enfrenta desafios estruturais significativos que têm gerado debate sobre reformas, modelos alternativos e complementares de validação do conhecimento.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="1.5"/></svg>
+                Debates e Críticas Contemporâneas
+              </h3>
+              <ul class="info-list">
+                <li><strong>Viés de confirmação:</strong> Revisores tendem a avaliar mais favoravelmente trabalhos que confirmam suas próprias hipóteses ou paradigmas teóricos.</li>
+                <li><strong>Viés de prestígio:</strong> No modelo single-blind, artigos de autores de universidades renomadas podem receber avaliações mais favoráveis.</li>
+                <li><strong>Lentidão:</strong> O processo pode levar meses ou anos, atrasando a disseminação de resultados urgentes (como ficou evidente durante a pandemia de COVID-19).</li>
+                <li><strong>Falta de incentivo:</strong> Revisores trabalham voluntariamente, sem reconhecimento formal na maioria das vezes.</li>
+                <li><strong>Baixa reprodutibilidade do próprio processo:</strong> Estudos mostram que dois grupos de revisores frequentemente chegam a conclusões opostas sobre o mesmo manuscrito.</li>
+                <li><strong>Paper mills:</strong> Fábricas de artigos fraudulentos que exploram fragilidades do sistema de revisão.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                Post-Publication Peer Review (PPPR)
+              </h3>
+              <p>Modelo emergente em que a avaliação ocorre <em>após</em> a publicação. Plataformas como <strong>PubPeer</strong>, <strong>F1000Research</strong> e <strong>Publons</strong> permitem que a comunidade científica comente, critique e avalie artigos já publicados, criando uma camada adicional de controle de qualidade contínuo e transparente.</p>
+              <div class="callout callout-info">
+                <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <p>O <strong>F1000Research</strong> publica artigos imediatamente e depois conduz o peer review de forma aberta, com pareceres e identidades dos revisores publicados junto ao artigo. Esse modelo é chamado de <em>open post-publication peer review</em>.</p>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" stroke="currentColor" stroke-width="1.5"/></svg>
+                Iniciativas de Reconhecimento aos Revisores
+              </h3>
+              <ul class="info-list">
+                <li><strong>Publons (Clarivate):</strong> Plataforma que registra revisões realizadas e gera métricas de contribuição como revisor.</li>
+                <li><strong>ORCID integrado:</strong> Algumas revistas permitem vincular revisões ao perfil ORCID do pesquisador.</li>
+                <li><strong>Reviewer credits:</strong> Modelos de compensação incluem descontos em APCs, assinaturas gratuitas e certificados formais.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="1.5"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#double-blind" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Double-Blind Review
+              </a>
+              <a href="#sistemas-editoriais" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Editor Científico
+              </a>
+              <a href="#cover-letter" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Manuscrito
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================
+             CONCEPT 2: DOUBLE-BLIND REVIEW
+             ============================================ -->
+        <article class="concept" id="double-blind">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Ciclo Editorial</span>
+              <span class="concept-tag concept-tag-category">Modelo de Avaliação</span>
+            </div>
+            <h2 class="concept-title">Double-Blind Review</h2>
+            <p class="concept-subtitle">Revisão Duplo-Cega &mdash; Quando nem autor nem revisor conhecem a identidade um do outro</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Nível 1 &mdash; Essencial</button>
+            <button class="concept-level-tab" data-level="2">Nível 2 &mdash; Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Nível 3 &mdash; Avançado</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p>Na <strong>double-blind review</strong> (revisão duplo-cega), o manuscrito é avaliado sem que o revisor saiba quem são os autores, e sem que os autores saibam quem são os revisores. É o modelo preferido quando se deseja eliminar vieses de prestígio e gênero na avaliação.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Analogia
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">Analogia</span>
+                <p>Imagine um concurso de culinária em que os pratos são degustados &ldquo;às cegas&rdquo;: os jurados não sabem quem preparou cada receita e os cozinheiros não sabem quem está avaliando. Dessa forma, o julgamento é baseado apenas na qualidade do prato.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>O <strong>double-blind review</strong> exige que os autores removam todas as informações identificáveis do manuscrito (nomes, afiliações, autocitações diretas, agradecimentos), e que o editor garanta o anonimato dos revisores. É o padrão adotado pela maioria dos periódicos de ciências humanas, sociais e parte dos periódicos de saúde.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Vantagens
+              </h3>
+              <ul class="info-list success">
+                <li>Reduz viés de prestígio institucional (Harvard vs. universidades periféricas).</li>
+                <li>Minimiza viés de gênero, etnia e nacionalidade.</li>
+                <li>Avaliação focada exclusivamente no mérito do conteúdo.</li>
+                <li>Maior conforto para revisores emitirem pareceres francos.</li>
+                <li>Promove equidade para pesquisadores de países em desenvolvimento.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="9" x2="12" y2="13" stroke="currentColor" stroke-width="2"/><line x1="12" y1="17" x2="12.01" y2="17" stroke="currentColor" stroke-width="2"/></svg>
+                Limitações
+              </h3>
+              <ul class="info-list danger">
+                <li>Anonimato do autor é difícil de garantir em áreas pequenas (revisores conseguem deduzir a autoria pelo tema, estilo ou autocitações).</li>
+                <li>Pode ser impraticável em nichos muito especializados com poucos pesquisadores.</li>
+                <li>Não elimina vieses por completo &mdash; o tema e a metodologia ainda revelam pistas.</li>
+                <li>Demanda trabalho adicional dos autores para anonimizar o manuscrito.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>O debate contemporâneo sobre modelos de revisão questiona se o anonimato duplo é suficiente ou se a ciência deveria migrar para modelos mais transparentes. Alternativas emergentes incluem <strong>open review</strong>, <strong>triple-blind</strong> e modelos híbridos.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.5"/></svg>
+                Modelos Alternativos Comparados
+              </h3>
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Modelo</th>
+                      <th>Transparência</th>
+                      <th>Vantagem Principal</th>
+                      <th>Risco Principal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Double-Blind</strong></td>
+                      <td>Baixa</td>
+                      <td>Reduz vieses</td>
+                      <td>Anonimato ilusório em áreas pequenas</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Open Review</strong></td>
+                      <td>Alta</td>
+                      <td>Accountability total, pareceres publicados</td>
+                      <td>Revisores juniores podem ter receio de criticar seniores</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Triple-Blind</strong></td>
+                      <td>Muito baixa</td>
+                      <td>Elimina viés até do editor</td>
+                      <td>Logisticamente complexo, pouco adotado</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Transferível</strong></td>
+                      <td>Variável</td>
+                      <td>Pareceres migram entre revistas (ex.: Neuroscience Peer Review Consortium)</td>
+                      <td>Coordenação entre editoras</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="1.5"/></svg>
+                Tendências Atuais
+              </h3>
+              <ul class="info-list">
+                <li>O <strong>BMJ</strong> e o <strong>eLife</strong> adotaram <em>open peer review</em> como padrão, publicando pareceres completos.</li>
+                <li>O eLife, desde 2023, substituiu decisões de aceite/rejeição por <em>assessments</em> públicos, abolindo o modelo tradicional de gatekeeping.</li>
+                <li>Revistas como <strong>Nature</strong> oferecem o modelo <em>opt-in</em>: revisores escolhem se querem se identificar.</li>
+                <li>A COPE (Committee on Publication Ethics) recomenda que periódicos explicitem qual modelo de revisão adotam.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="1.5"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#peer-review" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Peer Review
+              </a>
+              <a href="#open-access" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Open Access
+              </a>
+              <a href="#cover-letter" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Cover Letter
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================
+             CONCEPT 3: PREPRINT
+             ============================================ -->
+        <article class="concept" id="preprint">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Disseminação</span>
+              <span class="concept-tag concept-tag-category">Pré-publicação</span>
+            </div>
+            <h2 class="concept-title">Preprint</h2>
+            <p class="concept-subtitle">Pré-impressão &mdash; A versão do manuscrito disponibilizada antes da revisão por pares</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Nível 1 &mdash; Essencial</button>
+            <button class="concept-level-tab" data-level="2">Nível 2 &mdash; Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Nível 3 &mdash; Avançado</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p>Um <strong>preprint</strong> é a versão de um artigo científico que é compartilhada publicamente <em>antes</em> de passar pela revisão por pares de um periódico. É como publicar um &ldquo;rascunho oficial&rdquo; para que a comunidade científica possa ler e comentar rapidamente.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Analogia
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">Analogia</span>
+                <p>Imagine que você terminou de escrever um livro e, antes de enviá-lo para a editora, compartilha o texto completo em um blog público. As pessoas já podem ler, citar e até sugerir melhorias enquanto a editora decide se vai publicá-lo oficialmente. O preprint funciona assim para artigos científicos.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>Um <strong>preprint</strong> é um manuscrito depositado em um servidor público de pré-impressão, recebendo um <strong>DOI</strong> permanente, indexação e carimbo de data (timestamp). Não substitui a publicação em periódico, mas acelera a disseminação e estabelece prioridade de descoberta.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="1.5"/></svg>
+                Principais Servidores de Preprint
+              </h3>
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Servidor</th>
+                      <th>Área</th>
+                      <th>Fundação</th>
+                      <th>Destaques</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>arXiv</strong></td>
+                      <td>Física, Matemática, Computação, Estatística</td>
+                      <td>1991</td>
+                      <td>O pioneiro; mais de 2,4 milhões de artigos depositados</td>
+                    </tr>
+                    <tr>
+                      <td><strong>bioRxiv</strong></td>
+                      <td>Ciências Biológicas</td>
+                      <td>2013</td>
+                      <td>Operado pela Cold Spring Harbor Laboratory</td>
+                    </tr>
+                    <tr>
+                      <td><strong>medRxiv</strong></td>
+                      <td>Ciências da Saúde</td>
+                      <td>2019</td>
+                      <td>Triagem para evitar conteúdo perigoso sem revisão</td>
+                    </tr>
+                    <tr>
+                      <td><strong>SciELO Preprints</strong></td>
+                      <td>Multidisciplinar (foco América Latina)</td>
+                      <td>2020</td>
+                      <td>Integrado ao ecossistema SciELO; multilíngue</td>
+                    </tr>
+                    <tr>
+                      <td><strong>SSRN</strong></td>
+                      <td>Ciências Sociais, Direito, Economia</td>
+                      <td>1994</td>
+                      <td>Adquirido pela Elsevier em 2016</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Como Submeter
+              </h3>
+              <ol class="info-list">
+                <li><strong>1.</strong> Prepare o manuscrito final (PDF ou LaTeX).</li>
+                <li><strong>2.</strong> Crie conta no servidor escolhido (ex.: bioRxiv.org).</li>
+                <li><strong>3.</strong> Preencha metadados: título, autores, resumo, categoria.</li>
+                <li><strong>4.</strong> Faça upload do arquivo e de figuras complementares.</li>
+                <li><strong>5.</strong> Aguarde triagem básica (1-3 dias): verifica se é conteúdo científico, não plagiado.</li>
+                <li><strong>6.</strong> Preprint fica online com DOI permanente.</li>
+                <li><strong>7.</strong> Submeta simultaneamente ao periódico (maioria aceita submissão paralela).</li>
+              </ol>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Vantagens e Desvantagens
+              </h3>
+              <div class="cards-grid cards-grid-2">
+                <div class="card">
+                  <h4 style="color: var(--color-success);">
+                    <svg viewBox="0 0 24 24" fill="none" width="18" height="18" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+                    Vantagens
+                  </h4>
+                  <ul class="info-list success">
+                    <li>Disseminação imediata (dias vs. meses).</li>
+                    <li>Estabelece prioridade temporal de descoberta.</li>
+                    <li>Recebe feedback precoce da comunidade.</li>
+                    <li>Livre e gratuito para autores e leitores.</li>
+                    <li>Aceito como referência para financiamento (FAPESP, NIH).</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4 style="color: var(--color-danger);">
+                    <svg viewBox="0 0 24 24" fill="none" width="18" height="18" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="9" x2="12" y2="13" stroke="currentColor" stroke-width="2"/><line x1="12" y1="17" x2="12.01" y2="17" stroke="currentColor" stroke-width="2"/></svg>
+                    Desvantagens
+                  </h4>
+                  <ul class="info-list danger">
+                    <li>Não passou por revisão por pares formal.</li>
+                    <li>Risco de disseminar dados preliminares incorretos.</li>
+                    <li>Pode ser explorado pela mídia fora de contexto.</li>
+                    <li>Não conta como &ldquo;publicação&rdquo; para Qualis/Lattes em muitos programas.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A cultura de preprints varia radicalmente entre campos científicos, e a atribuição de DOI, licenciamento e políticas de versionamento criam nuances importantes para a estratégia de publicação do pesquisador.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.5"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="1.5"/></svg>
+                Cultura de Preprints por Campo
+              </h3>
+              <ul class="info-list">
+                <li><strong>Física/Matemática:</strong> Cultura consolidada desde 1991. O arXiv é a principal forma de comunicação; muitos artigos são lidos primeiro (e às vezes unicamente) como preprints.</li>
+                <li><strong>Biologia/Biomédicas:</strong> Adoção crescente desde 2013, acelerada exponencialmente pela COVID-19. bioRxiv e medRxiv são essenciais.</li>
+                <li><strong>Ciências Sociais/Humanas:</strong> Adoção mais lenta. Resistência cultural: muitos pesquisadores temem que compartilhar resultados antes do peer review comprometa a originalidade.</li>
+                <li><strong>Direito/Economia:</strong> SSRN é amplamente utilizado como canal de circulação de working papers.</li>
+                <li><strong>Ciência da Computação:</strong> Conferências são o canal principal (ACM, IEEE), e arXiv complementa com versões estendidas.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z" stroke="currentColor" stroke-width="1.5"/><polyline points="13,2 13,9 20,9" stroke="currentColor" stroke-width="1.5"/></svg>
+                DOI e Versionamento
+              </h3>
+              <p>Todo preprint depositado recebe um <strong>DOI permanente</strong> (Digital Object Identifier), o que garante citabilidade e rastreabilidade. Os servidores permitem atualizar o preprint com versões revisadas (v1, v2, v3...), mantendo o histórico completo. Quando o artigo é publicado em periódico, o DOI do preprint é vinculado ao DOI da versão final publicada.</p>
+              <div class="callout callout-warning">
+                <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="9" x2="12" y2="13" stroke="currentColor" stroke-width="2"/><line x1="12" y1="17" x2="12.01" y2="17" stroke="currentColor" stroke-width="2"/></svg>
+                <p><strong>Atenção:</strong> Um preprint <em>nunca</em> é removido. Mesmo após publicação formal, a versão preprint permanece no servidor, com nota indicando a versão publicada e peer-reviewed.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="1.5"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#peer-review" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Publicação Formal
+              </a>
+              <a href="#open-access" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Prioridade de Descoberta
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================
+             CONCEPT 4: OPEN ACCESS
+             ============================================ -->
+        <article class="concept" id="open-access">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Modelos de Acesso</span>
+              <span class="concept-tag concept-tag-category">Ciência Aberta</span>
+            </div>
+            <h2 class="concept-title">Open Access</h2>
+            <p class="concept-subtitle">Acesso Aberto &mdash; Ciência sem barreiras de pagamento para o leitor</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Nível 1 &mdash; Essencial</button>
+            <button class="concept-level-tab" data-level="2">Nível 2 &mdash; Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Nível 3 &mdash; Avançado</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p><strong>Open Access</strong> (Acesso Aberto) significa que o artigo científico pode ser lido, baixado e compartilhado por qualquer pessoa, de graça, sem precisar de assinatura ou pagamento. A ciência financiada com dinheiro público deveria ser acessível ao público.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Por que Importa?
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">Essência</span>
+                <p>Se um hospital público no interior do Amazonas precisa de um protocolo clínico publicado em revista fechada, sem acesso aberto, ele simplesmente não consegue ler. Open Access é inclusão no acesso ao conhecimento.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>O <strong>Open Access</strong> opera por diferentes modelos econômicos que determinam quem paga pela publicação e distribuição do conhecimento. Cada modelo tem implicações distintas para autores, instituições e leitores.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.5"/></svg>
+                Modelos de Open Access Comparados
+              </h3>
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Modelo</th>
+                      <th>Cor</th>
+                      <th>Quem Paga</th>
+                      <th>Acesso</th>
+                      <th>Exemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Gold OA</strong></td>
+                      <td>Dourado</td>
+                      <td>Autor paga APC (taxa de publicação)</td>
+                      <td>Imediato no site da revista</td>
+                      <td>PLOS ONE, Nature Comms</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Green OA</strong></td>
+                      <td>Verde</td>
+                      <td>Ninguém (autoarquivamento)</td>
+                      <td>Versão do autor em repositório institucional</td>
+                      <td>SciELO, repositórios de universidades</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Diamond / Platinum OA</strong></td>
+                      <td>Diamante</td>
+                      <td>Instituição/governo subsidia</td>
+                      <td>Gratuito para autor e leitor</td>
+                      <td>SciELO, Redalyc, muitas revistas brasileiras</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Bronze OA</strong></td>
+                      <td>Bronze</td>
+                      <td>Editora (temporariamente)</td>
+                      <td>Livre, mas sem licença aberta formal</td>
+                      <td>Artigos liberados temporariamente</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Hybrid</strong></td>
+                      <td>Misto</td>
+                      <td>Autor paga APC em revista por assinatura</td>
+                      <td>Artigos individuais abertos em revista fechada</td>
+                      <td>Lancet, NEJM (artigos selecionados)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 010 7H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                APCs &mdash; Article Processing Charges
+              </h3>
+              <p>APCs são as taxas cobradas por revistas <em>Gold OA</em> para cobrir custos editoriais. Os valores variam enormemente:</p>
+              <ul class="info-list">
+                <li><strong>PLOS ONE:</strong> ~US$ 1.931</li>
+                <li><strong>Nature Communications:</strong> ~US$ 6.790</li>
+                <li><strong>Nature / Science (OA option):</strong> ~US$ 11.390</li>
+                <li><strong>Revistas SciELO brasileiras:</strong> R$ 0 (modelo Diamante)</li>
+              </ul>
+              <div class="callout callout-success">
+                <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <p><strong>Destaque Brasil:</strong> O modelo SciELO é referência mundial em <em>Diamond Open Access</em>. A maioria das revistas brasileiras indexadas no SciELO não cobra dos autores nem dos leitores &mdash; os custos são subsidiados por agências como CAPES, CNPq e FAPs estaduais.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>O movimento de acesso aberto é impulsionado por mandatos institucionais e supranacionais que exigem que pesquisa financiada com recursos públicos seja publicada sem barreiras. O <strong>Plan S</strong> e a <strong>cOAlition S</strong> representam a maior pressão regulatória já aplicada ao sistema de publicação científica.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.5"/><polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="1.5"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="1.5"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="1.5"/></svg>
+                Plan S e cOAlition S
+              </h3>
+              <p>O <strong>Plan S</strong>, lançado em 2018 pela <strong>cOAlition S</strong> (coalizão de agências de fomento europeias), estabelece que, a partir de 2021, toda pesquisa financiada por seus membros deve ser publicada imediatamente em acesso aberto completo.</p>
+              <ul class="info-list">
+                <li><strong>Princípio central:</strong> Artigos devem estar disponíveis sob licença CC BY imediatamente, sem embargo.</li>
+                <li><strong>Revistas híbridas:</strong> Não são aceitas, exceto em acordos transformativos (Transformative Agreements) com prazo de transição.</li>
+                <li><strong>Financiadores membros:</strong> European Research Council, Wellcome Trust, Gates Foundation, FAPESP (observadora).</li>
+                <li><strong>Impacto:</strong> Pressiona grandes editoras (Elsevier, Springer Nature, Wiley) a oferecer caminhos de OA completo ou acordos de leitura+publicação (Read & Publish).</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.5"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="1.5"/></svg>
+                Mandatos Nacionais e Internacionais
+              </h3>
+              <ul class="info-list">
+                <li><strong>NIH (EUA):</strong> Desde 2023, todos os artigos financiados pelo NIH devem estar em acesso aberto imediato via PubMed Central.</li>
+                <li><strong>UKRI (Reino Unido):</strong> Mandato de OA imediato para artigos de pesquisa e monografias (desde 2022).</li>
+                <li><strong>UNESCO:</strong> Recomendação sobre Ciência Aberta (2021) incentiva governos a adotar políticas de acesso aberto.</li>
+                <li><strong>Brasil:</strong> Projeto de lei em tramitação para garantir acesso aberto a pesquisas financiadas com recursos públicos federais.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="1.5"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#open-access" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Acesso Aberto Diamante
+              </a>
+              <a href="modelo-brasileiro.html" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                SciELO
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================
+             CONCEPT 5: SISTEMAS EDITORIAIS
+             ============================================ -->
+        <article class="concept" id="sistemas-editoriais">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Infraestrutura</span>
+              <span class="concept-tag concept-tag-category">Ferramentas</span>
+            </div>
+            <h2 class="concept-title">Sistemas Editoriais</h2>
+            <p class="concept-subtitle">OJS, ScholarOne, Editorial Manager &mdash; As plataformas que gerenciam todo o fluxo editorial científico</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Nível 1 &mdash; Essencial</button>
+            <button class="concept-level-tab" data-level="2">Nível 2 &mdash; Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Nível 3 &mdash; Avançado</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p><strong>Sistemas editoriais</strong> são plataformas online que organizam todo o ciclo de vida de um artigo: da submissão pelo autor, passando pela atribuição de revisores, avaliação, decisão editorial, até a publicação final. São o &ldquo;sistema operacional&rdquo; das revistas científicas.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Analogia
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">Analogia</span>
+                <p>Pense no sistema editorial como o &ldquo;e-mail organizado&rdquo; de uma revista. Assim como uma empresa usa um sistema de tickets para gerenciar pedidos de suporte, a revista usa uma plataforma para rastrear cada manuscrito: quem submeteu, quem está avaliando, qual o status, quando vence o prazo. Tudo num só lugar.</p>
+              </div>
+            </div>
+            <div class="callout callout-info">
+              <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M16 8v8M12 11v5M8 14v2M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.5"/></svg>
+              <p><strong>Dado importante:</strong> Aproximadamente 90% dos periódicos de universidades públicas brasileiras utilizam o OJS (Open Journal Systems) como sistema editorial.</p>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>Os principais sistemas editoriais no mundo acadêmico são o <strong>OJS</strong> (código aberto, predominante em universidades), o <strong>ScholarOne</strong> (Clarivate, usado por grandes editoras) e o <strong>Editorial Manager</strong> (Aries Systems/Elsevier). Cada um tem perfil e custos diferentes.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="1.5"/></svg>
+                Como o OJS Funciona &mdash; Passo a Passo
+              </h3>
+              <ol class="info-list">
+                <li><strong>1. Criação de conta:</strong> O autor cria um cadastro no portal da revista (geralmente em <code>revistas.universidade.br</code>).</li>
+                <li><strong>2. Nova submissão:</strong> Preenche metadados (título, resumo, palavras-chave, autores, ORCID).</li>
+                <li><strong>3. Upload de arquivos:</strong> Envia o manuscrito (Word/PDF), carta de apresentação e documentos complementares.</li>
+                <li><strong>4. Checklist obrigatório:</strong> Confirma originalidade, conformidade ética e cessão de direitos.</li>
+                <li><strong>5. Atribuição editorial:</strong> O editor-chefe recebe a submissão e designa um editor de seção.</li>
+                <li><strong>6. Convite a revisores:</strong> O editor convida revisores pelo sistema; eles recebem e-mail com prazo e link de acesso ao manuscrito.</li>
+                <li><strong>7. Pareceres:</strong> Revisores preenchem formulários de avaliação dentro do OJS com notas e recomendações.</li>
+                <li><strong>8. Decisão:</strong> Editor registra decisão (aceitar, revisões, rejeitar). O autor recebe notificação.</li>
+                <li><strong>9. Editoração:</strong> Após aceite, o artigo segue para revisão de texto, diagramação e publicação online.</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A escolha do sistema editorial impacta custos operacionais, interoperabilidade, integração com indexadores e experiência do autor. A comparação entre OJS, ScholarOne e Editorial Manager revela diferenças estruturais significativas.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.5"/></svg>
+                Comparação Técnica
+              </h3>
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Critério</th>
+                      <th>OJS (PKP)</th>
+                      <th>ScholarOne (Clarivate)</th>
+                      <th>Editorial Manager (Aries/Elsevier)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Custo</strong></td>
+                      <td>Gratuito (código aberto)</td>
+                      <td>Assinatura (milhares US$/ano)</td>
+                      <td>Assinatura (milhares US$/ano)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Código</strong></td>
+                      <td>Open source (PHP)</td>
+                      <td>Proprietário</td>
+                      <td>Proprietário</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Hospedagem</strong></td>
+                      <td>Própria ou em nuvem</td>
+                      <td>SaaS (nuvem Clarivate)</td>
+                      <td>SaaS (nuvem Aries)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Integração DOI</strong></td>
+                      <td>Crossref, DataCite</td>
+                      <td>Crossref</td>
+                      <td>Crossref</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Detecção plágio</strong></td>
+                      <td>Plugin iThenticate</td>
+                      <td>iThenticate nativo</td>
+                      <td>iThenticate nativo</td>
+                    </tr>
+                    <tr>
+                      <td><strong>ORCID</strong></td>
+                      <td>Plugin</td>
+                      <td>Nativo</td>
+                      <td>Nativo</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Uso global</strong></td>
+                      <td>>25.000 revistas</td>
+                      <td>~6.500 revistas</td>
+                      <td>~8.200 revistas</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Perfil típico</strong></td>
+                      <td>Universidades, países em desenvolvimento</td>
+                      <td>Editoras de grande porte (Wiley, IEEE)</td>
+                      <td>Editoras de grande porte (Elsevier, Springer)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M16 8v8M12 11v5M8 14v2M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.5"/></svg>
+                Métricas de Impacto: Fator de Impacto e Índice h
+              </h3>
+              <p>Dois indicadores complementares são amplamente utilizados para medir relevância de revistas e pesquisadores:</p>
+              <div class="cards-grid cards-grid-2">
+                <div class="card">
+                  <h4>Fator de Impacto (JIF)</h4>
+                  <p>Calculado pela Clarivate (Journal Citation Reports): média de citações recebidas nos últimos 2 anos pelos artigos publicados na revista. Ex.: JIF = 5.0 significa que cada artigo recebeu, em média, 5 citações.</p>
+                  <ul class="info-list" style="margin-top:var(--space-sm);">
+                    <li>Usado para ranquear revistas, não autores individuais.</li>
+                    <li>Médias distorcidas por poucos artigos altamente citados.</li>
+                    <li>A DORA (San Francisco Declaration) recomenda <em>não</em> usar JIF para avaliar pesquisadores.</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Índice h</h4>
+                  <p>Proposto por Jorge Hirsch (2005): um pesquisador tem índice h = <em>n</em> se possui <em>n</em> artigos com pelo menos <em>n</em> citações cada. Ex.: h = 20 significa que o pesquisador tem 20 artigos com pelo menos 20 citações.</p>
+                  <ul class="info-list" style="margin-top:var(--space-sm);">
+                    <li>Balanceia produtividade e impacto.</li>
+                    <li>Desfavorece pesquisadores jovens e áreas de nicho.</li>
+                    <li>Não distingue autoria: primeiro autor vs. coautor.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="1.5"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#peer-review" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Peer Review
+              </a>
+              <a href="#open-access" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Open Access
+              </a>
+              <a href="#cover-letter" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Cover Letter
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================
+             CONCEPT 6: COVER LETTER
+             ============================================ -->
+        <article class="concept" id="cover-letter">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Submissão</span>
+              <span class="concept-tag concept-tag-category">Documento</span>
+            </div>
+            <h2 class="concept-title">Cover Letter</h2>
+            <p class="concept-subtitle">Carta de Apresentação &mdash; O documento que acompanha seu manuscrito na submissão</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab active" data-level="1">Nível 1 &mdash; Essencial</button>
+            <button class="concept-level-tab" data-level="2">Nível 2 &mdash; Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Nível 3 &mdash; Avançado</button>
+          </div>
+
+          <!-- LEVEL 1 -->
+          <div class="concept-level-panel active" data-level="1">
+            <div class="concept-definition">
+              <p>A <strong>cover letter</strong> (carta de apresentação) é uma carta formal dirigida ao editor-chefe da revista, enviada junto com o manuscrito na submissão. Nela, você explica em poucas linhas o que o artigo trata, por que é relevante e por que aquela revista específica é o lugar ideal para publicá-lo.</p>
+            </div>
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Em uma frase
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">Essência</span>
+                <p>A cover letter é seu &ldquo;cartão de visitas&rdquo; para o editor. Assim como uma carta de apresentação em uma entrevista de emprego, ela precisa convencer a pessoa que vai ler por que vale a pena prestar atenção ao seu trabalho.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="concept-level-panel" data-level="2">
+            <div class="concept-definition">
+              <p>A <strong>cover letter</strong> é um documento estratégico: o editor-chefe pode receber centenas de submissões por mês e a carta é muitas vezes o primeiro texto lido. Uma carta bem escrita destaca originalidade, relevância e encaixe com o escopo da revista.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.5"/><polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="1.5"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="1.5"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="1.5"/></svg>
+                Estrutura Recomendada
+              </h3>
+              <ol class="info-list">
+                <li><strong>1. Cabeçalho:</strong> Data, nome do editor-chefe, nome da revista.</li>
+                <li><strong>2. Assunto (Subject):</strong> &ldquo;Submission of manuscript entitled [Título]&rdquo;.</li>
+                <li><strong>3. Parágrafo 1 &mdash; Contexto:</strong> Apresente o problema de pesquisa e a lacuna que motivou o estudo (2-3 frases).</li>
+                <li><strong>4. Parágrafo 2 &mdash; Contribuição:</strong> Descreva os principais achados e por que são originais/relevantes (3-4 frases).</li>
+                <li><strong>5. Parágrafo 3 &mdash; Encaixe:</strong> Explique por que a revista é o veículo ideal para este trabalho, citando artigos recentes publicados nela que dialogam com seu tema.</li>
+                <li><strong>6. Declarações obrigatórias:</strong> Originalidade, não submissão simultânea, aprovação ética (se aplicável), conflitos de interesse.</li>
+                <li><strong>7. Sugestão de revisores:</strong> Algumas revistas pedem que você sugira 3-5 revisores potenciais (com nome, instituição e e-mail).</li>
+                <li><strong>8. Encerramento:</strong> Agradecimento e assinatura do autor correspondente.</li>
+              </ol>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                O que Incluir / O que Evitar
+              </h3>
+              <div class="cards-grid cards-grid-2">
+                <div class="card">
+                  <h4 style="color: var(--color-success);">
+                    <svg viewBox="0 0 24 24" fill="none" width="18" height="18" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+                    Incluir
+                  </h4>
+                  <ul class="info-list success">
+                    <li>Destaque o que é inédito nos seus resultados.</li>
+                    <li>Mencione artigos recentes da revista que se relacionam.</li>
+                    <li>Declare conflitos de interesse (mesmo se &ldquo;nenhum&rdquo;).</li>
+                    <li>Confirme que o trabalho não está submetido em outra revista.</li>
+                    <li>Sugira revisores especialistas (quando solicitado).</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4 style="color: var(--color-danger);">
+                    <svg viewBox="0 0 24 24" fill="none" width="18" height="18" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Evitar
+                  </h4>
+                  <ul class="info-list danger">
+                    <li>Repetir o resumo do artigo literalmente.</li>
+                    <li>Usar tom informal ou linguagem vaga.</li>
+                    <li>Exceder uma página (meia página é o ideal).</li>
+                    <li>Errar o nome do editor ou da revista.</li>
+                    <li>Enviar carta genérica igual para todas as revistas.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A cover letter é uma ferramenta retórica cuja estratégia varia conforme o prestígio e o perfil do periódico-alvo. Periódicos de alto impacto exigem argumentação mais assertiva sobre impacto e novidade; periódicos especializados valorizam precisão de escopo.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.5"/><polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="1.5"/></svg>
+                Adaptação por Tipo de Periódico
+              </h3>
+              <div class="accordion">
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span><strong>Periódico de alto impacto</strong> (Nature, Science, Lancet)</span>
+                    <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <div class="accordion-body">
+                    <p>Enfatize o impacto transformador do estudo. Use frases como: &ldquo;Our findings challenge the current paradigm...&rdquo;, &ldquo;This is the first study to demonstrate...&rdquo;, &ldquo;These results have immediate implications for...&rdquo;. Seja ambicioso mas fundamentado. O editor busca artigos que gerem cobertura midiática e citações.</p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span><strong>Periódico especializado</strong> (revista da área)</span>
+                    <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <div class="accordion-body">
+                    <p>Foque no encaixe preciso com o escopo. Cite 2-3 artigos recentes da própria revista que dialogam diretamente com seu trabalho. O editor quer garantir que o manuscrito é relevante para a audiência específica daquele periódico.</p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span><strong>Periódico brasileiro / SciELO</strong></span>
+                    <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <div class="accordion-body">
+                    <p>A carta pode ser em português ou inglês, conforme a língua da revista. Muitos periódicos brasileiros exigem declaração de originalidade como documento separado. Verifique as instruções aos autores cuidadosamente. Periódicos SciELO podem solicitar também a carta de aprovação do CEP.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 8l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg>
+                Exemplo Completo de Cover Letter
+              </h3>
+              <div class="example-box example-level-advanced">
+                <span class="example-label">
+                  <svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.5"/><polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="1.5"/></svg>
+                  Modelo de Cover Letter
+                </span>
+                <div style="font-family: var(--font-serif); font-size: 0.88rem; line-height: 1.85; color: var(--color-text-secondary);">
+                  <p style="margin-bottom: var(--space-md);"><strong>Date:</strong> June 21, 2026</p>
+                  <p style="margin-bottom: var(--space-md);">
+                    <strong>Dear Editor-in-Chief,</strong><br>
+                    <em>Journal of Evidence-Based Medicine</em>
+                  </p>
+                  <p style="margin-bottom: var(--space-md);">
+                    <strong>Re: Submission of manuscript entitled</strong> &ldquo;Effectiveness of Telehealth Interventions for Chronic Disease Management in Low-Resource Settings: A Systematic Review and Meta-Analysis&rdquo;
+                  </p>
+                  <p style="margin-bottom: var(--space-md);">
+                    We are pleased to submit the enclosed manuscript for consideration for publication in the <em>Journal of Evidence-Based Medicine</em>. Chronic diseases account for 74% of global deaths annually, yet access to specialized care remains severely limited in low- and middle-income countries, creating an urgent need for scalable interventions.
+                  </p>
+                  <p style="margin-bottom: var(--space-md);">
+                    Our systematic review synthesizes evidence from 47 randomized controlled trials (n = 12,834 participants) across 23 countries, demonstrating that telehealth interventions significantly improve clinical outcomes (pooled effect size: SMD = 0.42, 95% CI: 0.31&ndash;0.53) with high cost-effectiveness ratios. To our knowledge, this is the first comprehensive meta-analysis to stratify results by infrastructure level (WHO service availability indices), providing actionable evidence for policy implementation in resource-constrained healthcare systems.
+                  </p>
+                  <p style="margin-bottom: var(--space-md);">
+                    We believe this manuscript aligns closely with the scope and readership of your journal, particularly in light of your recent publications on digital health equity (Smith et al., 2025; Chen &amp; Patel, 2026) and evidence synthesis methodology. Our findings offer practical, evidence-based guidance for healthcare policymakers in underserved regions.
+                  </p>
+                  <p style="margin-bottom: var(--space-md);">
+                    This manuscript is original, has not been published previously, and is not under consideration elsewhere. All authors have read and approved the submitted version. The study was registered in PROSPERO (CRD42025XXXXXX). There are no conflicts of interest to declare.
+                  </p>
+                  <p style="margin-bottom: var(--space-md);">
+                    We have suggested three potential reviewers with relevant expertise in the submission system. We thank you for considering this manuscript and look forward to your response.
+                  </p>
+                  <p>
+                    Sincerely,<br>
+                    <strong>Dr. Maria Silva, PhD</strong><br>
+                    Corresponding Author<br>
+                    Department of Public Health, Universidade Federal<br>
+                    Email: m.silva@universidade.br | ORCID: 0000-0002-XXXX-XXXX
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="concept-section">
+            <h3 class="concept-section-title">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="1.5"/></svg>
+              Conceitos Relacionados
+            </h3>
+            <div class="relations-grid">
+              <a href="#peer-review" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Peer Review
+              </a>
+              <a href="#sistemas-editoriais" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Sistemas Editoriais
+              </a>
+              <a href="escrita.html" class="relation-link">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Escrita Científica
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ===== MODULE NAV (prev/next) ===== -->
+        <nav class="module-nav">
+          <a href="escrita.html" class="module-nav-link prev">
+            <span class="module-nav-label">
+              <svg viewBox="0 0 24 24" fill="none" width="14" height="14" style="display:inline-block;vertical-align:middle;margin-right:2px;transform:rotate(180deg);"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Módulo Anterior
+            </span>
+            <span class="module-nav-title">F8 &mdash; Escrita Científica</span>
+          </a>
+          <a href="modelo-brasileiro.html" class="module-nav-link next">
+            <span class="module-nav-label">
+              Próximo Módulo
+              <svg viewBox="0 0 24 24" fill="none" width="14" height="14" style="display:inline-block;vertical-align:middle;margin-left:2px;"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="module-nav-title">F18 &mdash; Modelo Brasileiro</span>
+          </a>
+        </nav>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <svg class="footer-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="4" width="20" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+            <rect x="10" y="2" width="20" height="26" rx="2" fill="var(--color-bg)" stroke="currentColor" stroke-width="2"/>
+            <line x1="14" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="14" y1="13" x2="26" y2="13" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="14" y1="17" x2="22" y2="17" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span>Manual do Pesquisador</span>
+        </div>
+        <p class="footer-text">Guia definitivo de pesquisa científica, escrita de artigos e publicação acadêmica.</p>
+        <div class="footer-links">
+          <a href="../index.html">Início</a>
+          <a href="escrita.html">Escrita</a>
+          <a href="publicacao.html">Publicação</a>
+          <a href="modelo-brasileiro.html">Modelo Brasileiro</a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">Manual Mestre do Pesquisador Iniciante. Conteúdo educacional de livre acesso.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="../script.js"></script>
+</body>
+</html>

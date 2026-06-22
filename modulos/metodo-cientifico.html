@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Módulo F1: Método Científico — Entenda o método científico, hipóteses, variáveis e raciocínio indutivo e dedutivo na pesquisa.">
+  <meta name="keywords" content="método científico, hipótese científica, variáveis de pesquisa, método indutivo, método dedutivo, pesquisa científica">
+  <meta name="author" content="Manual do Pesquisador">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://onecio.github.io/manual-pesquisador/modulos/metodo-cientifico.html">
+  <meta property="og:title" content="Módulo F1: Método Científico | Manual do Pesquisador">
+  <meta property="og:description" content="Domine o método científico: hipóteses, variáveis, raciocínio indutivo e dedutivo e rigor metodológico na pesquisa.">
+  <meta property="og:site_name" content="Manual do Pesquisador">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Módulo F1: Método Científico | Manual do Pesquisador">
+  <meta name="twitter:description" content="Domine o método científico: hipóteses, variáveis, raciocínio indutivo e dedutivo e rigor metodológico na pesquisa.">
+  <title>Módulo F1: Método Científico | Manual do Pesquisador</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="4" width="20" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+          <rect x="10" y="2" width="20" height="26" rx="2" fill="var(--color-surface)" stroke="currentColor" stroke-width="2"/>
+          <line x1="14" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="13" x2="26" y2="13" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="17" x2="22" y2="17" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="21" x2="24" y2="21" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span>Manual do Pesquisador</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="fundamentos.html">Fundamentos</a></li>
+        <li><a href="metodo-cientifico.html" class="active">Método Científico</a></li>
+        <li><a href="planejamento.html">Planejamento</a></li>
+      </ul>
+      <div class="level-selector">
+        <button class="level-btn" data-level="1">Básico</button>
+        <button class="level-btn active" data-level="2">Intermediário</button>
+        <button class="level-btn" data-level="3">Avançado</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="../index.html">Início</a></li>
+        <li class="breadcrumb-sep">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+        </li>
+        <li><a href="../index.html#blocos">Bloco A: Alicerces</a></li>
+        <li class="breadcrumb-sep">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+        </li>
+        <li class="breadcrumb-current">Método Científico</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header">
+    <div class="container">
+      <span class="module-badge">Módulo F1</span>
+      <h1>Método Científico</h1>
+      <p class="page-description">Domine o processo sistemático de investigação científica: da observação inicial à formulação de hipóteses, experimentação controlada, análise de dados e conclusões fundamentadas. Entenda os pilares epistemológicos que sustentam a pesquisa rigorosa.</p>
+    </div>
+  </header>
+
+  <!-- ===== MODULE LAYOUT ===== -->
+  <main class="container" id="main-content">
+    <div class="module-layout">
+
+      <!-- Sidebar -->
+      <aside class="module-sidebar">
+        <nav class="sidebar-nav">
+          <span class="sidebar-nav-title">Neste Módulo</span>
+          <a href="#metodo-cientifico" class="sidebar-link active">O que é o Método Científico</a>
+          <a href="#etapas" class="sidebar-link">Etapas do Método</a>
+          <a href="#observacao" class="sidebar-link">Observação</a>
+          <a href="#hipotese" class="sidebar-link">Hipótese</a>
+          <a href="#experimentacao" class="sidebar-link">Experimentação</a>
+          <a href="#analise" class="sidebar-link">Análise</a>
+          <a href="#conclusao" class="sidebar-link">Conclusão</a>
+          <a href="#indutivo-dedutivo" class="sidebar-link">Método Indutivo vs Dedutivo</a>
+          <a href="#limitacoes" class="sidebar-link">Limitações</a>
+        </nav>
+      </aside>
+
+      <!-- Content -->
+      <div class="module-content">
+
+        <!-- ============================================
+             CONCEPT 1 — Método Científico
+             ============================================ -->
+        <article class="concept" id="metodo-cientifico">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Fundamentos</span>
+              <span class="concept-tag concept-tag-category">Epistemologia</span>
+            </div>
+            <h2 class="concept-title">Método Científico</h2>
+            <p class="concept-subtitle"><strong>Scientific Method</strong> — O processo sistemático de investigação para construir conhecimento confiável e verificável.</p>
+          </div>
+
+          <!-- Level Tabs -->
+          <div class="concept-levels">
+            <button class="concept-level-tab" data-level="1">Básico</button>
+            <button class="concept-level-tab active" data-level="2">Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Avançado</button>
+          </div>
+
+          <!-- ===== LEVEL 1 — Básico ===== -->
+          <div class="concept-level-panel" data-level="1">
+            <div class="concept-definition">
+              <p>O <strong>método científico</strong> é um caminho organizado para descobrir como o mundo funciona. Em vez de adivinhar ou confiar em intuição, os cientistas seguem passos claros — observar, perguntar, testar e concluir — para chegar a respostas confiáveis.</p>
+            </div>
+
+            <div class="concept-section" id="etapas">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                As 7 Etapas Simplificadas
+              </h3>
+              <ul class="info-list">
+                <li><strong>1. Observação</strong> — Olhar com atenção para algo que desperta curiosidade.</li>
+                <li><strong>2. Pergunta</strong> — Formular uma pergunta clara sobre o que foi observado.</li>
+                <li><strong>3. Pesquisa prévia</strong> — Verificar o que já se sabe sobre o assunto.</li>
+                <li><strong>4. Hipótese</strong> — Propor uma possível resposta à pergunta.</li>
+                <li><strong>5. Experimentação</strong> — Testar a hipótese com um experimento controlado.</li>
+                <li><strong>6. Análise</strong> — Examinar os resultados obtidos.</li>
+                <li><strong>7. Conclusão</strong> — Decidir se a hipótese foi confirmada ou refutada.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r=".5"/></svg>
+                Quando Usar?
+              </h3>
+              <p>Sempre que quiser responder a uma pergunta de forma confiável — em trabalhos escolares, projetos de iniciação científica ou na vida cotidiana quando precisa tomar decisões baseadas em evidências.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Exemplo Prático
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+                  Exemplo Simples
+                </span>
+                <p><strong>Pergunta:</strong> As plantas crescem mais rápido com música? <strong>Hipótese:</strong> Plantas expostas a música crescem 20% mais. <strong>Teste:</strong> Dois vasos iguais, um com música, outro sem. <strong>Resultado:</strong> Mede-se o crescimento após 30 dias e compara-se.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== LEVEL 2 — Intermediário ===== -->
+          <div class="concept-level-panel active" data-level="2">
+            <div class="concept-definition">
+              <p>O <strong>método científico</strong> é um conjunto de procedimentos lógicos e sistemáticos que orientam a investigação de fenômenos, a aquisição de novos conhecimentos e a correção e integração de conhecimentos já existentes. Fundamenta-se na <strong>observação empírica</strong>, na <strong>formulação de hipóteses testáveis</strong> e na <strong>verificação experimental</strong> com controle de variáveis.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Breve História
+              </h3>
+              <p><strong>Francis Bacon</strong> (1561–1626) propôs o empirismo sistemático e o método indutivo. <strong>Galileu Galilei</strong> (1564–1642) introduziu a experimentação controlada e a quantificação como pilares da ciência moderna. <strong>René Descartes</strong> (1596–1650) contribuiu com o racionalismo e o método da dúvida metódica, exigindo evidências claras e distintas.</p>
+              <p>Juntos, esses pensadores moldaram o método que hoje conhecemos: uma combinação de observação cuidadosa, raciocínio lógico e teste experimental rigoroso.</p>
+            </div>
+
+            <div class="concept-section" id="observacao">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                As 7 Etapas em Detalhe
+              </h3>
+              <ul class="info-list">
+                <li><strong>1. Observação</strong> — Identificação sistemática de um fenômeno ou problema. Pode ser direta (sensorial) ou indireta (instrumentos, dados secundários).</li>
+                <li><strong>2. Formulação do problema</strong> — Transformar a observação em uma pergunta de pesquisa precisa, delimitada e viável.</li>
+                <li><strong>3. Revisão de literatura</strong> — Levantamento do estado da arte para contextualizar e evitar duplicação.</li>
+                <li><strong>4. Formulação da hipótese</strong> — Proposição de uma resposta provisória, testável e falseável ao problema.</li>
+                <li><strong>5. Experimentação</strong> — Desenho experimental com grupo controle, variáveis controladas e procedimentos replicáveis.</li>
+                <li><strong>6. Análise de dados</strong> — Tratamento estatístico dos resultados para identificar padrões e significâncias.</li>
+                <li><strong>7. Conclusão e comunicação</strong> — Interpretação dos resultados, aceitação ou refutação da hipótese e publicação dos achados.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Exemplos por Nível
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+                  Simples — Ciências Naturais
+                </span>
+                <p>Observação: plantas no corredor crescem menos. Hipótese: a falta de luz solar direta reduz o crescimento. Teste: comparar o crescimento de plantas em luz direta vs. luz indireta por 60 dias.</p>
+              </div>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                  Intermediário — Ciências Sociais
+                </span>
+                <p>Observação: alunos que usam celular em aula parecem ter notas mais baixas. Hipótese: o uso de smartphone durante a aula reduz o desempenho acadêmico. Teste: estudo quasi-experimental comparando turmas com e sem restrição de celular durante um semestre.</p>
+              </div>
+              <div class="example-box example-level-advanced">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                  Avançado — Ciências da Saúde
+                </span>
+                <p>Observação: pacientes com hipertensão apresentam níveis elevados de cortisol. Hipótese: intervenção com técnicas de mindfulness por 12 semanas reduz a pressão arterial sistólica em ≥5 mmHg. Teste: ensaio clínico randomizado, duplo-cego, com grupo controle ativo.</p>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Conceitos Relacionados
+              </h3>
+              <div class="relations-grid">
+                <a href="#hipotese" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Hipótese Científica
+                </a>
+                <a href="#variaveis" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Variáveis de Pesquisa
+                </a>
+                <a href="#indutivo-dedutivo" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Indutivo vs Dedutivo
+                </a>
+                <a href="planejamento.html" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Planejamento de Pesquisa
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== LEVEL 3 — Avançado ===== -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>O <strong>método científico</strong>, em sua acepção epistemológica contemporânea, constitui um <strong>sistema normativo de produção de conhecimento</strong> fundamentado no realismo crítico e no falseacionismo popperiano. Não se resume a uma sequência linear de etapas, mas opera como um ciclo iterativo de <strong>conjecturas e refutações</strong>, onde teorias são continuamente submetidas a testes empíricos rigorosos e revisão por pares.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Evolução Epistemológica
+              </h3>
+              <p><strong>Francis Bacon</strong> sistematizou o <em>Novum Organum</em> (1620), propondo a indução eliminativa como alternativa ao silogismo aristotélico. <strong>Galileu</strong> inaugurou o método hipotético-experimental, combinando a matemática como linguagem descritiva com a experimentação controlada. <strong>Descartes</strong>, em <em>Discurso do Método</em> (1637), estabeleceu quatro regras: evidência, análise, síntese e enumeração.</p>
+              <p>No séc. XX, <strong>Karl Popper</strong> introduziu o critério de <strong>falseabilidade</strong> como demarcação entre ciência e pseudociência. <strong>Thomas Kuhn</strong> (1962) propôs a teoria dos <strong>paradigmas científicos</strong> e revoluções, enquanto <strong>Lakatos</strong> desenvolveu a metodologia dos <strong>programas de pesquisa científica</strong>, reconciliando falseacionismo com a história real da ciência.</p>
+            </div>
+
+            <div class="concept-section" id="experimentacao">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                Rigor Metodológico Avançado
+              </h3>
+              <ul class="info-list">
+                <li><strong>Validade interna</strong> — controle de variáveis estranhas, randomização, cegamento e uso de placebos.</li>
+                <li><strong>Validade externa</strong> — generalização dos resultados para populações e contextos diferentes da amostra estudada.</li>
+                <li><strong>Reprodutibilidade</strong> — capacidade de outros pesquisadores replicarem o estudo obtendo resultados consistentes.</li>
+                <li><strong>Pré-registro</strong> — registro prévio de hipóteses, métodos e análises para evitar vieses de publicação e <em>p-hacking</em>.</li>
+                <li><strong>Triangulação</strong> — uso de múltiplos métodos, fontes de dados ou perspectivas teóricas para validar achados.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section" id="analise">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Exemplo Avançado
+              </h3>
+              <div class="example-box example-level-advanced">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                  Ensaio Clínico Fase III
+                </span>
+                <p><strong>Problema:</strong> Tratamento X é eficaz para depressão resistente? <strong>Desenho:</strong> RCT multicêntrico, duplo-cego, controlado por placebo, com n=500. <strong>Hipótese primária:</strong> redução ≥3 pontos na escala HAM-D-17 em 8 semanas (α=0,05, poder=80%). <strong>Análise pré-registrada:</strong> ITT com imputação múltipla; análise de sensibilidade per-protocol. <strong>Desfechos secundários:</strong> remissão (HAM-D ≤7), qualidade de vida (SF-36), eventos adversos. Estudo pré-registrado no ClinicalTrials.gov.</p>
+              </div>
+            </div>
+
+            <div class="concept-section" id="limitacoes">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Limitações do Método
+              </h3>
+              <ul class="info-list danger">
+                <li><strong>Problema da indução</strong> (Hume) — nenhum número finito de observações garante conclusões universais.</li>
+                <li><strong>Subdeterminação teórica</strong> (Duhem-Quine) — os mesmos dados podem ser compatíveis com múltiplas teorias.</li>
+                <li><strong>Viés de confirmação</strong> — tendência a buscar evidências que corroborem crenças prévias.</li>
+                <li><strong>Crise de replicação</strong> — muitos achados publicados não se reproduzem, especialmente em psicologia e biomedicina.</li>
+                <li><strong>Limites éticos</strong> — nem toda hipótese pode ser testada experimentalmente (ex.: estudos com seres humanos).</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                Referências
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">POPPER, K. <em>A Lógica da Pesquisa Científica</em>. São Paulo: Cultrix, 1972.</div>
+                <div class="reference-item">KUHN, T. <em>A Estrutura das Revoluções Científicas</em>. São Paulo: Perspectiva, 2003.</div>
+                <div class="reference-item">LAKATOS, I. <em>The Methodology of Scientific Research Programmes</em>. Cambridge: CUP, 1978.</div>
+                <div class="reference-item">BACON, F. <em>Novum Organum</em>. 1620.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================
+             CONCEPT 2 — Hipótese Científica
+             ============================================ -->
+        <article class="concept" id="hipotese">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Fundamentos</span>
+              <span class="concept-tag concept-tag-category">Formulação</span>
+            </div>
+            <h2 class="concept-title">Hipótese Científica</h2>
+            <p class="concept-subtitle"><strong>Scientific Hypothesis</strong> — Proposição testável e falseável que oferece uma resposta provisória ao problema de pesquisa.</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab" data-level="1">Básico</button>
+            <button class="concept-level-tab active" data-level="2">Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Avançado</button>
+          </div>
+
+          <!-- ===== LEVEL 1 ===== -->
+          <div class="concept-level-panel" data-level="1">
+            <div class="concept-definition">
+              <p>Uma <strong>hipótese</strong> é uma "aposta educada" — uma resposta provisória que o pesquisador propõe antes de fazer o teste. É como dizer: "Eu acho que isso acontece por causa daquilo" e depois verificar se está certo.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                Como Formular
+              </h3>
+              <p>Uma boa hipótese segue a fórmula: <strong>"Se [faço algo], então [acontece isso]"</strong>. Ela precisa ser específica, mensurável e possível de testar.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Exemplo
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+                  Exemplo Simples
+                </span>
+                <p><strong>Problema:</strong> Por que as plantas na janela crescem mais? <strong>Hipótese:</strong> "Se as plantas recebem mais luz solar, então elas crescem mais rápido." Isso pode ser testado medindo o crescimento de plantas em diferentes condições de luz.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== LEVEL 2 ===== -->
+          <div class="concept-level-panel active" data-level="2">
+            <div class="concept-definition">
+              <p>A <strong>hipótese científica</strong> é uma afirmação condicional, derivada da teoria ou da observação empírica, que propõe uma relação entre variáveis e que pode ser submetida a <strong>verificação empírica</strong>. Distingue-se da mera suposição por ser <strong>testável</strong>, <strong>falseável</strong> e <strong>fundamentada</strong> na literatura existente.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                H₀ vs H₁
+              </h3>
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Tipo</th>
+                      <th>Definição</th>
+                      <th>Exemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>H₀ (Nula)</strong></td>
+                      <td>Afirma que <strong>não há efeito</strong> ou diferença entre os grupos. É a hipótese que se busca rejeitar.</td>
+                      <td>"Não há diferença na pressão arterial entre o grupo tratamento e o grupo controle."</td>
+                    </tr>
+                    <tr>
+                      <td><strong>H₁ (Alternativa)</strong></td>
+                      <td>Afirma que <strong>há efeito</strong> ou diferença. Pode ser direcional (uni ou bicaudal).</td>
+                      <td>"Pacientes tratados com droga X apresentam redução significativa da pressão arterial."</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                Critérios de uma Boa Hipótese
+              </h3>
+              <ul class="info-list success">
+                <li><strong>Testabilidade</strong> — pode ser verificada empiricamente com dados observáveis.</li>
+                <li><strong>Falseabilidade</strong> — é possível imaginar um resultado que a refute (critério de Popper).</li>
+                <li><strong>Especificidade</strong> — define claramente as variáveis e a relação esperada.</li>
+                <li><strong>Fundamentação</strong> — é sustentada por evidências prévias ou teoria existente.</li>
+                <li><strong>Parcimônia</strong> — prefere a explicação mais simples compatível com os dados.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Exemplos
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+                  Simples
+                </span>
+                <p>"Plantas que recebem 8 horas de luz solar direta por dia crescem mais do que plantas que recebem apenas 4 horas." — Variável independente: horas de luz. Variável dependente: crescimento (em cm).</p>
+              </div>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                  Intermediário
+                </span>
+                <p>"Estudantes universitários que praticam exercício aeróbico regular (≥150 min/semana) apresentam escores significativamente maiores na escala DASS-21 de bem-estar em comparação com sedentários." — H₀: não há diferença entre os grupos.</p>
+              </div>
+              <div class="example-box example-level-advanced">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                  Avançado — Ensaio Clínico
+                </span>
+                <p>"H₁: A administração de 10 mg de droga Y, comparada ao placebo, resulta em redução de ≥5 mmHg na pressão arterial sistólica após 12 semanas de tratamento em adultos com hipertensão estágio 1 (n=400, RCT multicêntrico, α=0,05)."</p>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Conceitos Relacionados
+              </h3>
+              <div class="relations-grid">
+                <a href="#metodo-cientifico" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Método Científico
+                </a>
+                <a href="#variaveis" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Variáveis de Pesquisa
+                </a>
+                <a href="planejamento.html" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Objetivos de Pesquisa
+                </a>
+                <a href="fundamentos.html" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Problema de Pesquisa
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== LEVEL 3 ===== -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>Na epistemologia contemporânea, a hipótese opera como <strong>conjectura dedutiva</strong> (Popper) submetida a tentativas sistemáticas de falseamento. O teste estatístico formal (Neyman-Pearson) estabelece critérios probabilísticos para decisão entre H₀ e H₁, controlando as taxas de erro tipo I (α) e tipo II (β). Mais recentemente, abordagens bayesianas oferecem alternativa interpretando hipóteses como distribuições de probabilidade atualizáveis por evidência.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                Tipologia Avançada de Hipóteses
+              </h3>
+              <ul class="info-list">
+                <li><strong>Hipótese de trabalho</strong> — proposição provisória que guia a investigação inicial, podendo ser reformulada.</li>
+                <li><strong>Hipótese direcional (uni-caudal)</strong> — especifica a direção do efeito (ex.: "maior que", "menor que").</li>
+                <li><strong>Hipótese não-direcional (bi-caudal)</strong> — afirma apenas que há diferença, sem especificar a direção.</li>
+                <li><strong>Hipótese de nulidade estatística</strong> — afirmação de ausência de efeito; ponto de decisão no NHST.</li>
+                <li><strong>Hipótese auxiliar</strong> — pressupostos secundários necessários para testar a hipótese principal (ceteris paribus).</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Erros e Armadilhas
+              </h3>
+              <ul class="info-list danger">
+                <li><strong>HARKing</strong> (<em>Hypothesizing After Results are Known</em>) — formular hipóteses depois de ver os dados, apresentando-as como a priori.</li>
+                <li><strong>P-hacking</strong> — manipular análises até obter p &lt; 0,05, inflando a taxa de falsos positivos.</li>
+                <li><strong>Hipóteses não falseáveis</strong> — proposições vagas demais para serem refutadas por qualquer resultado empírico.</li>
+                <li><strong>Confundir correlação com causalidade</strong> — formular hipótese causal a partir de dados correlacionais sem desenho experimental adequado.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                Referências
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">POPPER, K. <em>Conjectures and Refutations</em>. London: Routledge, 1963.</div>
+                <div class="reference-item">NEYMAN, J.; PEARSON, E. On the Problem of the Most Efficient Tests of Statistical Hypotheses. <em>Phil. Trans. Roy. Soc. A</em>, 1933.</div>
+                <div class="reference-item">KERR, N. L. HARKing: Hypothesizing After the Results are Known. <em>Personality and Social Psychology Review</em>, 1998.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================
+             CONCEPT 3 — Variáveis de Pesquisa
+             ============================================ -->
+        <article class="concept" id="variaveis">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Desenho Experimental</span>
+              <span class="concept-tag concept-tag-category">Variáveis</span>
+            </div>
+            <h2 class="concept-title">Variáveis de Pesquisa</h2>
+            <p class="concept-subtitle"><strong>Research Variables</strong> — Características mensuráveis que podem assumir diferentes valores e cujas relações a pesquisa investiga.</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab" data-level="1">Básico</button>
+            <button class="concept-level-tab active" data-level="2">Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Avançado</button>
+          </div>
+
+          <!-- ===== LEVEL 1 ===== -->
+          <div class="concept-level-panel" data-level="1">
+            <div class="concept-definition">
+              <p><strong>Variáveis</strong> são as coisas que mudam (ou que o pesquisador muda) em um experimento. Para entender se algo causa um efeito, precisamos identificar o que estamos mudando (causa) e o que estamos medindo (resultado).</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                Tipos Principais
+              </h3>
+              <ul class="info-list">
+                <li><strong>Independente</strong> — O que o pesquisador <strong>muda</strong> (a causa). Ex.: quantidade de adubo.</li>
+                <li><strong>Dependente</strong> — O que o pesquisador <strong>mede</strong> (o efeito). Ex.: altura da planta.</li>
+                <li><strong>Controlada</strong> — O que é mantido <strong>igual</strong> para garantir que o teste seja justo. Ex.: tipo de solo, água.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Exemplo
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+                  Exemplo Simples
+                </span>
+                <p><strong>Experimento:</strong> Testar se café ajuda a estudar melhor. <strong>V. Independente:</strong> tomar café (sim/não). <strong>V. Dependente:</strong> nota na prova. <strong>V. Controladas:</strong> horas de estudo, matéria, hora da prova.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== LEVEL 2 ===== -->
+          <div class="concept-level-panel active" data-level="2">
+            <div class="concept-definition">
+              <p><strong>Variáveis de pesquisa</strong> são propriedades ou características que assumem valores diferentes entre unidades de observação e cujas relações o pesquisador investiga. A identificação, operacionalização e controle adequado de variáveis são fundamentais para a <strong>validade interna</strong> de qualquer estudo.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                Classificação Completa
+              </h3>
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Tipo</th>
+                      <th>Papel</th>
+                      <th>Exemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Independente (VI)</strong></td>
+                      <td>Manipulada pelo pesquisador; a suposta <strong>causa</strong>.</td>
+                      <td>Dosagem do medicamento (0 mg, 5 mg, 10 mg)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Dependente (VD)</strong></td>
+                      <td>Medida como <strong>resultado</strong>; o efeito observado.</td>
+                      <td>Nível de pressão arterial</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Controle</strong></td>
+                      <td>Mantida <strong>constante</strong> para isolar o efeito da VI.</td>
+                      <td>Idade, dieta, frequência de exercícios</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Confundidora (de confusão)</strong></td>
+                      <td>Influencia a VD mas <strong>não é controlada</strong>; ameaça a validade.</td>
+                      <td>Estresse não medido em estudo sobre sono e desempenho</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Exemplos por Nível
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+                  Simples
+                </span>
+                <p>"Mais fertilizante → mais flores?" — VI: quantidade de fertilizante. VD: número de flores. Controle: tipo de planta, rega, luz.</p>
+              </div>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                  Intermediário
+                </span>
+                <p>Estudo sobre eficácia de método de ensino. VI: método (tradicional vs. gamificação). VD: desempenho (nota pós-teste). Controle: professor, carga horária, conteúdo. Confundidora potencial: motivação intrínseca do aluno.</p>
+              </div>
+              <div class="example-box example-level-advanced">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                  Avançado
+                </span>
+                <p>RCT sobre intervenção nutricional: VI: dieta mediterrânea vs. dieta padrão (randomização). VD primária: hemoglobina glicada (HbA1c). VDs secundárias: IMC, colesterol LDL, PCR. Covariáveis: idade, sexo, uso de medicação, atividade física (controladas por estratificação e ajuste multivariado).</p>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Conceitos Relacionados
+              </h3>
+              <div class="relations-grid">
+                <a href="#hipotese" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Hipótese Científica
+                </a>
+                <a href="#metodo-cientifico" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Desenho Experimental
+                </a>
+                <a href="planejamento.html" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Planejamento de Pesquisa
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== LEVEL 3 ===== -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>Na pesquisa avançada, a <strong>operacionalização de variáveis</strong> envolve traduzir construtos abstratos em indicadores mensuráveis com propriedades psicométricas demonstráveis (validade de construto, confiabilidade). A análise de <strong>variáveis latentes</strong> (SEM), <strong>moderação</strong>, <strong>mediação</strong> e <strong>interação</strong> permite modelar relações complexas entre múltiplos fatores simultaneamente.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                Classificação Avançada
+              </h3>
+              <ul class="info-list">
+                <li><strong>Variável moderadora</strong> — altera a força ou direção da relação entre VI e VD (ex.: sexo modera o efeito de um fármaco).</li>
+                <li><strong>Variável mediadora</strong> — explica o mecanismo pelo qual a VI afeta a VD (ex.: autoeficácia medeia o efeito de treinamento sobre desempenho).</li>
+                <li><strong>Variável latente</strong> — construto não diretamente observável, inferido a partir de indicadores (ex.: "inteligência" medida por subtestes).</li>
+                <li><strong>Covariável</strong> — variável incluída na análise estatística para controlar seu efeito e reduzir a variância residual.</li>
+                <li><strong>Variável instrumental</strong> — usada em modelos de regressão 2SLS para estimar efeitos causais em dados observacionais.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Ameaças à Validade
+              </h3>
+              <ul class="info-list danger">
+                <li><strong>Confundimento</strong> — variável não controlada covaria com a VI, tornando impossível isolar o efeito causal.</li>
+                <li><strong>Multicolinearidade</strong> — VIs altamente correlacionadas inflam os erros-padrão na regressão.</li>
+                <li><strong>Endogeneidade</strong> — a VI está correlacionada com o termo de erro (causalidade reversa, variável omitida).</li>
+                <li><strong>Viés de mensuração</strong> — o instrumento não mede adequadamente o construto, comprometendo a validade.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                Referências
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">SHADISH, W. R.; COOK, T. D.; CAMPBELL, D. T. <em>Experimental and Quasi-Experimental Designs for Generalized Causal Inference</em>. Houghton Mifflin, 2002.</div>
+                <div class="reference-item">BARON, R. M.; KENNY, D. A. The moderator-mediator variable distinction. <em>J. Pers. Soc. Psychol.</em>, 1986.</div>
+                <div class="reference-item">HAIR, J. F. et al. <em>Multivariate Data Analysis</em>. 8th ed. Cengage, 2019.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ============================================
+             CONCEPT 4 — Método Indutivo vs. Dedutivo
+             ============================================ -->
+        <article class="concept" id="indutivo-dedutivo">
+          <div class="concept-header">
+            <div class="concept-meta">
+              <span class="concept-tag concept-tag-area">Epistemologia</span>
+              <span class="concept-tag concept-tag-category">Raciocínio</span>
+            </div>
+            <h2 class="concept-title">Método Indutivo vs. Dedutivo</h2>
+            <p class="concept-subtitle"><strong>Inductive vs. Deductive Method</strong> — Duas formas complementares de raciocínio lógico na construção do conhecimento científico.</p>
+          </div>
+
+          <div class="concept-levels">
+            <button class="concept-level-tab" data-level="1">Básico</button>
+            <button class="concept-level-tab active" data-level="2">Intermediário</button>
+            <button class="concept-level-tab" data-level="3">Avançado</button>
+          </div>
+
+          <!-- ===== LEVEL 1 ===== -->
+          <div class="concept-level-panel" data-level="1">
+            <div class="concept-definition">
+              <p>Existem duas formas principais de raciocinar na ciência: do <strong>particular para o geral</strong> (indução) e do <strong>geral para o particular</strong> (dedução). Um parte de exemplos para criar regras; o outro parte de regras para prever exemplos.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><line x1="3" y1="5" x2="21" y2="5"/><polyline points="7 23 3 19 7 15"/><line x1="21" y1="19" x2="3" y2="19"/></svg>
+                Comparação Simples
+              </h3>
+              <ul class="info-list">
+                <li><strong>Indutivo:</strong> "Vi 100 cisnes brancos, portanto todos os cisnes são brancos." (Parte de exemplos → cria uma regra geral.)</li>
+                <li><strong>Dedutivo:</strong> "Todos os mamíferos respiram. O gato é mamífero. Logo, o gato respira." (Parte da regra → aplica a um caso.)</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Exemplo
+              </h3>
+              <div class="example-box example-level-simple">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+                  Exemplo do Dia a Dia
+                </span>
+                <p><strong>Indução:</strong> Cada vez que como chocolate à noite, tenho insônia. Conclusão: chocolate à noite causa insônia. <strong>Dedução:</strong> Cafeína causa insônia. Chocolate contém cafeína. Logo, chocolate pode causar insônia.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== LEVEL 2 ===== -->
+          <div class="concept-level-panel active" data-level="2">
+            <div class="concept-definition">
+              <p>O <strong>método indutivo</strong> parte de observações particulares para generalizações (bottom-up), sendo central na pesquisa exploratória e qualitativa. O <strong>método dedutivo</strong> parte de premissas gerais para conclusões particulares (top-down), sendo característico da pesquisa confirmatória e quantitativa. Ambos são complementares e frequentemente combinados na prática científica.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                Quadro Comparativo
+              </h3>
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Critério</th>
+                      <th>Método Indutivo</th>
+                      <th>Método Dedutivo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Direção</strong></td>
+                      <td>Particular → Geral</td>
+                      <td>Geral → Particular</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Objetivo</strong></td>
+                      <td>Gerar teorias e hipóteses</td>
+                      <td>Testar teorias e hipóteses</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Abordagem</strong></td>
+                      <td>Exploratória, qualitativa</td>
+                      <td>Confirmatória, quantitativa</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Ponto de partida</strong></td>
+                      <td>Dados, observações</td>
+                      <td>Teoria, premissas</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Conclusão</strong></td>
+                      <td>Provável (nunca 100% certa)</td>
+                      <td>Certa (se premissas forem verdadeiras)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Associado a</strong></td>
+                      <td>Bacon, empirismo</td>
+                      <td>Aristóteles, Descartes, racionalismo</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Quando usar</strong></td>
+                      <td>Temas pouco explorados, pesquisa qualitativa, grounded theory</td>
+                      <td>Temas com base teórica sólida, testes de hipóteses, ensaios clínicos</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Exemplos
+              </h3>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                  Indutivo — Pesquisa Qualitativa
+                </span>
+                <p>Pesquisador entrevista 30 professores sobre dificuldades no ensino remoto. A partir dos relatos, identifica padrões (categorias) como "fadiga digital", "dificuldade de avaliação" e "isolamento profissional". Constrói uma <strong>teoria fundamentada</strong> (grounded theory) sobre as barreiras ao ensino online.</p>
+              </div>
+              <div class="example-box example-level-intermediate">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                  Dedutivo — Pesquisa Quantitativa
+                </span>
+                <p>Baseando-se na Teoria da Autodeterminação, o pesquisador formula: "Maior autonomia no trabalho → maior satisfação profissional". Aplica questionários validados em n=500 trabalhadores e testa a hipótese com regressão linear múltipla. A teoria é <strong>testada</strong>, não gerada.</p>
+              </div>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Conceitos Relacionados
+              </h3>
+              <div class="relations-grid">
+                <a href="#metodo-cientifico" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Método Científico
+                </a>
+                <a href="#hipotese" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Hipótese Científica
+                </a>
+                <a href="#variaveis" class="relation-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  Variáveis de Pesquisa
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== LEVEL 3 ===== -->
+          <div class="concept-level-panel" data-level="3">
+            <div class="concept-definition">
+              <p>A distinção entre indução e dedução remonta a Aristóteles, mas ganha nova dimensão com Peirce, que introduz a <strong>abdução</strong> (inferência à melhor explicação) como terceira forma de raciocínio. Na prática contemporânea, a maioria dos programas de pesquisa opera via <strong>ciclo abdutivo-dedutivo</strong>: gera-se uma hipótese pela abdução (insight), deduzem-se consequências testáveis e avalia-se pela experimentação — o chamado método <strong>hipotético-dedutivo</strong>.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                Método Hipotético-Dedutivo
+              </h3>
+              <p>Formulado sistematicamente por <strong>Karl Popper</strong>, o método hipotético-dedutivo segue a lógica: (1) identificar um problema, (2) propor uma conjectura ousada, (3) deduzir consequências observáveis, (4) tentar falseá-las. Se a predição falha, a hipótese é refutada; se resiste, é <strong>corroborada</strong> (nunca "provada").</p>
+              <p>A contribuição de <strong>C. S. Peirce</strong> foi formalizar a <strong>abdução</strong>: dado um fato surpreendente (F), se a hipótese H explicaria F, então há razão para suspeitar de H. Diferente da indução (que generaliza padrões) e da dedução (que deriva consequências), a abdução gera novas hipóteses.</p>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Exemplo Avançado
+              </h3>
+              <div class="example-box example-level-advanced">
+                <span class="example-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                  Mixed Methods — Ciclo Completo
+                </span>
+                <p><strong>Fase 1 (indutiva):</strong> Entrevistas exploratórias com n=20 pacientes identificam padrão emergente — "medo do estigma atrasa a busca por tratamento". <strong>Fase 2 (abdutiva):</strong> A partir desse padrão, formula-se a hipótese: "Intervenção de redução de estigma aumenta a adesão ao tratamento em ≥25%". <strong>Fase 3 (hipotético-dedutiva):</strong> RCT com n=300 testa a hipótese. O ciclo integra as três formas de raciocínio em um design de métodos mistos explanatório sequencial.</p>
+              </div>
+            </div>
+
+            <div class="concept-section" id="conclusao">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Críticas e Limitações
+              </h3>
+              <ul class="info-list danger">
+                <li><strong>Problema de Hume</strong> — a indução não pode ser justificada logicamente; conclusões indutivas são sempre probabilísticas.</li>
+                <li><strong>Falseacionismo ingênuo</strong> — uma única observação contrária nem sempre refuta uma teoria (hipóteses auxiliares, cláusulas ceteris paribus).</li>
+                <li><strong>Incomensurabilidade paradigmática</strong> (Kuhn) — teorias rivais podem não ser comparáveis por critérios lógicos comuns.</li>
+                <li><strong>Viés de seleção</strong> — pesquisadores tendem a escolher o método que confirma suas expectativas prévias.</li>
+              </ul>
+            </div>
+
+            <div class="concept-section">
+              <h3 class="concept-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                Referências
+              </h3>
+              <div class="references-list">
+                <div class="reference-item">POPPER, K. <em>A Lógica da Pesquisa Científica</em>. São Paulo: Cultrix, 1972.</div>
+                <div class="reference-item">PEIRCE, C. S. <em>Collected Papers</em>. Harvard University Press, 1931–1958.</div>
+                <div class="reference-item">CRESWELL, J. W.; PLANO CLARK, V. L. <em>Designing and Conducting Mixed Methods Research</em>. 3rd ed. Sage, 2018.</div>
+                <div class="reference-item">HUME, D. <em>An Enquiry Concerning Human Understanding</em>. 1748.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ===== Callout de síntese ===== -->
+        <div class="callout callout-info">
+          <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="16" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12.01" y2="8"/>
+          </svg>
+          <div>
+            <p><strong>Síntese:</strong> O método científico não é uma receita rígida, mas um <strong>sistema flexível de pensamento crítico</strong>. Hipóteses claras, variáveis bem definidas e raciocínio lógico (indutivo ou dedutivo) são os pilares que transformam curiosidade em conhecimento confiável.</p>
+          </div>
+        </div>
+
+
+        <!-- ===== MODULE NAVIGATION ===== -->
+        <div class="module-nav">
+          <a href="fundamentos.html" class="module-nav-link prev">
+            <span class="module-nav-label">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:4px"><polyline points="15 18 9 12 15 6"/></svg>
+              Módulo Anterior
+            </span>
+            <span class="module-nav-title">F0 — Fundamentos</span>
+          </a>
+          <a href="planejamento.html" class="module-nav-link next">
+            <span class="module-nav-label">
+              Próximo Módulo
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-left:4px"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+            <span class="module-nav-title">F4 — Planejamento de Pesquisa</span>
+          </a>
+        </div>
+
+      </div><!-- /.module-content -->
+    </div><!-- /.module-layout -->
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <svg class="footer-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="4" width="20" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+            <rect x="10" y="2" width="20" height="26" rx="2" fill="var(--color-primary)" stroke="currentColor" stroke-width="2"/>
+            <line x1="14" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="14" y1="13" x2="26" y2="13" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="14" y1="17" x2="22" y2="17" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="14" y1="21" x2="24" y2="21" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          Manual do Pesquisador
+        </div>
+        <p class="footer-text">Guia completo de pesquisa científica, escrita acadêmica e publicação em periódicos.</p>
+        <div class="footer-links">
+          <a href="../index.html">Início</a>
+          <a href="fundamentos.html">Fundamentos</a>
+          <a href="metodo-cientifico.html">Método Científico</a>
+          <a href="planejamento.html">Planejamento</a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">Manual do Pesquisador &mdash; Conteúdo educacional de acesso livre.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="../script.js"></script>
+</body>
+</html>

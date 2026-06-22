@@ -3,20 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Manual Mestre do Pesquisador Iniciante — Guia definitivo de pesquisa científica, escrita de artigos e publicação acadêmica. Metodologias, revisão sistemática, submissão e publicação em revistas.">
-  <meta name="keywords" content="pesquisa científica, artigo científico, revisão sistemática, publicação acadêmica, PRISMA, PICOS, Qualis CAPES, SciELO, metodologia científica">
+  <meta name="description" content="Ecossistema da Pesquisa Científica — portal multipágina com fundamentos, planejamento, escrita, publicação, submissão, roadmap e glossário técnico para pesquisadores.">
   <meta name="author" content="Manual do Pesquisador">
-  <title>Manual Mestre do Pesquisador Iniciante | Guia de Pesquisa Científica</title>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://onecio.github.io/manual-pesquisador/">
+  <meta property="og:title" content="Ecossistema da Pesquisa Científica">
+  <meta property="og:description" content="Portal de referência com módulos essenciais, glossário técnico e roadmap da jornada científica.">
+  <meta property="og:site_name" content="Manual do Pesquisador">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ecossistema da Pesquisa Científica">
+  <meta name="twitter:description" content="Fundamentos, planejamento, escrita, publicação e submissão em um portal único para pesquisa científica.">
+  <title>Ecossistema da Pesquisa Científica</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- ===== NAVIGATION ===== -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
   <nav class="main-nav" id="mainNav">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="2" y="4" width="20" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
           <rect x="10" y="2" width="20" height="26" rx="2" fill="var(--color-surface)" stroke="currentColor" stroke-width="2"/>
@@ -27,834 +36,259 @@
         </svg>
         <span>Manual do Pesquisador</span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação">
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir navegação">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="6" x2="21" y2="6"/>
           <line x1="3" y1="12" x2="21" y2="12"/>
           <line x1="3" y1="18" x2="21" y2="18"/>
         </svg>
       </button>
+
       <ul class="nav-links" id="navLinks">
-        <li><a href="#modulo1" data-module="1">Metodologias</a></li>
-        <li><a href="#modulo2" data-module="2">Ferramentas</a></li>
-        <li><a href="#modulo3" data-module="3">Ciência Aberta</a></li>
-        <li><a href="#modulo4" data-module="4">Sistemas Editoriais</a></li>
-        <li><a href="#modulo5" data-module="5">Modelo Brasileiro</a></li>
-        <li><a href="#modulo6" data-module="6">Submissão</a></li>
+        <li><a href="#blocos">Módulos</a></li>
+        <li><a href="glossario.html">Glossário</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
       </ul>
+
+      <div class="nav-search">
+        <svg class="nav-search-icon" viewBox="0 0 16 16" fill="none">
+          <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <input type="text" id="globalSearch" class="nav-search-input" placeholder="Buscar módulo ou conceito…" autocomplete="off">
+        <div id="searchResults" class="search-results" aria-live="polite"></div>
+      </div>
     </div>
   </nav>
 
-  <!-- ===== HERO SECTION ===== -->
-  <header class="hero" id="hero">
-    <div class="hero-bg-pattern"></div>
-    <div class="hero-content">
-      <div class="hero-badge">Guia Definitivo</div>
-      <h1>Manual Mestre do<br><span class="hero-highlight">Pesquisador Iniciante</span></h1>
-      <p class="hero-subtitle">O guia completo de pesquisa científica, escrita de artigos e publicação acadêmica. Da concepção da pergunta de pesquisa até a publicação em periódicos de alto impacto.</p>
-      <div class="hero-actions">
-        <a href="#modulo1" class="btn btn-primary">
-          Iniciar Leitura
-          <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
-        </a>
-        <a href="#modulo6" class="btn btn-outline">Glossário Técnico</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <span class="hero-stat-number" data-count="6">0</span>
-          <span class="hero-stat-label">Módulos Completos</span>
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-bg-pattern" aria-hidden="true"></div>
+      <div class="hero-content">
+        <span class="hero-badge">Portal de Referência</span>
+        <h1>Ecossistema da<br><span class="hero-highlight">Pesquisa Científica</span></h1>
+        <p class="hero-subtitle">Uma base organizada para estudar fundamentos, planejar projetos, escrever melhor, publicar com estratégia e navegar o processo editorial com mais clareza.</p>
+        <div class="hero-actions">
+          <a href="#blocos" class="btn btn-primary">Explorar módulos</a>
+          <a href="roadmap.html" class="btn btn-outline">Ver roadmap</a>
+          <a href="glossario.html" class="btn btn-outline">Abrir glossário</a>
         </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <span class="hero-stat-number" data-count="30">0</span>
-          <span class="hero-stat-label">Conceitos Essenciais</span>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <span class="hero-stat-number" data-count="10">0</span>
-          <span class="hero-stat-label">Revistas Destacadas</span>
-        </div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <svg class="hero-illustration" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Microscope / Research Illustration -->
-        <circle cx="250" cy="200" r="160" fill="url(#heroGrad1)" opacity="0.08"/>
-        <circle cx="250" cy="200" r="120" fill="url(#heroGrad1)" opacity="0.06"/>
-        <!-- Book -->
-        <rect x="160" y="140" width="80" height="110" rx="4" fill="var(--color-primary)" opacity="0.15" stroke="var(--color-primary)" stroke-width="1.5"/>
-        <rect x="170" y="130" width="80" height="110" rx="4" fill="var(--color-surface)" stroke="var(--color-primary)" stroke-width="1.5"/>
-        <line x1="182" y1="150" x2="238" y2="150" stroke="var(--color-primary)" stroke-width="1.2" opacity="0.5"/>
-        <line x1="182" y1="160" x2="238" y2="160" stroke="var(--color-primary)" stroke-width="1.2" opacity="0.5"/>
-        <line x1="182" y1="170" x2="225" y2="170" stroke="var(--color-primary)" stroke-width="1.2" opacity="0.5"/>
-        <line x1="182" y1="185" x2="238" y2="185" stroke="var(--color-primary)" stroke-width="1.2" opacity="0.3"/>
-        <line x1="182" y1="195" x2="238" y2="195" stroke="var(--color-primary)" stroke-width="1.2" opacity="0.3"/>
-        <line x1="182" y1="205" x2="218" y2="205" stroke="var(--color-primary)" stroke-width="1.2" opacity="0.3"/>
-        <!-- Magnifying Glass -->
-        <circle cx="320" cy="170" r="35" fill="none" stroke="var(--color-accent)" stroke-width="2.5"/>
-        <line x1="345" y1="195" x2="370" y2="220" stroke="var(--color-accent)" stroke-width="3" stroke-linecap="round"/>
-        <circle cx="320" cy="170" r="25" fill="var(--color-accent)" opacity="0.08"/>
-        <!-- Chart bars -->
-        <rect x="290" y="270" width="18" height="50" rx="3" fill="var(--color-primary)" opacity="0.25"/>
-        <rect x="315" y="250" width="18" height="70" rx="3" fill="var(--color-primary)" opacity="0.4"/>
-        <rect x="340" y="260" width="18" height="60" rx="3" fill="var(--color-accent)" opacity="0.35"/>
-        <rect x="365" y="240" width="18" height="80" rx="3" fill="var(--color-primary)" opacity="0.55"/>
-        <line x1="285" y1="320" x2="390" y2="320" stroke="var(--color-text-muted)" stroke-width="1"/>
-        <!-- Floating particles -->
-        <circle cx="180" cy="100" r="3" fill="var(--color-accent)" opacity="0.4">
-          <animate attributeName="cy" values="100;90;100" dur="3s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="380" cy="130" r="2.5" fill="var(--color-primary)" opacity="0.5">
-          <animate attributeName="cy" values="130;120;130" dur="4s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="140" cy="260" r="2" fill="var(--color-accent)" opacity="0.3">
-          <animate attributeName="cy" values="260;250;260" dur="3.5s" repeatCount="indefinite"/>
-        </circle>
-        <!-- Connections -->
-        <line x1="250" y1="250" x2="295" y2="280" stroke="var(--color-primary)" stroke-width="0.8" opacity="0.2" stroke-dasharray="4 3"/>
-        <line x1="250" y1="250" x2="210" y2="240" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.2" stroke-dasharray="4 3"/>
-        <defs>
-          <radialGradient id="heroGrad1" cx="0.5" cy="0.5" r="0.5">
-            <stop offset="0%" stop-color="var(--color-primary)"/>
-            <stop offset="100%" stop-color="var(--color-accent)"/>
-          </radialGradient>
-        </defs>
-      </svg>
-    </div>
-  </header>
-
-  <!-- ===== MODULES OVERVIEW ===== -->
-  <section class="modules-overview" id="modulesOverview">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Estrutura do Manual</span>
-        <h2>Seis Pilares do Conhecimento Científico</h2>
-        <p>Cada módulo cobre uma dimensão essencial da jornada acadêmica, da concepção da pesquisa até a publicação final.</p>
-      </div>
-      <div class="modules-grid">
-        <a href="#modulo1" class="module-card" data-module="1">
-          <div class="module-card-number">01</div>
-          <div class="module-card-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L6 14v20l18 10 18-10V14L24 4z" stroke="currentColor" stroke-width="2"/><path d="M6 14l18 10 18-10" stroke="currentColor" stroke-width="2"/><line x1="24" y1="24" x2="24" y2="44" stroke="currentColor" stroke-width="2"/></svg>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="7">0</span>
+            <span class="hero-stat-label">Módulos ativos</span>
           </div>
-          <h3>Anatomia da Pesquisa</h3>
-          <p>Abordagens metodológicas, dados qualitativos vs. quantitativos e classificação por objetivos.</p>
-        </a>
-        <a href="#modulo2" class="module-card" data-module="2">
-          <div class="module-card-number">02</div>
-          <div class="module-card-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="4" stroke="currentColor" stroke-width="2"/><line x1="6" y1="16" x2="42" y2="16" stroke="currentColor" stroke-width="2"/><line x1="18" y1="16" x2="18" y2="42" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="29" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M34 33l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="2">0</span>
+            <span class="hero-stat-label">Páginas de apoio</span>
           </div>
-          <h3>Ferramentas Metodológicas</h3>
-          <p>PICOS, PRISMA, CASP, ROBIS, CERQual e os componentes estruturais do artigo.</p>
-        </a>
-        <a href="#modulo3" class="module-card" data-module="3">
-          <div class="module-card-number">03</div>
-          <div class="module-card-icon">
-            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M24 6a18 18 0 010 36" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/><ellipse cx="24" cy="24" rx="8" ry="18" stroke="currentColor" stroke-width="1.5"/><line x1="6" y1="24" x2="42" y2="24" stroke="currentColor" stroke-width="1.5"/></svg>
-          </div>
-          <h3>Ciência Aberta</h3>
-          <p>Pré-registro, Open Science Framework e o ecossistema de transparência científica.</p>
-        </a>
-        <a href="#modulo4" class="module-card" data-module="4">
-          <div class="module-card-number">04</div>
-          <div class="module-card-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="32" height="28" rx="3" stroke="currentColor" stroke-width="2"/><line x1="8" y1="18" x2="40" y2="18" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="14" r="1.5" fill="currentColor"/><circle cx="19" cy="14" r="1.5" fill="currentColor"/><circle cx="24" cy="14" r="1.5" fill="currentColor"/><rect x="14" y="23" width="20" height="3" rx="1" fill="currentColor" opacity="0.3"/><rect x="14" y="29" width="14" height="3" rx="1" fill="currentColor" opacity="0.3"/></svg>
-          </div>
-          <h3>Sistemas Editoriais</h3>
-          <p>OJS, ScholarOne, Editorial Manager e o fluxo editorial das revistas científicas.</p>
-        </a>
-        <a href="#modulo5" class="module-card" data-module="5">
-          <div class="module-card-number">05</div>
-          <div class="module-card-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l4 8h9l-7 5 3 9-9-6-9 6 3-9-7-5h9l4-8z" stroke="currentColor" stroke-width="2"/><rect x="10" y="32" width="28" height="10" rx="2" stroke="currentColor" stroke-width="2"/><line x1="16" y1="37" x2="32" y2="37" stroke="currentColor" stroke-width="1.5"/></svg>
-          </div>
-          <h3>Modelo Brasileiro</h3>
-          <p>Qualis CAPES, SciELO, revistas gratuitas e o Acesso Aberto Diamante.</p>
-        </a>
-        <a href="#modulo6" class="module-card" data-module="6">
-          <div class="module-card-number">06</div>
-          <div class="module-card-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M14 8h20l6 6v26a2 2 0 01-2 2H10a2 2 0 01-2-2V10a2 2 0 012-2h4z" stroke="currentColor" stroke-width="2"/><path d="M34 8v6h6" stroke="currentColor" stroke-width="2"/><path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Submissão e Glossário</h3>
-          <p>Peer Review, Double-Blind, Preprints, Cover Letter e termos técnicos essenciais.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== MODULE 1 ===== -->
-  <section class="module-section" id="modulo1">
-    <div class="container">
-      <div class="module-header">
-        <div class="module-number-badge">Módulo 01</div>
-        <h2>Anatomia da Pesquisa</h2>
-        <p class="module-description">Abordagens e Metodologias — Todo projeto de pesquisa nasce de uma dúvida e de um método planejado para respondê-la.</p>
-      </div>
-
-      <!-- Nature of Data -->
-      <div class="content-block">
-        <h3 class="content-title">
-          <svg class="content-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
-          A Natureza dos Dados: Qualitativa vs. Quantitativa
-        </h3>
-        <div class="research-types-grid">
-          <div class="research-type-card research-type-quant">
-            <div class="research-type-header">
-              <svg class="research-type-icon" viewBox="0 0 32 32" fill="none"><rect x="4" y="20" width="6" height="8" rx="1" fill="currentColor" opacity="0.3"/><rect x="13" y="14" width="6" height="14" rx="1" fill="currentColor" opacity="0.5"/><rect x="22" y="8" width="6" height="20" rx="1" fill="currentColor" opacity="0.7"/></svg>
-              <h4>Quantitativa</h4>
-            </div>
-            <div class="research-type-tag">Dados Numéricos</div>
-            <p>Focada em <strong>medir, contar e gerar dados estatísticos</strong>. Busca a objetividade absoluta e quer generalizar os resultados para uma população inteira.</p>
-            <ul class="research-type-tools">
-              <li>Questionários fechados</li>
-              <li>Gráficos e testes matemáticos</li>
-              <li>Estatística e padrões</li>
-              <li>Generalização de resultados</li>
-            </ul>
-          </div>
-          <div class="research-type-card research-type-quali">
-            <div class="research-type-header">
-              <svg class="research-type-icon" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="10" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M6 28c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="currentColor" stroke-width="1.5"/></svg>
-              <h4>Qualitativa</h4>
-            </div>
-            <div class="research-type-tag">Significados</div>
-            <p>Focada em <strong>compreender comportamento humano</strong>, sentimentos, motivações e valores. Não se importa com números, mas com o significado das coisas.</p>
-            <ul class="research-type-tools">
-              <li>Entrevistas abertas</li>
-              <li>Grupos de discussão</li>
-              <li>Opiniões e culturas</li>
-              <li>Profundidade analítica</li>
-            </ul>
-          </div>
-          <div class="research-type-card research-type-mixed">
-            <div class="research-type-header">
-              <svg class="research-type-icon" viewBox="0 0 32 32" fill="none"><circle cx="12" cy="16" r="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2"/><circle cx="20" cy="16" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
-              <h4>Mista</h4>
-            </div>
-            <div class="research-type-tag">União de Ambos</div>
-            <p><strong>Combina dados numéricos e qualitativos</strong> no mesmo estudo para obter uma visão completa do fenômeno pesquisado.</p>
-            <ul class="research-type-tools">
-              <li>Fortalece o achado</li>
-              <li>Contextualiza dados</li>
-              <li>Visão panorâmica</li>
-              <li>Validação cruzada</li>
-            </ul>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="1">0</span>
+            <span class="hero-stat-label">Hub integrado</span>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Classification by Objectives -->
-      <div class="content-block">
-        <h3 class="content-title">
-          <svg class="content-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
-          Classificação pelos Objetivos
-        </h3>
-        <div class="objectives-list">
-          <div class="objective-item" data-level="1">
-            <div class="objective-level">
-              <span class="objective-level-label">Nível 1</span>
-              <span class="objective-level-name">Exploratória</span>
+    <section class="blocks-section" id="blocos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Estrutura</span>
+          <h2>Mapa do portal</h2>
+          <p>Os blocos abaixo mostram o que já está publicado, o que serve como referência transversal e quais trilhas ainda estão reservadas para expansão.</p>
+        </div>
+
+        <div class="blocks-grid">
+          <article class="block-card block-a">
+            <div class="block-card-header">
+              <span class="block-letter">A</span>
+              <h3>Alicerces</h3>
             </div>
-            <div class="objective-content">
-              <p>Realizada quando o assunto é <strong>pouco conhecido ou muito novo</strong>. O objetivo é familiarizar-se com o tema.</p>
-              <div class="objective-example">
-                <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                Exemplo: pesquisar uma nova doença recém-descoberta.
-              </div>
+            <div class="block-modules">
+              <a href="modulos/fundamentos.html" class="block-module-link"><span class="module-code">F0</span>Fundamentos <svg viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="modulos/metodo-cientifico.html" class="block-module-link"><span class="module-code">F1</span>Método Científico <svg viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <span class="block-module-link is-disabled"><span class="module-code">F2</span>Ética e Integridade</span>
             </div>
-          </div>
-          <div class="objective-item" data-level="2">
-            <div class="objective-level">
-              <span class="objective-level-label">Nível 2</span>
-              <span class="objective-level-name">Descritiva</span>
+          </article>
+
+          <article class="block-card block-b">
+            <div class="block-card-header">
+              <span class="block-letter">B</span>
+              <h3>Planejamento</h3>
             </div>
-            <div class="objective-content">
-              <p>Detalha as <strong>características de uma população ou fenômeno</strong> bem estabelecido. Descreve o "o que é", sem buscar relações de causa profunda.</p>
-              <div class="objective-example">
-                <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                Exemplo: o perfil demográfico de estudantes universitários no Brasil.
-              </div>
+            <div class="block-modules">
+              <span class="block-module-link is-disabled"><span class="module-code">F3</span>Ciência Aberta</span>
+              <a href="modulos/planejamento.html" class="block-module-link"><span class="module-code">F4</span>Planejamento <svg viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <span class="block-module-link is-disabled"><span class="module-code">F5</span>Revisão da Literatura</span>
             </div>
-          </div>
-          <div class="objective-item" data-level="3">
-            <div class="objective-level">
-              <span class="objective-level-label">Nível 3</span>
-              <span class="objective-level-name">Explicativa</span>
+          </article>
+
+          <article class="block-card block-c">
+            <div class="block-card-header">
+              <span class="block-letter">C</span>
+              <h3>Execução</h3>
             </div>
-            <div class="objective-content">
-              <p>O nível mais complexo. Busca identificar as <strong>causas diretas das coisas</strong>, determinando a razão e o "porquê" de um fenômeno acontecer.</p>
-              <div class="objective-example">
-                <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                Exemplo: por que determinada mutação genética causa o câncer.
-              </div>
+            <div class="block-modules">
+              <span class="block-module-link is-disabled"><span class="module-code">F6</span>Desenhos de Pesquisa</span>
+              <span class="block-module-link is-disabled"><span class="module-code">F7</span>Estatística</span>
+              <span class="block-module-link is-disabled"><span class="module-code">F11</span>Dados de Pesquisa</span>
             </div>
-          </div>
+          </article>
+
+          <article class="block-card block-d">
+            <div class="block-card-header">
+              <span class="block-letter">D</span>
+              <h3>Comunicação</h3>
+            </div>
+            <div class="block-modules">
+              <a href="modulos/escrita.html" class="block-module-link"><span class="module-code">F8</span>Escrita Científica <svg viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="modulos/publicacao.html" class="block-module-link"><span class="module-code">F9</span>Publicação <svg viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="modulos/submissao.html" class="block-module-link"><span class="module-code">F19</span>Submissão <svg viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <span class="block-module-link is-disabled"><span class="module-code">F10</span>Revisão por Pares</span>
+            </div>
+          </article>
+
+          <article class="block-card block-e">
+            <div class="block-card-header">
+              <span class="block-letter">E</span>
+              <h3>Identidade</h3>
+            </div>
+            <div class="block-modules">
+              <span class="block-module-link is-disabled"><span class="module-code">F12</span>Identidade do Pesquisador</span>
+              <span class="block-module-link is-disabled"><span class="module-code">F13</span>Financiamento</span>
+              <span class="block-module-link is-disabled"><span class="module-code">F14</span>Bibliometria</span>
+            </div>
+          </article>
+
+          <article class="block-card block-f">
+            <div class="block-card-header">
+              <span class="block-letter">F</span>
+              <h3>Impacto</h3>
+            </div>
+            <div class="block-modules">
+              <span class="block-module-link is-disabled"><span class="module-code">F15</span>Divulgação Científica</span>
+              <span class="block-module-link is-disabled"><span class="module-code">F16</span>Ferramentas Digitais</span>
+              <span class="block-module-link is-disabled"><span class="module-code">F17</span>IA na Pesquisa</span>
+            </div>
+          </article>
+
+          <article class="block-card block-g">
+            <div class="block-card-header">
+              <span class="block-letter">G</span>
+              <h3>Nacional</h3>
+            </div>
+            <div class="block-modules">
+              <a href="modulos/modelo-brasileiro.html" class="block-module-link"><span class="module-code">F18</span>Modelo Brasileiro <svg viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="block-card block-h">
+            <div class="block-card-header">
+              <span class="block-letter">H</span>
+              <h3>Referência</h3>
+            </div>
+            <div class="block-modules">
+              <a href="glossario.html" class="block-module-link"><span class="module-code">REF</span>Glossário técnico <svg viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="roadmap.html" class="block-module-link"><span class="module-code">REF</span>Roadmap da jornada <svg viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <span class="block-module-link is-disabled"><span class="module-code">FAQ</span>Perguntas frequentes</span>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <!-- Data Collection -->
-      <div class="content-block">
-        <h3 class="content-title">
-          <svg class="content-icon" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg>
-          Procedimentos e Coleta de Dados
-        </h3>
-        <div class="procedures-grid">
-          <div class="procedure-card">
-            <div class="procedure-icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v6m12-4v4m0 0H3m18 0v10a2 2 0 01-2 2H5a2 2 0 01-2-2V9" stroke="currentColor" stroke-width="1.5"/></svg>
+    <section class="roadmap-section" id="roadmap">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Jornada</span>
+          <h2>Da pergunta ao impacto</h2>
+          <p>Uma visão panorâmica para orientar a navegação do portal e mostrar como cada módulo se encaixa na prática da pesquisa científica.</p>
+        </div>
+
+        <div class="roadmap-flow">
+          <article class="roadmap-step roadmap-phase-idea">
+            <div class="roadmap-step-marker">
+              <div class="roadmap-dot">1</div>
+              <div class="roadmap-line"></div>
             </div>
-            <h4>Pesquisa de Campo / Experimental</h4>
-            <p>O cientista coleta dados diretamente no mundo real ou em laboratórios controlados por meio de testes, entrevistas ou exames.</p>
-          </div>
-          <div class="procedure-card">
-            <div class="procedure-icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 016.5 17H20" stroke="currentColor" stroke-width="1.5"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" stroke="currentColor" stroke-width="1.5"/><line x1="9" y1="7" x2="16" y2="7" stroke="currentColor" stroke-width="1.2"/><line x1="9" y1="11" x2="16" y2="11" stroke="currentColor" stroke-width="1.2"/></svg>
+            <div class="roadmap-step-content">
+              <h3 class="roadmap-step-title">Curiosidade e observação</h3>
+              <p class="roadmap-step-desc">Tudo começa com um problema relevante, uma dúvida persistente ou uma lacuna percebida no conhecimento.</p>
             </div>
-            <h4>Pesquisa Bibliográfica / Documental</h4>
-            <p>Baseia-se exclusivamente em materiais já impressos ou gravados, como livros, teses, atas de reuniões, leis e relatórios históricos.</p>
-          </div>
-          <div class="procedure-card procedure-card-highlight">
-            <div class="procedure-badge">Topo da Pirâmide</div>
-            <div class="procedure-icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 16H4L12 2z" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="10" x2="12" y2="14" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="16" r="0.8" fill="currentColor"/></svg>
+          </article>
+
+          <article class="roadmap-step roadmap-phase-plan">
+            <div class="roadmap-step-marker">
+              <div class="roadmap-dot">2</div>
+              <div class="roadmap-line"></div>
             </div>
-            <h4>Revisão Sistemática</h4>
-            <p>Usa como matéria-prima artigos científicos já publicados. Reúne, avalia criticamente e sintetiza todas as evidências globais sobre um tema específico de forma imparcial.</p>
-          </div>
+            <div class="roadmap-step-content">
+              <h3 class="roadmap-step-title">Definição do problema</h3>
+              <p class="roadmap-step-desc">A questão de pesquisa é delimitada, contextualizada e traduzida em objetivos claros e viáveis.</p>
+            </div>
+          </article>
+
+          <article class="roadmap-step roadmap-phase-plan">
+            <div class="roadmap-step-marker">
+              <div class="roadmap-dot">3</div>
+              <div class="roadmap-line"></div>
+            </div>
+            <div class="roadmap-step-content">
+              <h3 class="roadmap-step-title">Planejamento metodológico</h3>
+              <p class="roadmap-step-desc">Entram aqui desenho do estudo, estratégia de busca, critérios, cronograma, ética e pré-registro.</p>
+            </div>
+          </article>
+
+          <article class="roadmap-step roadmap-phase-exec">
+            <div class="roadmap-step-marker">
+              <div class="roadmap-dot">4</div>
+              <div class="roadmap-line"></div>
+            </div>
+            <div class="roadmap-step-content">
+              <h3 class="roadmap-step-title">Coleta e análise</h3>
+              <p class="roadmap-step-desc">Os dados são obtidos, tratados e interpretados com coerência metodológica e transparência.</p>
+            </div>
+          </article>
+
+          <article class="roadmap-step roadmap-phase-write">
+            <div class="roadmap-step-marker">
+              <div class="roadmap-dot">5</div>
+              <div class="roadmap-line"></div>
+            </div>
+            <div class="roadmap-step-content">
+              <h3 class="roadmap-step-title">Redação do manuscrito</h3>
+              <p class="roadmap-step-desc">A pesquisa é convertida em texto científico com estrutura clara, referências corretas e linguagem acadêmica.</p>
+            </div>
+          </article>
+
+          <article class="roadmap-step roadmap-phase-publish">
+            <div class="roadmap-step-marker">
+              <div class="roadmap-dot">6</div>
+              <div class="roadmap-line"></div>
+            </div>
+            <div class="roadmap-step-content">
+              <h3 class="roadmap-step-title">Submissão e revisão</h3>
+              <p class="roadmap-step-desc">Escolha do periódico, checklist editorial, resposta a pareceres e adaptação às exigências da revista.</p>
+            </div>
+          </article>
+
+          <article class="roadmap-step roadmap-phase-impact">
+            <div class="roadmap-step-marker">
+              <div class="roadmap-dot">7</div>
+            </div>
+            <div class="roadmap-step-content">
+              <h3 class="roadmap-step-title">Publicação e impacto</h3>
+              <p class="roadmap-step-desc">Depois da aceitação, o trabalho passa a circular, ser citado, reutilizado e gerar contribuição social e científica.</p>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ===== MODULE 2 ===== -->
-  <section class="module-section module-section-alt" id="modulo2">
-    <div class="container">
-      <div class="module-header">
-        <div class="module-number-badge">Módulo 02</div>
-        <h2>Componentes Estruturais e Ferramentas Metodológicas</h2>
-        <p class="module-description">Para que um artigo de alto nível tenha validade científica, ele precisa adotar componentes e checklists validados internacionalmente.</p>
-      </div>
-
-      <!-- Methodological Funnel -->
-      <div class="content-block">
-        <div class="funnel-diagram">
-          <h3 class="funnel-title">Funil Metodológico</h3>
-          <div class="funnel-steps">
-            <div class="funnel-step" data-step="1">
-              <div class="funnel-step-number">1</div>
-              <div class="funnel-step-content">
-                <strong>PICOS</strong>
-                <span>Pergunta de pesquisa cirúrgica</span>
-              </div>
-            </div>
-            <div class="funnel-connector">
-              <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div class="funnel-step" data-step="2">
-              <div class="funnel-step-number">2</div>
-              <div class="funnel-step-content">
-                <strong>Critérios de Inclusão/Exclusão</strong>
-                <span>Regras de entrada no estudo</span>
-              </div>
-            </div>
-            <div class="funnel-connector">
-              <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div class="funnel-step" data-step="3">
-              <div class="funnel-step-number">3</div>
-              <div class="funnel-step-content">
-                <strong>PRISMA</strong>
-                <span>Seleção transparente de artigos</span>
-              </div>
-            </div>
-            <div class="funnel-connector">
-              <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div class="funnel-step" data-step="4">
-              <div class="funnel-step-number">4</div>
-              <div class="funnel-step-content">
-                <strong>ROBIS / CASP</strong>
-                <span>Avaliação crítica da qualidade</span>
-              </div>
-            </div>
-            <div class="funnel-connector">
-              <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div class="funnel-step" data-step="5">
-              <div class="funnel-step-number">5</div>
-              <div class="funnel-step-content">
-                <strong>CERQual</strong>
-                <span>Grau de confiança na conclusão</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tools Detail -->
-      <div class="content-block">
-        <h3 class="content-title">
-          <svg class="content-icon" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="1.5"/></svg>
-          Detalhamento das Ferramentas
-        </h3>
-        <div class="tools-accordion">
-          <div class="tool-item">
-            <button class="tool-header" aria-expanded="false">
-              <div class="tool-header-left">
-                <span class="tool-acronym">PICOS</span>
-                <span class="tool-name">População, Intervenção, Comparação, Outcome, Study Design</span>
-              </div>
-              <svg class="tool-chevron" viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </button>
-            <div class="tool-body">
-              <p>Fórmula fixa para desenhar a sua pergunta de pesquisa sem deixar margem para ambiguidades. Cada letra define um componente essencial da questão de investigação:</p>
-              <div class="picos-grid">
-                <div class="picos-item"><strong>P</strong><span>População — quem será estudado</span></div>
-                <div class="picos-item"><strong>I</strong><span>Intervenção — o que será testado</span></div>
-                <div class="picos-item"><strong>C</strong><span>Comparação — contra o quê</span></div>
-                <div class="picos-item"><strong>O</strong><span>Outcome — qual resultado esperado</span></div>
-                <div class="picos-item"><strong>S</strong><span>Study Design — tipo de estudo</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="tool-item">
-            <button class="tool-header" aria-expanded="false">
-              <div class="tool-header-left">
-                <span class="tool-acronym">PRISMA</span>
-                <span class="tool-name">Fluxograma de Seleção de Artigos</span>
-              </div>
-              <svg class="tool-chevron" viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </button>
-            <div class="tool-body">
-              <p>Diagrama padrão internacional que rastreia visualmente o fluxo de artigos encontrados, triados, excluídos e finalmente incluídos na sua revisão. Prova que você não escolheu seus artigos favoritos a dedo.</p>
-            </div>
-          </div>
-          <div class="tool-item">
-            <button class="tool-header" aria-expanded="false">
-              <div class="tool-header-left">
-                <span class="tool-acronym">CASP</span>
-                <span class="tool-name">Critical Appraisal Skills Programme</span>
-              </div>
-              <svg class="tool-chevron" viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </button>
-            <div class="tool-body">
-              <p>Checklist metodológico usado para avaliar criticamente a qualidade de artigos específicos e julgar se eles foram bem executados pelos autores originais.</p>
-            </div>
-          </div>
-          <div class="tool-item">
-            <button class="tool-header" aria-expanded="false">
-              <div class="tool-header-left">
-                <span class="tool-acronym">ROBIS</span>
-                <span class="tool-name">Risk of Bias in Systematic Reviews</span>
-              </div>
-              <svg class="tool-chevron" viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </button>
-            <div class="tool-body">
-              <p>Ferramenta internacional voltada estritamente para avaliar o risco de viés em revisões de literatura. Ela aponta se o método dos estudos revisados tendeu a favorecer ou manipular algum resultado.</p>
-            </div>
-          </div>
-          <div class="tool-item">
-            <button class="tool-header" aria-expanded="false">
-              <div class="tool-header-left">
-                <span class="tool-acronym">CERQual</span>
-                <span class="tool-name">GRADE-CERQual — Confiança em Evidências Qualitativas</span>
-              </div>
-              <svg class="tool-chevron" viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </button>
-            <div class="tool-body">
-              <p>Abordagem rigorosa para avaliar o grau de confiança nas conclusões extraídas de revisões de estudos qualitativos. Classifica a certeza da evidência em:</p>
-              <div class="cerqual-levels">
-                <div class="cerqual-level cerqual-high">Alta</div>
-                <div class="cerqual-level cerqual-moderate">Moderada</div>
-                <div class="cerqual-level cerqual-low">Baixa</div>
-                <div class="cerqual-level cerqual-very-low">Muito Baixa</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Additional Components -->
-      <div class="content-block">
-        <h3 class="content-title">
-          <svg class="content-icon" viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="3" width="6" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/><line x1="9" y1="12" x2="15" y2="12" stroke="currentColor" stroke-width="1.5"/><line x1="9" y1="16" x2="13" y2="16" stroke="currentColor" stroke-width="1.5"/></svg>
-          Componentes Complementares do Artigo
-        </h3>
-        <div class="components-grid">
-          <div class="component-card">
-            <h4>Resumo Estruturado</h4>
-            <p>Sinopse curta do artigo dividida rigidamente em seções (Introdução, Objetivo, Método, Resultados, Conclusão). Permite ao leitor entender todo o estudo em menos de dois minutos.</p>
-          </div>
-          <div class="component-card">
-            <h4>Fontes de Busca</h4>
-            <p>As bases de dados digitais oficiais da ciência — PubMed, Embase, Scopus, SciELO — onde você rodou suas estratégias de pesquisa.</p>
-          </div>
-          <div class="component-card">
-            <h4>Tabela de Estudos</h4>
-            <p>Tabela comparativa central que resume panoramicamente as características dos estudos selecionados: Autor, Ano, Amostra, Intervenção, Resultados principais.</p>
-          </div>
-          <div class="component-card">
-            <h4>Limitações Explícitas</h4>
-            <p>Seção crucial de honestidade intelectual onde os autores apontam os pontos fracos, lacunas geográficas ou carências de dados da própria pesquisa.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== MODULE 3 ===== -->
-  <section class="module-section" id="modulo3">
-    <div class="container">
-      <div class="module-header">
-        <div class="module-number-badge">Módulo 03</div>
-        <h2>O Ecossistema da Ciência Aberta</h2>
-        <p class="module-description">A ciência moderna exige transparência total. Você deve provar que não alterou suas hipóteses no meio do caminho.</p>
-      </div>
-
-      <div class="content-block">
-        <h3 class="content-title">
-          <svg class="content-icon" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Pré-registro vs. Registro Pós-hoc
-        </h3>
-        <div class="comparison-cards">
-          <div class="comparison-card">
-            <div class="comparison-card-header comparison-pre">
-              <svg viewBox="0 0 24 24" fill="none" width="28" height="28"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <h4>Pré-registro</h4>
-            </div>
-            <p>O pesquisador publica seu <strong>protocolo de intenções</strong> — o planejamento exato de como fará a busca e a análise — <em>antes</em> de começar a coletar os dados.</p>
-            <div class="comparison-tag">Antes da coleta</div>
-          </div>
-          <div class="comparison-card">
-            <div class="comparison-card-header comparison-post">
-              <svg viewBox="0 0 24 24" fill="none" width="28" height="28"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <h4>Registro Pós-hoc</h4>
-            </div>
-            <p>O protocolo é registrado em uma plataforma pública <strong>após o estudo ter sido iniciado ou finalizado</strong>. Documenta ajustes metodológicos inevitáveis e justifica mudanças.</p>
-            <div class="comparison-tag">Após a coleta</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="content-block">
-        <h3 class="content-title">
-          <svg class="content-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="1.5"/></svg>
-          Open Science Framework (OSF)
-        </h3>
-        <div class="osf-feature-box">
-          <div class="osf-description">
-            <p>O OSF é uma <strong>plataforma online, gratuita e de código aberto</strong> voltada para a gestão de projetos científicos. Funciona como um <strong>cartório público da ciência</strong>.</p>
-          </div>
-          <div class="osf-features">
-            <div class="osf-feature">
-              <svg viewBox="0 0 20 20" fill="none" width="18" height="18"><path d="M9 3.5l1.5 3 3.5.5-2.5 2.5.5 3.5L9 11.5 6 13l.5-3.5L4 7l3.5-.5L9 3.5z" stroke="currentColor" stroke-width="1.2"/></svg>
-              <span>Registrar planos de estudo</span>
-            </div>
-            <div class="osf-feature">
-              <svg viewBox="0 0 20 20" fill="none" width="18" height="18"><rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><line x1="7" y1="8" x2="13" y2="8" stroke="currentColor" stroke-width="1.2"/><line x1="7" y1="12" x2="11" y2="12" stroke="currentColor" stroke-width="1.2"/></svg>
-              <span>Hospedar dados brutos e planilhas</span>
-            </div>
-            <div class="osf-feature">
-              <svg viewBox="0 0 20 20" fill="none" width="18" height="18"><path d="M4 4l6 6m0 0l6-6m-6 6v7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-              <span>Scripts para auditoria e reprodução</span>
-            </div>
-            <div class="osf-feature">
-              <svg viewBox="0 0 20 20" fill="none" width="18" height="18"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.2"/><path d="M10 6v4l2.5 2.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-              <span>Validação e reprodutibilidade global</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== MODULE 4 ===== -->
-  <section class="module-section module-section-alt" id="modulo4">
-    <div class="container">
-      <div class="module-header">
-        <div class="module-number-badge">Módulo 04</div>
-        <h2>Sistemas de Gerenciamento de Revistas</h2>
-        <p class="module-description">Artigos não são enviados por e-mail. Existem softwares internacionais dedicados a guiar o fluxo editorial de forma limpa.</p>
-      </div>
-
-      <div class="content-block">
-        <div class="systems-grid">
-          <div class="system-card system-card-primary">
-            <div class="system-card-badge">Software Livre</div>
-            <h4>Open Journal Systems (OJS)</h4>
-            <p>Software livre criado pelo <strong>Public Knowledge Project (PKP)</strong>. Gerencia todo o ciclo de vida de uma revista científica: submissão de arquivos, encaminhamento para avaliadores, controle de revisões e publicação online.</p>
-            <div class="system-stat">
-              <svg viewBox="0 0 20 20" fill="none" width="18" height="18"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.2"/><path d="M10 6v4l2 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-              <span>~90% das revistas das universidades públicas do Brasil</span>
-            </div>
-          </div>
-          <div class="system-card">
-            <div class="system-card-badge system-badge-commercial">Corporativo</div>
-            <h4>ScholarOne Manuscripts</h4>
-            <p>Software pago proprietário usado por grandes editoras internacionais. Inclui ferramentas avançadas de análise de métricas e banco de avaliadores global integrado.</p>
-          </div>
-          <div class="system-card">
-            <div class="system-card-badge system-badge-commercial">Corporativo</div>
-            <h4>Editorial Manager</h4>
-            <p>Plataforma comercial que oferece checagem automatizada de metadados, fluxo de submissão guiado e integração com bases de dados internacionais.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="content-block">
-        <div class="why-box">
-          <div class="why-box-icon">
-            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/><text x="16" y="21" text-anchor="middle" fill="currentColor" font-size="16" font-weight="700">?</text></svg>
-          </div>
-          <div class="why-box-content">
-            <h4>Por que esses sistemas existem?</h4>
-            <p>Eles eliminam o caos de e-mails, organizam os prazos, registram o histórico de modificações do texto e garantem a integridade do processo de avaliação cega, impedindo fraudes ou quebras de sigilo.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== MODULE 5 ===== -->
-  <section class="module-section" id="modulo5">
-    <div class="container">
-      <div class="module-header">
-        <div class="module-number-badge">Módulo 05</div>
-        <h2>O Modelo Brasileiro de Publicação</h2>
-        <p class="module-description">O Brasil é pioneiro mundial no modelo Acesso Aberto Diamante — sem taxas para quem lê e sem taxas para quem publica.</p>
-      </div>
-
-      <!-- Qualis CAPES -->
-      <div class="content-block">
-        <h3 class="content-title">
-          <svg class="content-icon" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.2H22l-6 4.8 2.4 7.2L12 16.4l-6.4 4.8 2.4-7.2-6-4.8h7.6L12 2z" stroke="currentColor" stroke-width="1.5"/></svg>
-          O Termômetro Nacional: Qualis CAPES
-        </h3>
-        <p class="content-text">O Qualis é o sistema brasileiro que classifica e dá notas para os periódicos científicos de todas as áreas do conhecimento.</p>
-        <div class="qualis-chart">
-          <div class="qualis-tier qualis-elite">
-            <div class="qualis-tier-label">Elite Internacional / Nacional</div>
-            <div class="qualis-badges">
-              <span class="qualis-badge qb-a1">A1</span>
-              <svg class="qualis-arrow" viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span class="qualis-badge qb-a2">A2</span>
-              <svg class="qualis-arrow" viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span class="qualis-badge qb-a3">A3</span>
-              <svg class="qualis-arrow" viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span class="qualis-badge qb-a4">A4</span>
-            </div>
-          </div>
-          <div class="qualis-tier qualis-intermediate">
-            <div class="qualis-tier-label">Impacto Intermediário</div>
-            <div class="qualis-badges">
-              <span class="qualis-badge qb-b1">B1</span>
-              <svg class="qualis-arrow" viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span class="qualis-badge qb-b2">B2</span>
-              <svg class="qualis-arrow" viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span class="qualis-badge qb-b3">B3</span>
-              <svg class="qualis-arrow" viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span class="qualis-badge qb-b4">B4</span>
-            </div>
-          </div>
-          <div class="qualis-tier qualis-none">
-            <div class="qualis-tier-label">Sem Relevância / Pontuação</div>
-            <div class="qualis-badges">
-              <span class="qualis-badge qb-c">C</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Indexers -->
-      <div class="content-block">
-        <h3 class="content-title">
-          <svg class="content-icon" viewBox="0 0 24 24" fill="none"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9m-9 9a9 9 0 019-9" stroke="currentColor" stroke-width="1.5"/></svg>
-          Principais Indexadores Gratuitos
-        </h3>
-        <div class="indexers-grid">
-          <div class="indexer-card">
-            <h4>SciELO</h4>
-            <p class="indexer-full">Scientific Electronic Library Online</p>
-            <p>A vitrine de elite da ciência latino-americana. Biblioteca eletrônica ultrarigorosa que indexa apenas os periódicos nacionais mais bem avaliados.</p>
-          </div>
-          <div class="indexer-card">
-            <h4>Portal de Periódicos CAPES</h4>
-            <p class="indexer-full">Ministério da Educação</p>
-            <p>Imenso acervo que disponibiliza bases de dados internacionais de ponta para estudantes e pesquisadores de instituições públicas brasileiras.</p>
-          </div>
-          <div class="indexer-card">
-            <h4>Redalyc</h4>
-            <p class="indexer-full">Rede de Revistas Científicas</p>
-            <p>Rede de revistas da América Latina, Caribe, Espanha e Portugal que defende ativamente o modelo Diamante de publicação não-comercial.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Top 10 Journals -->
-      <div class="content-block">
-        <h3 class="content-title">
-          <svg class="content-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 016.5 17H20" stroke="currentColor" stroke-width="1.5"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" stroke="currentColor" stroke-width="1.5"/></svg>
-          Top 10 Revistas com Publicação Gratuita
-        </h3>
-        <div class="journals-table-wrapper">
-          <table class="journals-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Revista</th>
-                <th>Área</th>
-                <th>Instituição</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="journal-rank">01</span></td>
-                <td>Revista USP</td>
-                <td>Multidisciplinar</td>
-                <td>Universidade de São Paulo</td>
-              </tr>
-              <tr>
-                <td><span class="journal-rank">02</span></td>
-                <td>Cadernos de Saúde Pública</td>
-                <td>Epidemiologia / Saúde Coletiva</td>
-                <td>Fiocruz</td>
-              </tr>
-              <tr>
-                <td><span class="journal-rank">03</span></td>
-                <td>Memórias do Instituto Oswaldo Cruz</td>
-                <td>Biomédica</td>
-                <td>Fiocruz</td>
-              </tr>
-              <tr>
-                <td><span class="journal-rank">04</span></td>
-                <td>Educação e Pesquisa</td>
-                <td>Educação</td>
-                <td>USP</td>
-              </tr>
-              <tr>
-                <td><span class="journal-rank">05</span></td>
-                <td>Revista de Administração de Empresas (RAE)</td>
-                <td>Negócios / Gestão</td>
-                <td>FGV</td>
-              </tr>
-              <tr>
-                <td><span class="journal-rank">06</span></td>
-                <td>Dados — Revista de Ciências Sociais</td>
-                <td>Ciência Política / Sociologia</td>
-                <td>UERJ</td>
-              </tr>
-              <tr>
-                <td><span class="journal-rank">07</span></td>
-                <td>Revista Brasileira de Ciência do Solo</td>
-                <td>Ciências Agrárias</td>
-                <td>UFV</td>
-              </tr>
-              <tr>
-                <td><span class="journal-rank">08</span></td>
-                <td>Scientia Plena</td>
-                <td>Ciências Exatas / Engenharias</td>
-                <td>Assoc. Sergipana de Ciência</td>
-              </tr>
-              <tr>
-                <td><span class="journal-rank">09</span></td>
-                <td>Boletim do Museu Paraense Emílio Goeldi</td>
-                <td>Ciências Naturais / Antropologia</td>
-                <td>MPEG / MCTI</td>
-              </tr>
-              <tr>
-                <td><span class="journal-rank">10</span></td>
-                <td>Brazilian Journal of Psychiatry</td>
-                <td>Saúde Mental</td>
-                <td>ABP</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== MODULE 6 ===== -->
-  <section class="module-section module-section-alt" id="modulo6">
-    <div class="container">
-      <div class="module-header">
-        <div class="module-number-badge">Módulo 06</div>
-        <h2>O Ritual da Submissão e Glossário Técnico</h2>
-        <p class="module-description">Ao submeter o seu artigo na plataforma da revista escolhida, você participará de um processo burocrático padronizado. Conheça os termos técnicos indispensáveis.</p>
-      </div>
-
-      <div class="content-block">
-        <div class="glossary-grid">
-          <div class="glossary-card">
-            <div class="glossary-card-header">
-              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M15 9a3 3 0 00-6 0c0 2 3 3 3 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="17" r="0.8" fill="currentColor"/></svg>
-              <h4>Peer Review</h4>
-              <span class="glossary-en">Revisão por Pares</span>
-            </div>
-            <p>Processo de validação em que o editor envia seu texto para dois ou mais pesquisadores doutores especialistas na sua área avaliarem a qualidade do estudo antes de aceitá-lo.</p>
-          </div>
-
-          <div class="glossary-card">
-            <div class="glossary-card-header">
-              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="4" x2="12" y2="20" stroke="currentColor" stroke-width="1.5"/></svg>
-              <h4>Double-Blind Review</h4>
-              <span class="glossary-en">Avaliação Duplo-Cega</span>
-            </div>
-            <p>Método em que os nomes dos autores são completamente omitidos do manuscrito enviado aos revisores, e as identidades dos revisores também permanecem em segredo para o autor. Garante total imparcialidade.</p>
-          </div>
-
-          <div class="glossary-card">
-            <div class="glossary-card-header">
-              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="currentColor" stroke-width="1.5"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M9 15l3-3 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <h4>Preprint</h4>
-              <span class="glossary-en">Pré-publicação</span>
-            </div>
-            <p>Versão inicial do artigo compartilhada publicamente em servidor específico (como SciELO Preprints) antes da revisão por pares oficial. Serve para fixar a data de prioridade da descoberta.</p>
-          </div>
-
-          <div class="glossary-card">
-            <div class="glossary-card-header">
-              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M12 9v4M12 17h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="currentColor" stroke-width="1.5"/></svg>
-              <h4>Plágio e Autoplágio</h4>
-              <span class="glossary-en">Integridade Acadêmica</span>
-            </div>
-            <p>Uso de ideias, palavras ou dados de outros sem crédito (plágio), ou reutilização massiva de textos que você mesmo já publicou sem autocitação (autoplágio). Ambos são infrações graves.</p>
-          </div>
-
-          <div class="glossary-card">
-            <div class="glossary-card-header">
-              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5"/></svg>
-              <h4>Comitê de Ética (CEP/CONEP)</h4>
-              <span class="glossary-en">Ética em Pesquisa</span>
-            </div>
-            <p>Órgão oficial que avalia e autoriza projetos com coleta de dados de seres humanos. Revisões sistemáticas com dados públicos de artigos já publicados são legalmente dispensadas.</p>
-          </div>
-
-          <div class="glossary-card">
-            <div class="glossary-card-header">
-              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="currentColor" stroke-width="1.5"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="currentColor" stroke-width="1.5"/></svg>
-              <h4>Manuscrito</h4>
-              <span class="glossary-en">Manuscript</span>
-            </div>
-            <p>Nome técnico dado ao arquivo do artigo enquanto ele está em fase de escrita ou avaliação na revista. Só se torna "Artigo" oficialmente após ser aceito e publicado.</p>
-          </div>
-
-          <div class="glossary-card glossary-card-wide">
-            <div class="glossary-card-header">
-              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 8l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg>
-              <h4>Cover Letter</h4>
-              <span class="glossary-en">Carta de Apresentação</span>
-            </div>
-            <p>Documento formal submetido junto com o artigo onde você explica brevemente ao editor-chefe por que o seu estudo é relevante, inédito e se encaixa perfeitamente no escopo daquela revista.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-content">
@@ -868,16 +302,24 @@
           </svg>
           <span>Manual do Pesquisador</span>
         </div>
-        <p class="footer-text">Guia definitivo de pesquisa científica, escrita de artigos e publicação acadêmica.</p>
+        <p class="footer-text">Portal aberto para estudar pesquisa científica com uma navegação mais clara, páginas temáticas e referências permanentes.</p>
+        <div class="footer-links">
+          <a href="#blocos">Módulos</a>
+          <a href="glossario.html">Glossário</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="https://github.com/onecio/manual-pesquisador" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
         <div class="footer-divider"></div>
-        <p class="footer-copy">Manual Mestre do Pesquisador Iniciante. Conteúdo educacional de livre acesso.</p>
+        <p class="footer-copy">Ecossistema da Pesquisa Científica. Conteúdo educacional em evolução contínua.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Back to top -->
   <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
-    <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg viewBox="0 0 20 20" fill="none" width="20" height="20">
+      <path d="M10 16V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M4 10l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
   </button>
 
   <script src="script.js"></script>
