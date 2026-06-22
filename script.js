@@ -15,9 +15,15 @@
     { title: 'Ciência Aberta', module: 'F3 · Planejamento', url: 'modulos/ciencia-aberta.html', keywords: 'ciência aberta preregistro pre-registro dados abertos materiais abertos transparência reprodutibilidade' },
     { title: 'Planejamento da Pesquisa', module: 'F4 · Planejamento', url: 'modulos/planejamento.html', keywords: 'planejamento problema pergunta picos objetivos preregistro critérios inclusão exclusão' },
     { title: 'Revisão da Literatura', module: 'F5 · Planejamento', url: 'modulos/revisao-literatura.html', keywords: 'revisão da literatura revisão sistemática narrativa integrativa escopo estratégia de busca prisma' },
+    { title: 'Desenhos de Pesquisa', module: 'F6 · Execução', url: 'modulos/desenhos-pesquisa.html', keywords: 'desenhos de pesquisa transversal coorte ensaio clínico qualitativo validade interna externa' },
+    { title: 'Estatística', module: 'F7 · Execução', url: 'modulos/estatistica.html', keywords: 'estatística p-valor intervalo de confiança tamanho de efeito inferência significância análise quantitativa' },
     { title: 'Escrita Científica', module: 'F8 · Comunicação', url: 'modulos/escrita.html', keywords: 'escrita científica imrad resumo abstract metodologia discussão referências abnt apa vancouver' },
     { title: 'Publicação Científica', module: 'F9 · Comunicação', url: 'modulos/publicacao.html', keywords: 'publicação científica peer review double blind open access ojs cover letter preprint' },
     { title: 'Revisão por Pares', module: 'F10 · Comunicação', url: 'modulos/revisao-pares.html', keywords: 'revisão por pares peer review parecerista revisão duplo-cega open review editor pareceres' },
+    { title: 'Dados de Pesquisa', module: 'F11 · Execução', url: 'modulos/dados-pesquisa.html', keywords: 'dados de pesquisa coleta de dados dicionário de variáveis anonimização gestão de dados qualidade' },
+    { title: 'Divulgação Científica', module: 'F15 · Impacto', url: 'modulos/divulgacao-cientifica.html', keywords: 'divulgação científica comunicação pública da ciência linguagem acessível alcance social' },
+    { title: 'Ferramentas Digitais', module: 'F16 · Impacto', url: 'modulos/ferramentas-digitais.html', keywords: 'ferramentas digitais fluxo acadêmico gerenciador de referências automação organização de pesquisa' },
+    { title: 'IA na Pesquisa', module: 'F17 · Impacto', url: 'modulos/ia-pesquisa.html', keywords: 'ia na pesquisa inteligência artificial acadêmica uso responsável transparência supervisão humana' },
     { title: 'Submissão de Manuscritos', module: 'F19 · Comunicação', url: 'modulos/submissao.html', keywords: 'submissão manuscrito checklist sistema editorial revisão resposta pareceristas' },
     { title: 'Modelo Brasileiro de Publicação', module: 'F18 · Nacional', url: 'modulos/modelo-brasileiro.html', keywords: 'qualis scielo redalyc capes acesso aberto diamante brasil periódicos' }
   ];
