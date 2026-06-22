@@ -9,7 +9,7 @@
     { title: 'Página inicial', module: 'Hub principal', url: 'index.html', keywords: 'início home ecossistema pesquisa científica módulos roadmap glossário' },
     { title: 'Glossário técnico', module: 'Referência', url: 'glossario.html', keywords: 'glossário termos peer review preprint osf prisma qualis' },
     { title: 'Roadmap da pesquisa', module: 'Referência', url: 'roadmap.html', keywords: 'roadmap jornada etapas projeto pesquisa redação submissão publicação' },
-    { title: 'Perguntas frequentes', module: 'Referência', url: 'faq.html', keywords: 'faq perguntas frequentes pesquisa científica prisma ia bibliometria submissão revisão sistemática' },
+    { title: 'Perguntas frequentes', module: 'Referência', url: 'faq.html', keywords: 'faq perguntas frequentes pesquisa científica prisma ia bibliometria submissão revisão sistemática desk reject parecerista periódico edital pré-registro lattes orcid' },
     { title: 'Fundamentos da Ciência', module: 'F0 · Alicerces', url: 'modulos/fundamentos.html', keywords: 'ciência fundamentos epistemologia qualitativa quantitativa revisão sistemática' },
     { title: 'Método Científico', module: 'F1 · Alicerces', url: 'modulos/metodo-cientifico.html', keywords: 'método científico hipótese variáveis indução dedução experimento' },
     { title: 'Ética e Integridade Científica', module: 'F2 · Alicerces', url: 'modulos/etica-integridade.html', keywords: 'ética integridade científica plágio autoria conflito de interesse comitê de ética consentimento' },
@@ -32,6 +32,7 @@
     { title: 'Modelo Brasileiro de Publicação', module: 'F18 · Nacional', url: 'modulos/modelo-brasileiro.html', keywords: 'qualis scielo redalyc capes acesso aberto diamante brasil periódicos' }
     ,{ title: 'Lattes, ORCID e Identificadores', module: 'BR1 · Nacional', url: 'modulos/lattes-orcid.html', keywords: 'lattes orcid identificadores autoria currículo acadêmico cnpq brasil' }
     ,{ title: 'Fomento e Avaliação no Brasil', module: 'BR2 · Nacional', url: 'modulos/fomento-avaliacao-brasil.html', keywords: 'capes cnpq faps fapesp sucupira avaliação da pós-graduação fomento brasil' }
+    ,{ title: 'Periódicos, Indexação e Submissão no Brasil', module: 'BR3 · Nacional', url: 'modulos/periodicos-indexacao-brasil.html', keywords: 'periódicos brasileiros indexação scielo redalyc latindex qualis submissão brasil estratégia editorial desk reject escopo' }
   ];
 
   var mainNav = document.getElementById('mainNav');
