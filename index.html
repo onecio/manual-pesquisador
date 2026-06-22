@@ -69,13 +69,13 @@
         <li><a href="roadmap.html">Roadmap</a></li>
       </ul>
 
-      <div class="nav-search">
+      <div class="nav-search" role="search">
         <svg class="nav-search-icon" viewBox="0 0 16 16" fill="none">
           <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/>
           <path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
-        <input type="text" id="globalSearch" class="nav-search-input" placeholder="Buscar módulo ou conceito…" autocomplete="off">
-        <div id="searchResults" class="search-results" aria-live="polite"></div>
+        <input type="search" id="globalSearch" class="nav-search-input" name="global-search" aria-label="Buscar módulo ou conceito" placeholder="Buscar módulo ou conceito…" autocomplete="off" spellcheck="false">
+        <div id="searchResults" class="search-results" aria-live="polite" hidden></div>
       </div>
     </div>
   </nav>

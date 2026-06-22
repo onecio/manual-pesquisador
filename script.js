@@ -25,7 +25,107 @@
   var globalLevelBtns = document.querySelectorAll('.level-btn');
   var searchInput = document.getElementById('globalSearch');
   var searchResults = document.getElementById('searchResults');
+  var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var ticking = false;
+
+  function setButtonState(buttons, activeButton) {
+    buttons.forEach(function (button) {
+      button.classList.toggle('active', button === activeButton);
+      button.setAttribute('aria-pressed', String(button === activeButton));
+    });
+  }
+
+  function updateTabPanels(tabs, panels, level) {
+    tabs.forEach(function (tab) {
+      var isActive = tab.getAttribute('data-level') === level;
+      tab.classList.toggle('active', isActive);
+      tab.setAttribute('aria-selected', String(isActive));
+      tab.setAttribute('tabindex', isActive ? '0' : '-1');
+    });
+
+    panels.forEach(function (panel) {
+      var isActive = panel.getAttribute('data-level') === level;
+      panel.classList.toggle('active', isActive);
+      panel.hidden = !isActive;
+    });
+  }
+
+  function initSemantics() {
+    document.querySelectorAll('svg').forEach(function (icon) {
+      if (!icon.hasAttribute('aria-hidden') && !icon.hasAttribute('aria-label') && icon.getAttribute('role') !== 'img') {
+        icon.setAttribute('aria-hidden', 'true');
+        icon.setAttribute('focusable', 'false');
+      }
+    });
+
+    if (navToggle && navLinks) {
+      navToggle.setAttribute('aria-controls', 'navLinks');
+    }
+
+    if (searchInput) {
+      searchInput.setAttribute('type', 'search');
+      searchInput.setAttribute('name', 'global-search');
+      searchInput.setAttribute('aria-label', 'Buscar módulo ou conceito');
+      searchInput.setAttribute('spellcheck', 'false');
+    }
+
+    if (searchResults) {
+      searchResults.hidden = true;
+      searchResults.setAttribute('role', 'list');
+    }
+
+    globalLevelBtns.forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.classList.contains('active')));
+    });
+
+    document.querySelectorAll('.concept').forEach(function (concept, conceptIndex) {
+      var tabs = concept.querySelectorAll('.concept-level-tab');
+      var panels = concept.querySelectorAll('.concept-level-panel');
+      var tabList = concept.querySelector('.concept-levels');
+      var conceptId = concept.getAttribute('id') || ('concept-' + conceptIndex);
+
+      if (tabList) {
+        tabList.setAttribute('role', 'tablist');
+        tabList.setAttribute('aria-label', 'Níveis de profundidade do conteúdo');
+      }
+
+      tabs.forEach(function (tab, index) {
+        var level = tab.getAttribute('data-level');
+        var panel = concept.querySelector('.concept-level-panel[data-level="' + level + '"]');
+        var tabId = conceptId + '-tab-' + level;
+        var panelId = conceptId + '-panel-' + level;
+
+        tab.setAttribute('role', 'tab');
+        tab.id = tabId;
+
+        if (panel) {
+          panel.setAttribute('role', 'tabpanel');
+          panel.setAttribute('aria-labelledby', tabId);
+          panel.id = panelId;
+          tab.setAttribute('aria-controls', panelId);
+        }
+
+        if (index === 0 && !tab.hasAttribute('tabindex')) {
+          tab.setAttribute('tabindex', tab.classList.contains('active') ? '0' : '-1');
+        }
+      });
+
+      var activeTab = concept.querySelector('.concept-level-tab.active') || tabs[0];
+      if (activeTab) {
+        updateTabPanels(tabs, panels, activeTab.getAttribute('data-level'));
+      }
+    });
+
+    document.querySelectorAll('.glossary-filter-btn').forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.classList.contains('active')));
+    });
+
+    var glossaryFilter = document.querySelector('.glossary-filter');
+    if (glossaryFilter) {
+      glossaryFilter.setAttribute('role', 'toolbar');
+      glossaryFilter.setAttribute('aria-label', 'Filtrar termos do glossário por letra');
+    }
+  }
 
   function closeMobileNav() {
     if (!navLinks || !navToggle) return;
@@ -39,6 +139,13 @@
       navToggle.addEventListener('click', function () {
         var isOpen = navLinks.classList.toggle('open');
         navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+          closeMobileNav();
+          navToggle.focus();
+        }
       });
 
       navLinks.querySelectorAll('a').forEach(function (link) {
@@ -123,13 +230,11 @@
 
   function setAllConceptLevels(level) {
     document.querySelectorAll('.concept').forEach(function (concept) {
-      concept.querySelectorAll('.concept-level-tab').forEach(function (tab) {
-        tab.classList.toggle('active', tab.getAttribute('data-level') === level);
-      });
-
-      concept.querySelectorAll('.concept-level-panel').forEach(function (panel) {
-        panel.classList.toggle('active', panel.getAttribute('data-level') === level);
-      });
+      updateTabPanels(
+        concept.querySelectorAll('.concept-level-tab'),
+        concept.querySelectorAll('.concept-level-panel'),
+        level
+      );
     });
   }
 
@@ -140,12 +245,10 @@
 
     globalLevelBtns.forEach(function (btn) {
       btn.classList.toggle('active', btn.getAttribute('data-level') === savedLevel);
+      btn.setAttribute('aria-pressed', String(btn.getAttribute('data-level') === savedLevel));
       btn.addEventListener('click', function () {
         var level = this.getAttribute('data-level');
-        globalLevelBtns.forEach(function (button) {
-          button.classList.remove('active');
-        });
-        this.classList.add('active');
+        setButtonState(globalLevelBtns, this);
         setAllConceptLevels(level);
         localStorage.setItem('ecossistema-level', level);
       });
@@ -163,14 +266,30 @@
       if (!concept) return;
 
       var level = tab.getAttribute('data-level');
+      updateTabPanels(
+        concept.querySelectorAll('.concept-level-tab'),
+        concept.querySelectorAll('.concept-level-panel'),
+        level
+      );
+    });
 
-      concept.querySelectorAll('.concept-level-tab').forEach(function (button) {
-        button.classList.toggle('active', button === tab);
-      });
+    document.addEventListener('keydown', function (event) {
+      var tab = event.target.closest('.concept-level-tab');
+      if (!tab) return;
+      if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft' && event.key !== 'Home' && event.key !== 'End') return;
 
-      concept.querySelectorAll('.concept-level-panel').forEach(function (panel) {
-        panel.classList.toggle('active', panel.getAttribute('data-level') === level);
-      });
+      var tabs = Array.prototype.slice.call(tab.closest('.concept').querySelectorAll('.concept-level-tab'));
+      var currentIndex = tabs.indexOf(tab);
+      var nextIndex = currentIndex;
+
+      if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % tabs.length;
+      if (event.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+      if (event.key === 'Home') nextIndex = 0;
+      if (event.key === 'End') nextIndex = tabs.length - 1;
+
+      event.preventDefault();
+      tabs[nextIndex].focus();
+      tabs[nextIndex].click();
     });
   }
 
@@ -203,7 +322,7 @@
       element.classList.add('reveal');
     });
 
-    if (!('IntersectionObserver' in window)) {
+    if (prefersReducedMotion || !('IntersectionObserver' in window)) {
       document.querySelectorAll('.reveal').forEach(function (element) {
         element.classList.add('visible');
       });
@@ -248,6 +367,13 @@
       requestAnimationFrame(step);
     }
 
+    if (prefersReducedMotion) {
+      counters.forEach(function (counter) {
+        counter.textContent = counter.getAttribute('data-count');
+      });
+      return;
+    }
+
     if (!('IntersectionObserver' in window)) {
       counters.forEach(animateCounter);
       return;
@@ -271,7 +397,7 @@
     if (!searchInput || !searchResults) return;
 
     function hideResults() {
-      searchResults.style.display = 'none';
+      searchResults.hidden = true;
       searchResults.innerHTML = '';
     }
 
@@ -300,7 +426,7 @@
         '</a>';
       }).join('');
 
-      searchResults.style.display = 'block';
+      searchResults.hidden = false;
     });
 
     document.addEventListener('click', function (event) {
@@ -320,7 +446,7 @@
         if (!target) return;
 
         event.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
+        target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth' });
 
         if (history.pushState) {
           history.pushState(null, '', targetId);
@@ -339,8 +465,10 @@
 
         glossaryBtns.forEach(function (button) {
           button.classList.remove('active');
+          button.setAttribute('aria-pressed', 'false');
         });
         this.classList.add('active');
+        this.setAttribute('aria-pressed', 'true');
 
         document.querySelectorAll('.glossary-term').forEach(function (term) {
           if (letter === 'all') {
@@ -356,6 +484,7 @@
   }
 
   function init() {
+    initSemantics();
     initNavigation();
     initLevels();
     initAccordion();
